@@ -1,0 +1,37 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sStages/_sStages.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= 'Как открыть гостиницу не нарушая законодательство'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head('Как открыть гостиницу не нарушая законодательство', 'Нормативные документы', 'Гостиницы')
+		+headerBlock 
+		+sStages
+		+sCatalog
+		+sForm()
+		+sContact()
+		
+	+parts('footer')
+      
+
+
+

@@ -1,0 +1,13 @@
+mixin topLine()
+	// start topLine
+	+b.topLine.section#topLine&attributes(attributes)
+		.container.container--wide
+			+e.row.row
+				.col
+						+b.logo(href="/")
+							img(src="img/logo.svg", alt="").res-i
+				+e.search-col.col-auto
+						+search()
+				.col-auto
+						+btn('Отправить обращение').btn.btn-primary
+	// end topLine
