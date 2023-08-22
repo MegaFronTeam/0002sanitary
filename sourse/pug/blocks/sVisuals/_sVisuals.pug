@@ -1,0 +1,25 @@
+mixin visualItem(title, date="19.04.2023", size="1.6")
+	+e.item.LI
+		+e.item-link(href="#")
+			+img('img/doc.svg')
+			+e.item-text
+				+e.item-title= title
+				+e.item-date= date
+				+e.item-file
+					+icon('download')
+					| pdf
+					span= size
+					| mb
+
+mixin sVisuals(data)
+	// start sVisuals
+	+b.SECTION.sVisuals.section#sVisuals&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Наглядные материалы
+			+e.items-list.UL
+				+visualItem('Пример заголовка для названия документа в одну или несколько строк ')
+				+visualItem('Пример заголовка для названия документа в одну или несколько ример заголовка для названия документа в одну или несколько строк сример заголовка для названия документа в одну или несколько строк трок ')
+				+visualItem('Название материала или документа')
+				+visualItem('Пример заголовка для названия документа в одну или несколько строк  ')
+	// end sVisuals

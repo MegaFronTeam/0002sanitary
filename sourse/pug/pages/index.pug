@@ -9,6 +9,9 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sCatalog/_sCatalog.pug
 include ../blocks/sStages/_sStages.pug
+include ../blocks/sTargetedLinks/_sTargetedLinks.pug
+include ../blocks/sVisuals/_sVisuals.pug
+include ../blocks/sRpn/_sRpn.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -26,11 +29,18 @@ block pagecontent
 		+page-head('Как открыть гостиницу не нарушая законодательство', 'Нормативные документы', 'Гостиницы')
 		+headerBlock 
 		+sStages
-		+sCatalog
-		+sForm()
-		+sContact()
+		+sTargetedLinks('Управление рисками в процессе осуществления деятельности')
+		+sTargetedLinks('Безопасность и гигиена труда')
+			+targetItem('7', 'Профилактика профессиональных заболеваний сотрудников офиса')
+			+targetItem('8', 'Производственное освещение')
+		+sVisuals
+		+sRpn
+
+		//- +sCatalog
+		//- +sContact()
 		
 	+parts('footer')
+		+sForm()
       
 
 

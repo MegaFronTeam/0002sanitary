@@ -1,6 +1,9 @@
 // start .headerBlock
 .headerBlock {
-	--sPT: #{rem(60)};
+	--sPT: #{rem(30)};
+	@include media-breakpoint-up(md) {
+		--sPT: #{rem(60)};
+	}
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()}; 
 	// min-height: 100vh;
@@ -8,21 +11,33 @@
 	
 	
 	&__row{
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+		@include media-breakpoint-up(md) {
+			flex-wrap: nowrap;
+		}
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: var(--bs-gutter-x);
 
 	}
 	&__text {
-		max-width: 336px;
+		width: 100%;
 		font-size: rem(18);
 		line-height: 140%; 
+		@include media-breakpoint-up(md) {
+			max-width: 336px;
+		}
 	}
 	&__video-wrap {
 		@include block(560,849);
-		max-width: 849px;
+		max-width: 700px;
+		width: 100%;
 		border-radius: 12px;
 		overflow: hidden;
+		@include media-breakpoint-up(xl) {
+			max-width: 849px;
+		}
 		iframe {
 			position: absolute;
 			top: 0;

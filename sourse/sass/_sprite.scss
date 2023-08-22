@@ -17,12 +17,42 @@
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
 	width: calc(27 / #{$h} *1em );
 }
+.icon-city {
+	$h: 24;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(24 / #{$h} *1em );
+}
+.icon-download {
+	$h: 12;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(10 / #{$h} *1em );
+}
+.icon-emblem {
+	$h: 24;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(24 / #{$h} *1em );
+}
+.icon-emblem-c {
+	$h: 30;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(27 / #{$h} *1em );
+}
 .icon-fb {
 	$h: 24;
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
 	width: calc(24 / #{$h} *1em );
 }
 .icon-instagram {
+	$h: 24;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(24 / #{$h} *1em );
+}
+.icon-internet {
+	$h: 16;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(16 / #{$h} *1em );
+}
+.icon-mail {
 	$h: 24;
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
 	width: calc(24 / #{$h} *1em );

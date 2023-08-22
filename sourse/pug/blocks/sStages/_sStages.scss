@@ -1,5 +1,6 @@
 // start .sStages
 .sStages {
+	counter-reset: dd-head;
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
@@ -17,6 +18,90 @@
 	&__item{
 
 	}
+	.dd-group__content {
+		padding: 16px 16px 24px;
+		background-color: $white;
+		border-radius: 0 0 12px 12px;
+		&:not(.active) {
+			display: none;
+		}		
+	}
+	.dd-group__item {
+		margin-bottom: 8px;
+		&.active {
+			.dd-group__head {
+				border-bottom-left-radius: 0px;
+				border-bottom-right-radius: 0px;
+				span::after {
+					transform: rotate(90deg);
+					// background-color: transparent;
+				}
+			}
+		}
+	}
+
+	.dd-group__head {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 24px;
+		padding-right: 46px;
+		border-radius: 12px;
+		background-color: $white;
+		color: var(--bl, #0A0A0A);
+		font-family: $header-font;
+		font-size: rem(20);
+		font-weight: 700;
+		line-height: 1;
+		@include media-breakpoint-up(md) {
+			flex-wrap: nowrap;
+		}
+		&::before {
+			counter-increment: dd-head;
+			content: counter(dd-head, upper-roman) " этап";
+			flex-shrink: 0;
+			margin-right: 30px;
+			width: 100%;
+			margin-bottom: 10px;
+			color: $gray-600;
+			@include media-breakpoint-up(md) {
+				margin-bottom: 0;
+				width: auto;
+			}
+		}
+		span {
+			position: absolute;
+			right: 16px;
+			display: block;
+			flex-shrink: 0;
+			margin-left: auto;
+			height: 2px;
+			width: 14px;
+			background-color: #BBBBBB;
+			border-radius: 20%;
+			&::after {
+				position: absolute;
+				display: inline-block;
+				content: '';
+				top: -6px;
+				left: 6px;
+				height: 14px;
+				width: 2px;
+				background-color: #BBBBBB;
+				border-radius: 20%;
+				transition: transform .3s ease-in-out;
+			}
+		}
+	}
+	.low-info {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.alarm {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -26,3 +111,101 @@
 	@include media-breakpoint-only(xl) {}
 	@include media-breakpoint-down(xl) {}
 } // end.sStages
+
+.icon-row {
+	--bs-gutter-x: #{rem(24)};
+	--bs-gutter-y: #{rem(24)};
+	margin-bottom: 32px;
+	&__img-wrap {
+		display: flex;
+		width: 56px;
+		height: 56px;
+		margin: auto;
+		margin-bottom: 16px;
+		border-radius:$border-radius;
+		background: #F3F5F7;
+		&>* {
+			margin: auto;
+			width: 24px;
+			height: 24px;
+		}
+	}
+	&__text {
+		text-align: center;
+		font-size: 14px;
+		line-height: 140%;
+	}
+}
+
+.low-info {
+	padding: 16px;
+	background: $gray-200;
+	font-size: 14px;
+	line-height: 140%;
+	border-radius: $border-radius;
+	a {
+		text-decoration: underline;
+	}
+}
+
+.alarm {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	background: rgba($red, 0.20);
+	border-radius: $border-radius;
+	font-size: 14px;
+	&::before {
+		content: url('../img/alarm.svg');
+		margin-right: 10px;
+		flex-shrink: 0;
+		width: 24px;
+		height: 24px;
+	}
+}
+.doc-list {
+	padding-left: rem(24);
+	margin-bottom: rem(40);
+	font-size: 14px;
+	li:not(:last-child) {
+		margin-bottom: 16px;
+	}
+}
+
+.info-item {
+	&:not(:last-child) {
+		margin-bottom: rem(40);
+	}
+	&__title {
+		margin-bottom: 16px;
+		font-family: $header-font;
+		font-weight: 700;
+		line-height: 1;
+	}
+	p {
+		font-size: 14px;
+		line-height: 140%;
+	}
+	a {
+		text-decoration: underline;
+	}
+}
+
+.alert-list {
+	--bs-gutter-x: #{rem(24)};
+	--bs-gutter-y: #{rem(40)};
+	padding-top: 30px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 140%;
+	img {
+		margin-bottom: 24px;
+		width: 40px;
+		height: 40px;
+	}
+	&__text {
+		max-width: 364px;
+		margin: auto;
+	}
+}

@@ -1,0 +1,20 @@
+mixin sRpn(data)
+	// start sRpn
+	+b.SECTION.sRpn.section#sRpn&attributes(attributes)
+		.container
+			+e.wrap
+				+e.text
+					+b.section-title
+						h2 Мой роспотребнадзор
+					+e.subtitle Вся информация для просмотра возможностей
+					+e.info-list.UL
+						+e.info-item.LI Путеводитель по антикризисной поддержке МСП
+						+e.info-item.LI Актуальные новости о мерах господдержки и мероприятиях от центров «Мой бизнес»
+						+e.info-item.LI Пошаговые инструкции, подборки советов и сервисов
+						+e.info-item.LI «Горячие линии» для консультаций
+					+e.btn.btn.btn-outline-secondary
+						+icon('internet')
+						| Найти центр в своем регионе
+				+e.img-wrap
+					+img('img/rpn.jpg')
+	// end sRpn

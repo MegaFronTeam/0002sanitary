@@ -23,6 +23,9 @@
 		display: block;
 		padding: rem(20) calc(var(--bs-gutter-x) / 2);
 		color: $body-color;
+		@include media-breakpoint-down(xl) {
+			padding: rem(20) 5px;
+		}
 	}
 }
 
@@ -93,6 +96,7 @@
 		// left: 0;
 		right: 0;
 		background-color: $body-bg;
+		font-family: $header-font;
 		&:not(.active){
 			transform: translate3d(120%, 0,0);
 			--opacity: 0;

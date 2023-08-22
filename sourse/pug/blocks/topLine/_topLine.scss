@@ -22,13 +22,10 @@
 	&__slide{
 		height: auto;
 	}
-	.search-block {
-		font-family: $header-font;
-	}
-	.icon-search {
-		fill: none;
-		stroke: $body-color;
-		stroke-width: 2px;
+	&__btn {
+		@include media-breakpoint-down(sm) {
+			font-size: 14px;
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -55,3 +52,14 @@
 	@include media-breakpoint-down(xs) {} 
 
 } // end.topLine
+.logo {
+	flex-shrink: 0;
+}
+.search-block {
+	font-family: $header-font;
+}
+.icon-search {
+	fill: none;
+	stroke: $body-color;
+	stroke-width: 2px;
+}

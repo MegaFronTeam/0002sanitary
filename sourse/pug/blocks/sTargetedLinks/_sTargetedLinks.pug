@@ -1,0 +1,25 @@
+mixin targetItem(img, title)
+	.col-lg-6
+		+e.item(href="#")
+			+e.img-wrap
+				+img(`img/target-${img}.svg`)
+			+e.title= title
+
+mixin sTargetedLinks(header)
+	// start sTargetedLinks
+	+b.SECTION.sTargetedLinks.section#sTargetedLinks&attributes(attributes)
+		.container
+			+b.section-title
+				h2= header				
+			+e.row.row
+				if block
+					block
+				else
+					+targetItem('1', 'Порядок проведения дезинфекции')
+					+targetItem('2', 'Как правильно хранить и утилизировать люминесцентные лампы')
+					+targetItem('3', 'Определение потребности в дезинфекционных средствах и кожных антисептиках')
+					+targetItem('4', 'Рекомендации по профилактике Covid-19')
+					+targetItem('5', 'Вакцинация от гриппа сотрудников отеля')
+					+targetItem('6', 'Организация санитарноэпидемиологического режима в гостиницах ')
+				
+	// end sTargetedLinks
