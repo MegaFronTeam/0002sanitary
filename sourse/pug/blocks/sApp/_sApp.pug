@@ -1,0 +1,21 @@
+mixin sApp(data)
+	// start sApp
+	+b.SECTION.sApp.section#sApp&attributes(attributes)
+		.container
+			+e.container
+				+e.text
+					+e.subtitle Мобильное приложение
+					+e.title.H2 «КЭП» - консультации эпидемиолога
+					p информационно-консультационного характера направленное на&nbsp;информационное сопровождение и&nbsp;обеспечение санитарно-эпидемиологического благополучия в&nbsp;организациях и&nbsp;предприятиях
+					+e.buttons
+						+e.btn.btn.btn-outline-secondary
+							+icon('internet')
+							| Веб версия
+						+e.btn.btn.btn-outline-secondary
+							+icon('android')
+							| Скачать для Android
+						+e.btn.btn.btn-outline-secondary
+							+icon('apple')
+							| Скачать для iOs
+				+img('img/app-img.png').sApp__img.d-none.d-lg-block
+	// end sApp

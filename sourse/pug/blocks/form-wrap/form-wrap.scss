@@ -16,7 +16,30 @@
 		width: 100%;
 		display: block;
 	}
+	&__input-title {
+		color: $gray-600;
+		font-size: 14px;
+		font-weight: 500;
+	}
 }
+.form-floating>label {
+	padding-left: 0;
+}
+.form-floating>.form-control[type="textarea"] {
+	min-height: 90px;
+}
+
+
+.form-control {
+	margin-bottom: 0;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #1A1A1A;
+	@include media-breakpoint-up(md) {
+		margin-bottom: 32px;
+	}
+}
+
 
 .parsley-error {
 	border-image: none;
@@ -248,3 +271,4 @@ input::-webkit-inner-spin-button {
 	.select2-selection__arrow {
 	display: none;
 }
+

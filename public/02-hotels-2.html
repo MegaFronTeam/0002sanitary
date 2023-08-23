@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Порядок проведения дезинсекции</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<div class="page-head">
+					<div class="container">
+						<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+							<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"/></a></li>
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Нормативные документы</span>
+										<meta itemprop="position" content="2"/></a></li>
+								<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Гостиницы</span>
+										<meta itemprop="position" content="3"/></a></li>
+							</ol>
+						</nav>
+						<h1>Порядок проведения дезинсекции</h1>
+					</div>
+				</div>
+				<!-- start headerBlock2-->
+				<div class="headerBlock headerBlock--des section" id="headerBlock">
+					<div class="container">
+						<div class="headerBlock__row row">
+							<div class="col-12 col-lg-6">
+								<p>Дезинсекция (фр. d&eacute;s-, означающая уничтожение, удаление + лат. insectum&nbsp;&mdash; насекомое)&nbsp;&mdash; один из&nbsp;видов обеззараживания, представляющий собой уничтожение артроподов (насекомых и&nbsp;клещей), способных переносить трансмиссивные инфекции, вредить запасам продовольствия и&nbsp;растениям, с&nbsp;помощью специальных химических, физических (путём воздействия горячей воды или пара, электроразрядные, механические) или биологических средств.</p>
+								<p>Под дезинсекцией также понимается процедура уничтожения любых членистоногих, чьё соседство с&nbsp;человеком считается нежелательным: мухи, комары, тараканы, муравьи, постельные клопы, блохи.</p>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="headerBlock__img-wrap"><img src="img/header-hotels.jpg" alt="" loading="lazy"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end headerBlock2-->
+				<!-- start sApp-->
+				<section class="sApp section" id="sApp">
+					<div class="container">
+						<div class="sApp__container">
+							<div class="sApp__text">
+								<div class="sApp__subtitle">Мобильное приложение
+								</div>
+								<h2 class="sApp__title">«КЭП» - консультации эпидемиолога
+								</h2>
+								<p>информационно-консультационного характера направленное на&nbsp;информационное сопровождение и&nbsp;обеспечение санитарно-эпидемиологического благополучия в&nbsp;организациях и&nbsp;предприятиях</p>
+								<div class="sApp__buttons">
+									<div class="sApp__btn btn btn-outline-secondary">
+										<svg class="icon icon-internet ">
+											<use xlink:href="img/svg/sprite.svg#internet"></use>
+										</svg>Веб версия
+									</div>
+									<div class="sApp__btn btn btn-outline-secondary">
+										<svg class="icon icon-android ">
+											<use xlink:href="img/svg/sprite.svg#android"></use>
+										</svg>Скачать для Android
+									</div>
+									<div class="sApp__btn btn btn-outline-secondary">
+										<svg class="icon icon-apple ">
+											<use xlink:href="img/svg/sprite.svg#apple"></use>
+										</svg>Скачать для iOs
+									</div>
+								</div>
+							</div><img class="sApp__img d-none d-lg-block" src="img/app-img.png" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</section>
+				<!-- end sApp-->
+				<!-- start sDisinsection-->
+				<section class="sDisinsection section" id="sDisinsection">
+					<div class="container">
+						<div class="sDisinsection__wrap">
+							<div class="sDisinsection__text">
+								<div class="sDisinsection__article">
+									<div class="section-title">
+										<h3>Дезинсекция должна проводиться на объектах, имеющих особое эпидемиологическое значение, а именно:</h3>
+									</div>
+									<ul class="sDisinsection__list">
+										<li>организации пищевой промышленности, общественного питания и организации, осуществляющие хранение и реализацию пищевой продукции;</li>
+										<li>здания, предназначенные для постоянного или временного пребывания людей;</li>
+										<li>гостиницы, общежития;</li>
+										<li>медицинские организации;</li>
+										<li>санаторно-курортные организации, дома отдыха, пансионаты;</li>
+										<li>организации, реализующие образовательные программы дошкольного, начального, общего, основного общего и среднего общего образования, организации дополнительного образования для детей и организации для детей-сирот и детей, оставшихся без попечения родителей (далее - образовательные организации для детей), организации отдыха детей и их оздоровления;</li>
+										<li>организации водоснабжения и канализации;</li>
+										<li>объекты коммунально-бытового назначения;</li>
+										<li>объекты и территории организаций, занимающихся утилизацией твердых коммунальных отходов, кладбища, очистные сооружения;</li>
+										<li>объекты и территории организаций, занимающихся внешним благоустройством: санитарной очисткой, уборкой и озеленением населенных пунктов;</li>
+										<li>рекреационные объекты и территории (пляжи, места массового отдыха, туризма, рыбалки, охоты и другие);</li>
+										<li>садоводческие, огороднические и дачные объединения граждан;</li>
+										<li>таможенные терминалы;</li>
+										<li>объекты транспортной инфраструктуры;</li>
+										<li>пункты пропуска через государственную границу РФ;</li>
+										<li>железнодорожные вокзалы, морские (речные, озерные) вокзалы и порты, автовокзалы, аэропорты;</li>
+										<li>суда морские, речные, смешанного (река-море) плавания;</li>
+										<li>воздушные суда;</li>
+										<li>подвижной состав железнодорожного транспорта (пассажирский, грузовой), а также транспортное оборудование (контейнеры),</li>
+										<li>подвижной состав метрополитена;</li>
+										<li>специализированный автотранспорт.</li>
+									</ul>
+									<p>Дезинсекция включает в&nbsp;себя организационные, санитарно-технические, санитарно-гигиенические и&nbsp;истребительные мероприятия, направленные на&nbsp;уничтожение членистоногих, имеющих эпидемиологическое и&nbsp;санитарно-гигиеническое значение.</p>
+									<p>Предусмотрено, что в&nbsp;лесопарковой зоне, на&nbsp;территории участков природных очагов, на&nbsp;которых расположены медицинские организации, организации отдыха детей и&nbsp;их&nbsp;оздоровления, санатории, базы отдыха, а&nbsp;также на&nbsp;территории населенных пунктов дезинсекция, включая акарицидные и&nbsp;ларвицидные обработки, проводится в&nbsp;весенний, летний периоды, при необходимости&nbsp;&mdash; в&nbsp;осенний период.</p>
+									<p>Таким образом, исходя из&nbsp;мест обитания членистоногих, имеющих эпидемиологическое и&nbsp;санитарно-гигиеническое значение, дезинсекция может проводиться как на&nbsp;открытых территориях (городские и&nbsp;сельские поселения, природные территории), так и&nbsp;в&nbsp;зданиях, строениях, сооружениях, а&nbsp;также на&nbsp;транспорте.</p>
+									<p>Членистоногие, имеющие эпидемиологическое и&nbsp;санитарно-гигиеническое значение могут переносить возбудителей инфекционных болезней или своим присутствием либо результатами жизнедеятельности, негативно влиять на&nbsp;самочувствие человека или санитарное состояние помещений и&nbsp;территорий.</p>
+									<div class="sDisinsection__list-title">Например:
+									</div>
+									<ul class="sDisinsection__list">
+										<li>клещи домашней пыли способны вызывать аллергические реакции;</li>
+										<li>чесоточный клещ своим паразитированием в кожных покровах человека причиняет ему беспокойство, вызывая сильный зуд;</li>
+										<li>иксодовые клещи, обитающие в природных ареалах, являются переносчиками клещевого вирусного энцефалита, клещевого боррелиоза и др.</li>
+										<li>Помимо клещей, этот перечень включает мокриц, пауков, тараканов, комаров, сверчков, блох, клопов, вшей, муравьев и т.д.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sDisinsection__alarm">
+								<svg class="icon icon-alarm ">
+									<use xlink:href="img/svg/sprite.svg#alarm"></use>
+								</svg>
+								<p>С 01.09.2021 действуют новые требования к организации и проведению дезинсекции, определенные в разделе III <a href="#">СанПиН 3.3686-21</a> «Санитарно-эпидемиологические требования по профилактике инфекционных болезней».</p>
+							</div>
+							<div class="sDisinsection__text">
+								<div class="sDisinsection__article">
+									<div class="section-title">
+										<h3>Дезинсекция должна проводиться на объектах, имеющих особое эпидемиологическое значение, а именно:</h3>
+									</div>
+									<p>Дезинсекционные мероприятия на&nbsp;объектах, транспортных средствах, рекреационных территориях населенных пунктов проводятся персоналом организаций, в&nbsp;соответствии с&nbsp;учредительными документами которых одним из&nbsp;видов экономической деятельности является осуществление дезинсекционной деятельности.</p>
+									<p>Таким образом, до&nbsp;проведения дезинсекции допускаются только специально обученные лица, путем привлечения сторонних организаций на&nbsp;договорной основе.</p>
+								</div>
+								<div class="sDisinsection__article">
+									<div class="section-title">
+										<h3>Дезинсекционные мероприятия включают организацию и проведение:</h3>
+									</div>
+									<ul class="sDisinsection__list">
+										<li>определения видовой принадлежности членистоногих; учета численности, определения заселенности членистоногими объектов и&nbsp;территории;</li>
+										<li>истребительных мероприятий с&nbsp;использованием механических, химических и&nbsp;биологических методов;</li>
+										<li>контроля эффективности истребительных мероприятий своими силами или силами исполнителей дезинсекционных работ или сторонних организаций. При отсутствии эффективности проверяют качество препарата, а&nbsp;дезинсекционные обработки повторяют, используя инсектициды из&nbsp;других групп химических веществ.</li>
+									</ul>
+								</div>
+								<div class="sDisinsection__article">
+									<div class="section-title">
+										<h3>Дезинсекционные мероприятия проводятся в следующем порядке:</h3>
+									</div>
+									<ol class="sDisinsection__list">
+										<li>информирование руководителями организаций, в&nbsp;которых проводится дезинсекция сотрудников, о&nbsp;дате, времени проведения и&nbsp;мерах предосторожности;</li>
+										<li>подготовка помещений к&nbsp;истребительным мероприятиям;</li>
+										<li>помещение пищевой продукции в&nbsp;герметично закрывающуюся тару или герметичное упаковывание иным способом (в&nbsp;случае попадания дезинсекционных средств на&nbsp;пищевую продукцию эта продукция подлежит уничтожению);</li>
+										<li>закрытие форточек и&nbsp;окон;</li>
+										<li>раскладывание дезинсекционных приманок для синантропных членистоногих в&nbsp;местах, недоступных для людей и&nbsp;домашних животных (для раскладки приманок не&nbsp;допускается использовать пищевую посуду);</li>
+										<li>применение иных дезинсекционных средств в&nbsp;соответствии с&nbsp;инструкцией по&nbsp;применению;</li>
+										<li>проветривание помещения;</li>
+										<li>проведение влажной уборки с&nbsp;применением моющих средств.</li>
+									</ol>
+								</div>
+								<div class="sDisinsection__article">
+									<div class="section-title">
+										<h3>Также установлены требования к осуществлению дезинфекционной деятельности (в том числе по дезинсекции) на отдельных объектах.</h3>
+									</div>
+									<p>Помимо мероприятий по&nbsp;уничтожению членистоногих, на&nbsp;каждом предприятии (организации) должны быть созданы условия, препятствующие их&nbsp;проникновению и&nbsp;размножению, например герметизация швов, щелей; надлежащая организация сбора и&nbsp;вывоза мусора; своевременная уборка помещений, очистка мусоропроводов, соблюдение требований к&nbsp;хранению пищевых продуктов и&nbsp;т.д.</p>
+									<p>За&nbsp;несоблюдение требований санитарных правил, в&nbsp;том числе в&nbsp;части организации и&nbsp;проведения дезинсекционных мероприятий, а&nbsp;также нарушение санитарно-эпидемиологических требований к&nbsp;эксплуатации зданий, сооружений и&nbsp;транспорта для юридических, должностных лиц или индивидуальных предпринимателей статьями 6.3 и&nbsp;6.4 Кодекса Российской Федерации об&nbsp;административных правонарушениях предусмотрено наказание в&nbsp;виде предупреждения, административного штрафа или приостановления деятельности на&nbsp;срок до&nbsp;девяноста суток.</p>
+								</div>
+							</div>
+							<div class="sDisinsection__alarm">
+								<svg class="icon icon-alarm ">
+									<use xlink:href="img/svg/sprite.svg#alarm"></use>
+								</svg>
+								<p>Цель дезинсекции&nbsp;&mdash; обеспечение безопасных и&nbsp;комфортных в&nbsp;эпидемиологическом и&nbsp;гигиеническом плане условий пребывания человека.</p>
+							</div>
+						</div>
+						<div class="sDisinsection__row row">
+						</div>
+					</div>
+				</section>
+				<!-- end sDisinsection-->
+				<!-- start sSlider-->
+				<section class="sSlider section" id="sSlider">
+					<div class="container">
+						<div class="section-title">
+							<h2>Похожие материалы</h2>
+						</div>
+						<div class="sSlider__wrapper">
+							<div class="sSlider__slider sSlider__slider--js swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-1.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-2.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-3.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-4.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-1.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-2.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-3.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-4.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="sSlider__controls">
+								<div class="swiper-pagination"></div>
+								<div class="sSlider__buttons">
+									<div class="swiper-button-prev">
+										<svg class="icon icon-slider-left ">
+											<use xlink:href="img/svg/sprite.svg#slider-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon icon-slider-right ">
+											<use xlink:href="img/svg/sprite.svg#slider-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sSlider-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

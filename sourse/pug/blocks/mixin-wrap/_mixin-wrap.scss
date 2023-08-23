@@ -4,21 +4,32 @@
 	@include roww(10px, m);
 	display: flex;
 	&__item{
+		width: 32px;
+		height: 32px;
+		background-color: #E7E7E7;
 		text-decoration: none !important; 
 		vertical-align: middle;
 		@include mt;
 		display: grid;
 		place-items: center;
+		border-radius: 12px;
+		&:not(:last-child) {
+			margin-right: 8px;
+			@include media-breakpoint-up(lg) {
+				margin-right: 26px;
+			}
+		}
 		&:hover{
-		 	// box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
-			// opacity: .6 ;
+		 	box-shadow: 0 0 33px 0px rgba(255, 83, 0, 0.16);
+			opacity: .6 ;
 		}
 		
 	}
 	.icon{
-		font-size: rem(30);
+		font-size: rem(22);
+		fill: $gray-600;
 	}
-
+	
 
 }
 

@@ -62,6 +62,30 @@ function eventHandler() {
 
 	});
 
+	const moreSlider = new Swiper('.sSlider__slider--js', {
+		slidesPerView: 4,
+		pagination: {
+			el: '.sSlider .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.sSlider .swiper-button-next',
+			prevEl: '.sSlider .swiper-button-prev',
+		},
+		spaceBetween: 8,
+		slidesPerView: 1,
+		breakpoints: {
+			570: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+			1024: {
+				slidesPerView: 4,
+			},
+		},
+	});
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

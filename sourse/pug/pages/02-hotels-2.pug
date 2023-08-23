@@ -1,0 +1,48 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sApp/_sApp.pug
+include ../blocks/sDisinsection/_sDisinsection.pug
+include ../blocks/sSlider/_sSlider.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= 'Порядок проведения дезинсекции'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head('Порядок проведения дезинсекции', 'Нормативные документы', 'Гостиницы')
+		+headerBlock2
+		+sApp
+		+sDisinsection
+		+sSlider('Похожие материалы')
+		//- +sStages
+		//- +sTargetedLinks('Управление рисками в процессе осуществления деятельности')
+		//- +sTargetedLinks('Безопасность и гигиена труда')
+		//- 	+targetItem('7', 'Профилактика профессиональных заболеваний сотрудников офиса')
+		//- 	+targetItem('8', 'Производственное освещение')
+		//- +sVisuals
+		//- +sRpn
+
+		//- +sCatalog
+		//- +sContact()
+		
+	+parts('footer')
+		+sForm()
+      
+
+
+

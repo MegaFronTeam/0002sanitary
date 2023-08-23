@@ -1,0 +1,41 @@
+mixin contentItem(img,title="Текст новости для наглядности отображения контента в одну или несколько строк как пример",date="25 октября 2023")
+	+b.content-item(href="#")
+		+e.img-wrap
+			+img(`img/content-${img}.jpg`)
+		+e.text-wrap
+			+e.title= title
+			+e.date= date
+
+mixin sSlider(title)
+	// start sSlider
+	+b.SECTION.sSlider.section#sSlider&attributes(attributes)
+		.container
+			+b.section-title
+				h2= title
+			+e.wrapper
+				+e.slider--js.swiper
+					.swiper-wrapper
+						.swiper-slide
+							+contentItem('1')
+						.swiper-slide
+							+contentItem('2')
+						.swiper-slide
+							+contentItem('3')
+						.swiper-slide
+							+contentItem('4')
+						.swiper-slide
+							+contentItem('1')
+						.swiper-slide
+							+contentItem('2')
+						.swiper-slide
+							+contentItem('3')
+						.swiper-slide
+							+contentItem('4')
+				+e.controls
+					.swiper-pagination
+					+e.buttons
+						.swiper-button-prev
+							+icon('slider-left')
+						.swiper-button-next
+							+icon('slider-right')
+	// end sSlider

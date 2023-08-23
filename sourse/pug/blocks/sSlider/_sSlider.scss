@@ -1,0 +1,111 @@
+// start .sSlider
+.sSlider {
+	--sPT: #{rem(0)};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		h2 {
+			color: $body-color;
+		}
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	&__wrapper {
+		position: relative;
+	}
+	&__slider {
+		padding-bottom: 20px;
+	}
+	&__controls {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.swiper-pagination {
+		position: static;
+		// bottom: -30px;
+		text-align: left;
+	}
+	.swiper-pagination-bullet {
+		width: 7px;
+		height: 7px;
+		margin: 0 8px !important;
+	}
+	&__buttons {
+		display: flex;
+		& > * {
+			position: static;
+			margin-top: 0;
+			&::after {
+				content: none;
+			}
+		}
+		.icon {
+			width: 16px;
+			height: 16px;
+			stroke: $body-color;
+		}
+	}
+	.swiper-button-prev {
+		margin-right: 16px;
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sSlider
+
+.content-item {
+	display: block;
+	background-color: $white;
+	border-radius: 12px;
+	box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+	overflow: hidden;
+	&:hover {
+		.content-item__title {
+			color: $primary;
+		}
+	}
+	&__img-wrap {
+		width: 100%;
+		img {
+			height: 255px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	&__text-wrap {
+		padding: 16px;
+	}
+	&__title {
+		-webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+		margin-bottom: 50px;
+    overflow: hidden;
+		font-family: $header-font;
+		font-size: rem(24);
+		font-weight: 700;
+		line-height: 87.188%;
+		color: $body-color;
+		transition: color .3s ease-in-out;
+	}
+	&__date {
+		font-family: $header-font;
+		font-size: 14px;
+		color: rgba($body-color, .5);
+	}
+}

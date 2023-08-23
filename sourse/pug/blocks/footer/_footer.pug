@@ -1,9 +1,51 @@
 mixin footer()
 	+b.FOOTER.footer.section
 		.container
-			.row
-				.col-6
-					
-				.col Footer
-				.col
-				.col-auto
+			+e.row.row
+				.col-lg-6
+					+b.section-title
+						h2 Есть вопросы?
+					+form-wrap
+						+e.row.row
+							.col-12.col-sm-6
+								.form-floating
+									input.form-wrap__input.form-control.form-wrap__input-wrap.form-wrap__input-wrap--text(inputmode="" name="" type="text" placeholder="" id="name")
+									label.form-wrap__input-title(for="name") Ваше имя
+							.col-12.col-sm-6
+								.form-floating
+									input.form-wrap__input.form-control.form-wrap__input-wrap.form-wrap__input-wrap--text(inputmode="" name="" type="text" placeholder="" id="surname")
+									label.form-wrap__input-title(for="namsurnamee") Ваш фамилия
+							.col-12
+								.form-floating
+									input.form-wrap__input.form-control.form-wrap__input-wrap.form-wrap__input-wrap--text(inputmode="" name="" type="textarea" placeholder="" id="comment")
+									label.form-wrap__input-title(for="comment") Ваш вопрос
+							.col-12.col-sm-auto
+								+e.btn.btn.btn-primary.BUTTON(type="submit")
+									span Отправить
+									+img('/img/footer-btn.svg')
+							.col
+								+e.policy Отправляя форму, я соглашаюсь <br>с <a href="#">Политикой обработки персональных данных</a>
+							.col-12
+								+e.notice *Обращение направленное в&nbsp;этом разделе не&nbsp;является официальным обращением в&nbsp;Роспотребнадзор. В&nbsp;случае если&nbsp;Вы хотите направить официальное обращение, это можно сделать <a href="#">здесь</a>
+				.col-lg-auto
+					+e.nav.NAV
+						+e.nav-list.UL
+							+e.nav-item.LI
+								+e.nav-link(href="#") Статьи
+							+e.nav-item.LI
+								+e.nav-link(href="#") Отправить обращение
+							+e.nav-item.LI
+								+e.nav-link(href="#") Новости
+							+e.nav-item.LI
+								+e.nav-link(href="#") Нормативные документы
+							+e.nav-item.LI
+								+e.nav-link(href="#") Для СМИ
+							+e.nav-item.LI
+								+e.nav-link(href="#") Вопрос-ответ
+					+e.contacts
+						+e.tel(href="tel:") +7 800 898 88 99
+						+e.email(href="mailto:") sample@sample.com
+			+e.bottom
+				+e.privacy(href="#") Политика конфиденциальности
+				+soc
+				+e.copyright Портал центра защиты здоровья населения

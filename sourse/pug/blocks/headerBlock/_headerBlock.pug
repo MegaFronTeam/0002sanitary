@@ -9,3 +9,15 @@ mixin headerBlock()
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/mIYoasoNa5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 				
 	// end headerBlock
+mixin headerBlock2()
+	// start headerBlock2
+	+b.headerBlock--des.section#headerBlock&attributes(attributes)
+		.container
+			+e.row.row
+				.col-12.col-lg-6
+					p Дезинсекция (фр. d&eacute;s-, означающая уничтожение, удаление + лат. insectum&nbsp;&mdash; насекомое)&nbsp;&mdash; один из&nbsp;видов обеззараживания, представляющий собой уничтожение артроподов (насекомых и&nbsp;клещей), способных переносить трансмиссивные инфекции, вредить запасам продовольствия и&nbsp;растениям, с&nbsp;помощью специальных химических, физических (путём воздействия горячей воды или пара, электроразрядные, механические) или биологических средств.
+					p Под дезинсекцией также понимается процедура уничтожения любых членистоногих, чьё соседство с&nbsp;человеком считается нежелательным: мухи, комары, тараканы, муравьи, постельные клопы, блохи.
+				.col-12.col-lg-6
+					+e.img-wrap
+						+img('img/header-hotels.jpg')
+	// end headerBlock2

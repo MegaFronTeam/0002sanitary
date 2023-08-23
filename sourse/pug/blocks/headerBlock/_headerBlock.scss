@@ -47,6 +47,26 @@
 		}
 	}
 
+	&__img-wrap {
+		width: 100%;
+		border-radius: 12px;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&--des {
+		.headerBlock__row {
+			flex-wrap: wrap;
+		}
+		@include media-breakpoint-up(lg) {
+			p {
+				max-width: 506px;
+			}
+		}
+	}
+
 	@include media-breakpoint-up(xl) {}
 
 	@include media-breakpoint-up(lg) {}
