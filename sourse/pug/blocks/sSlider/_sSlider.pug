@@ -12,7 +12,7 @@ mixin sSlider(title)
 		.container
 			+b.section-title
 				h2= title
-			+e.wrapper
+			.slider-wrapper
 				+e.slider--js.swiper
 					.swiper-wrapper
 						.swiper-slide
@@ -31,9 +31,9 @@ mixin sSlider(title)
 							+contentItem('3')
 						.swiper-slide
 							+contentItem('4')
-				+e.controls
+				.slider-controls
 					.swiper-pagination
-					+e.buttons
+					.slider-buttons
 						.swiper-button-prev
 							+icon('slider-left')
 						.swiper-button-next

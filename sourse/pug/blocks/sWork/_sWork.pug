@@ -1,0 +1,63 @@
+mixin workItem(img,title)
+	+e.item(href="#")
+		+img(`img/work-${img}.jpg`)
+		+e.title= title
+
+mixin sWork(data)
+	// start sWork
+	+b.SECTION.sWork.section#sWork&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Труд и здоровье
+			.slider-wrapper
+				+e.slider--js.swiper
+					.swiper-wrapper
+						.swiper-slide
+							+workItem('1','Правила выбора и применения обуви на пищевом предприятии')
+						.swiper-slide
+							+workItem('2','Порядок проведения дезинсекции')
+						.swiper-slide
+							+workItem('3','Гигиенические требования к срокам годности и условиям хранения пищевых продуктов')
+						.swiper-slide
+							+workItem('4','Производство масложировой продукции')
+						.swiper-slide
+							+workItem('5','Производство рыбной продукции')
+						.swiper-slide
+							+workItem('6','Производство молока и молочной продукции')
+						.swiper-slide
+							+workItem('7','Производство соковой продукции из фруктов и овощей')
+						.swiper-slide
+							+workItem('8','Производство мяса и мясной продукции')
+						.swiper-slide
+							+workItem('9','Контроль за работой кондитерского производства')
+						.swiper-slide
+							+workItem('10','Как организовать работу кондитерских цехов')
+						.swiper-slide
+							+workItem('1','Правила выбора и применения обуви на пищевом предприятии')
+						.swiper-slide
+							+workItem('2','Порядок проведения дезинсекции')
+						.swiper-slide
+							+workItem('3','Гигиенические требования к срокам годности и условиям хранения пищевых продуктов')
+						.swiper-slide
+							+workItem('4','Производство масложировой продукции')
+						.swiper-slide
+							+workItem('5','Производство рыбной продукции')
+						.swiper-slide
+							+workItem('6','Производство молока и молочной продукции')
+						.swiper-slide
+							+workItem('7','Производство соковой продукции из фруктов и овощей')
+						.swiper-slide
+							+workItem('8','Производство мяса и мясной продукции')
+						.swiper-slide
+							+workItem('9','Контроль за работой кондитерского производства')
+						.swiper-slide
+							+workItem('10','Как организовать работу кондитерских цехов')
+				.slider-controls
+					.swiper-pagination
+					.slider-buttons
+						.swiper-button-prev
+							+icon('slider-left')
+						.swiper-button-next
+							+icon('slider-right')
+
+	// end sWork

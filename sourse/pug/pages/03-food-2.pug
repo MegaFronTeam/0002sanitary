@@ -10,6 +10,7 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sApp/_sApp.pug
 include ../blocks/sDisinsection/_sDisinsection.pug
 include ../blocks/sSlider/_sSlider.pug
+include ../blocks/sStages/_sStages.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -17,18 +18,17 @@ block variables
 
 block title
 	- let  title= index.head.title
-	title= 'Порядок проведения дезинсекции'
+	title= 'Как открыть пекарню'
 block pagecontent
 	//- +mob-mnu()
 	
 	
 	+parts('header')
 	main
-		+page-head('Порядок проведения дезинсекции', 'Нормативные документы', 'Гостиницы')
-		+headerBlock2
+		+page-head('Как открыть пекарню', 'Нормативные документы', 'Пищевая промышленность','Как открыть пекарню')
+		+headerBlock3
+		+sStages2
 		+sApp
-		+sDisinsection
-		+sSlider('Похожие материалы')
 	+parts('footer')
 		+sForm()
       

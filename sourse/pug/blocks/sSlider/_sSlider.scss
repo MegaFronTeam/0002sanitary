@@ -19,45 +19,46 @@
 	&__item{
 
 	}
-	&__wrapper {
-		position: relative;
-	}
+	// .slider-wrapper {
+	// 	position: relative;
+	// }
 	&__slider {
-		padding-bottom: 20px;
+		margin: -8px;
+		padding: 8px;
 	}
-	&__controls {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.swiper-pagination {
-		position: static;
-		// bottom: -30px;
-		text-align: left;
-	}
-	.swiper-pagination-bullet {
-		width: 7px;
-		height: 7px;
-		margin: 0 8px !important;
-	}
-	&__buttons {
-		display: flex;
-		& > * {
-			position: static;
-			margin-top: 0;
-			&::after {
-				content: none;
-			}
-		}
-		.icon {
-			width: 16px;
-			height: 16px;
-			stroke: $body-color;
-		}
-	}
-	.swiper-button-prev {
-		margin-right: 16px;
-	}
+	// .slider-controls {
+	// 	display: flex;
+	// 	align-items: center;
+	// 	justify-content: space-between;
+	// }
+	// .swiper-pagination {
+	// 	position: static;
+	// 	// bottom: -30px;
+	// 	text-align: left;
+	// }
+	// .swiper-pagination-bullet {
+	// 	width: 7px;
+	// 	height: 7px;
+	// 	margin: 0 8px !important;
+	// }
+	// .slider-buttons {
+	// 	display: flex;
+	// 	& > * {
+	// 		position: static;
+	// 		margin-top: 0;
+	// 		&::after {
+	// 			content: none;
+	// 		}
+	// 	}
+	// 	.icon {
+	// 		width: 16px;
+	// 		height: 16px;
+	// 		stroke: $body-color;
+	// 	}
+	// }
+	// .swiper-button-prev {
+	// 	margin-right: 16px;
+	// }
 
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
@@ -72,7 +73,7 @@
 	display: block;
 	background-color: $white;
 	border-radius: 12px;
-	box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.07);
 	overflow: hidden;
 	&:hover {
 		.content-item__title {

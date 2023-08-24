@@ -17,6 +17,9 @@
 			align-items: start;
 		}
 	}
+	&__text {
+		grid-column: 1 / 2;
+	}
 	.section-title{
 		max-width: 680px;
 		margin-bottom: rem(24);
@@ -31,7 +34,7 @@
 			line-height: 140%;
 		}
 	}
-	&__list {
+	ul, ol {
 		padding-left: 20px;
 		margin-bottom: rem(24);
 		font-size: 14px;

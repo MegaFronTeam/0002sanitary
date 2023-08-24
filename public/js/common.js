@@ -86,6 +86,54 @@ function eventHandler() {
 			},
 		},
 	});
+
+	const videoSlider = new Swiper('.sVideoSlider__slider--js', {
+		slidesPerView: 'auto',
+		spaceBetween: 24,
+		pagination: {
+			el: '.sVideoSlider .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.sVideoSlider .swiper-button-next',
+			prevEl: '.sVideoSlider .swiper-button-prev',
+		},
+	});
+
+	const workSlider = new Swiper('.sWork__slider--js', {
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				grid: {
+					fill: 'row',
+					rows: 3,
+				},
+			},
+			992: {
+				slidesPerView: 3,
+				grid: {
+					fill: 'row',
+					rows: 3,
+				},
+			},
+			1200: {
+				slidesPerView: 4,
+				grid: {
+					fill: 'row',
+					rows: 3,
+				},
+			},
+		},
+		spaceBetween: 24,
+		pagination: {
+			el: '.sWork .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.sWork .swiper-button-next',
+			prevEl: '.sWork .swiper-button-prev',
+		},
+	});
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

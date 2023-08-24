@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Пищевая промышленность</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<div class="page-head">
+					<div class="container">
+						<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+							<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"/></a></li>
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Пищевая промышленность</span>
+										<meta itemprop="position" content="2"/></a></li>
+								<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Нормативные документы</span>
+										<meta itemprop="position" content="3"/></a></li>
+							</ol>
+						</nav>
+						<h1>Пищевая промышленность</h1>
+					</div>
+				</div>
+				<!-- start sFoodGuide-->
+				<section class="sFoodGuide section" id="sFoodGuide">
+					<div class="container">
+						<div class="sFoodGuide__row row">
+							<div class="col-sm-6 col-lg-3">
+								<a class="sFoodGuide__item" href="#"><img src="img/guide-1.svg" alt="" loading="lazy"/>
+									<div class="sFoodGuide__title">Как открыть пекарню
+									</div>
+								</a>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<a class="sFoodGuide__item" href="#"><img src="img/guide-2.svg" alt="" loading="lazy"/>
+									<div class="sFoodGuide__title">Как открыть кондитерский цех
+									</div>
+								</a>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<a class="sFoodGuide__item" href="#"><img src="img/guide-3.svg" alt="" loading="lazy"/>
+									<div class="sFoodGuide__title">Как открыть предприятие производства мясопродуктов
+									</div>
+								</a>
+							</div>
+							<div class="col-sm-6 col-lg-3">
+								<a class="sFoodGuide__item" href="#"><img src="img/guide-4.svg" alt="" loading="lazy"/>
+									<div class="sFoodGuide__title">Как открыть предприятие производства рыбопродуктов?
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sFoodGuide-->
+				<!-- start sVideoSlider-->
+				<section class="sVideoSlider section" id="sVideoSlider">
+					<div class="container">
+						<div class="section-title">
+							<h2>Видеоматериалы по теме</h2>
+						</div>
+						<div class="slider-wrapper">
+							<div class="sVideoSlider__slider sVideoSlider__slider--js swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="sVideoSlider__item">
+											<div class="sVideoSlider__video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											</div>
+											<div class="sVideoSlider__item-title">Мытье рук персонала в общественном питании
+											</div>
+											<div class="sVideoSlider__info-row">
+												<div class="sVideoSlider__date">
+													<svg class="icon icon-calendar ">
+														<use xlink:href="img/svg/sprite.svg#calendar"></use>
+													</svg><span>25.07.23г</span>
+												</div>
+												<div class="sVideoSlider__time">
+													<svg class="icon icon-clock ">
+														<use xlink:href="img/svg/sprite.svg#clock"></use>
+													</svg><span>1:43</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="sVideoSlider__item">
+											<div class="sVideoSlider__video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											</div>
+											<div class="sVideoSlider__item-title">Мытье рук персонала в общественном питании
+											</div>
+											<div class="sVideoSlider__info-row">
+												<div class="sVideoSlider__date">
+													<svg class="icon icon-calendar ">
+														<use xlink:href="img/svg/sprite.svg#calendar"></use>
+													</svg><span>25.07.23г</span>
+												</div>
+												<div class="sVideoSlider__time">
+													<svg class="icon icon-clock ">
+														<use xlink:href="img/svg/sprite.svg#clock"></use>
+													</svg><span>1:43</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="sVideoSlider__item">
+											<div class="sVideoSlider__video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											</div>
+											<div class="sVideoSlider__item-title">Мытье рук персонала в общественном питании
+											</div>
+											<div class="sVideoSlider__info-row">
+												<div class="sVideoSlider__date">
+													<svg class="icon icon-calendar ">
+														<use xlink:href="img/svg/sprite.svg#calendar"></use>
+													</svg><span>25.07.23г</span>
+												</div>
+												<div class="sVideoSlider__time">
+													<svg class="icon icon-clock ">
+														<use xlink:href="img/svg/sprite.svg#clock"></use>
+													</svg><span>1:43</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="sVideoSlider__item">
+											<div class="sVideoSlider__video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+											</div>
+											<div class="sVideoSlider__item-title">Мытье рук персонала в общественном питании
+											</div>
+											<div class="sVideoSlider__info-row">
+												<div class="sVideoSlider__date">
+													<svg class="icon icon-calendar ">
+														<use xlink:href="img/svg/sprite.svg#calendar"></use>
+													</svg><span>25.07.23г</span>
+												</div>
+												<div class="sVideoSlider__time">
+													<svg class="icon icon-clock ">
+														<use xlink:href="img/svg/sprite.svg#clock"></use>
+													</svg><span>1:43</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider-controls">
+								<div class="swiper-pagination"></div>
+								<div class="slider-buttons">
+									<div class="swiper-button-prev">
+										<svg class="icon icon-slider-left ">
+											<use xlink:href="img/svg/sprite.svg#slider-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon icon-slider-right ">
+											<use xlink:href="img/svg/sprite.svg#slider-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sVideoSlider__row row">
+						</div>
+					</div>
+				</section>
+				<!-- end sVideoSlider-->
+				<!-- start sWork-->
+				<section class="sWork section" id="sWork">
+					<div class="container">
+						<div class="section-title">
+							<h2>Труд и здоровье</h2>
+						</div>
+						<div class="slider-wrapper">
+							<div class="sWork__slider sWork__slider--js swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-1.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Правила выбора и применения обуви на пищевом предприятии
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-2.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Порядок проведения дезинсекции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-3.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Гигиенические требования к срокам годности и условиям хранения пищевых продуктов
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-4.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство масложировой продукции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-5.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство рыбной продукции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-6.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство молока и молочной продукции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-7.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство соковой продукции из фруктов и овощей
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-8.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство мяса и мясной продукции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-9.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Контроль за работой кондитерского производства
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-10.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Как организовать работу кондитерских цехов
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-1.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Правила выбора и применения обуви на пищевом предприятии
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-2.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Порядок проведения дезинсекции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-3.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Гигиенические требования к срокам годности и условиям хранения пищевых продуктов
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-4.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство масложировой продукции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-5.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство рыбной продукции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-6.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство молока и молочной продукции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-7.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство соковой продукции из фруктов и овощей
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-8.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Производство мяса и мясной продукции
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-9.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Контроль за работой кондитерского производства
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="sWork__item" href="#"><img src="img/work-10.jpg" alt="" loading="lazy"/>
+											<div class="sWork__title">Как организовать работу кондитерских цехов
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-controls">
+								<div class="swiper-pagination"></div>
+								<div class="slider-buttons">
+									<div class="swiper-button-prev">
+										<svg class="icon icon-slider-left ">
+											<use xlink:href="img/svg/sprite.svg#slider-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon icon-slider-right ">
+											<use xlink:href="img/svg/sprite.svg#slider-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sWork-->
+				<!-- start sApp-->
+				<section class="sApp sApp--test section" id="sApp">
+					<div class="container">
+						<div class="section-title">
+							<h2>Тесты для самопроверки</h2>
+						</div>
+						<div class="sApp__container">
+							<div class="sApp__text">
+								<div class="sApp__subtitle">Категория теста
+								</div>
+								<div class="sApp__title h2">Наименование теста в одну или несколько строк для наглядности отображения
+								</div>
+								<p>информационно-консультационного характера направленное на информационное сопровождение и обеспечение санитарноэпи</p>
+								<div class="sApp__btn btn btn-outline-secondary">Пройти тест
+								</div>
+							</div><img class="d-none d-lg-block" src="img/app-test-bg.svg" alt="" loading="lazy"/>
+						</div>
+					</div>
+				</section>
+				<!-- end sApp-->
+				<!-- start sVisuals-->
+				<section class="sVisuals section" id="sVisuals">
+					<div class="container">
+						<div class="section-title">
+							<h2>Основные нормативно-правовые документы</h2>
+						</div>
+						<ul class="sVisuals__items-list">
+							<li class="sVisuals__item">
+								<a class="sVisuals__item-link" href="#"><img src="img/doc.svg" alt="" loading="lazy"/>
+									<div class="sVisuals__item-text">
+										<div class="sVisuals__item-title">Пример заголовка для названия документа в одну или несколько строк 
+										</div>
+										<div class="sVisuals__item-date">19.04.2023
+										</div>
+										<div class="sVisuals__item-file">
+											<svg class="icon icon-download ">
+												<use xlink:href="img/svg/sprite.svg#download"></use>
+											</svg>pdf<span>1.6</span>mb
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="sVisuals__item">
+								<a class="sVisuals__item-link" href="#"><img src="img/doc.svg" alt="" loading="lazy"/>
+									<div class="sVisuals__item-text">
+										<div class="sVisuals__item-title">Пример заголовка для названия документа в одну или несколько ример заголовка для названия документа в одну или несколько строк сример заголовка для названия документа в одну или несколько строк трок 
+										</div>
+										<div class="sVisuals__item-date">19.04.2023
+										</div>
+										<div class="sVisuals__item-file">
+											<svg class="icon icon-download ">
+												<use xlink:href="img/svg/sprite.svg#download"></use>
+											</svg>pdf<span>1.6</span>mb
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="sVisuals__item">
+								<a class="sVisuals__item-link" href="#"><img src="img/doc.svg" alt="" loading="lazy"/>
+									<div class="sVisuals__item-text">
+										<div class="sVisuals__item-title">Название материала или документа
+										</div>
+										<div class="sVisuals__item-date">19.04.2023
+										</div>
+										<div class="sVisuals__item-file">
+											<svg class="icon icon-download ">
+												<use xlink:href="img/svg/sprite.svg#download"></use>
+											</svg>pdf<span>1.6</span>mb
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="sVisuals__item">
+								<a class="sVisuals__item-link" href="#"><img src="img/doc.svg" alt="" loading="lazy"/>
+									<div class="sVisuals__item-text">
+										<div class="sVisuals__item-title">Пример заголовка для названия документа в одну или несколько строк  
+										</div>
+										<div class="sVisuals__item-date">19.04.2023
+										</div>
+										<div class="sVisuals__item-file">
+											<svg class="icon icon-download ">
+												<use xlink:href="img/svg/sprite.svg#download"></use>
+											</svg>pdf<span>1.6</span>mb
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- end sVisuals-->
+				<!-- start sRpn-->
+				<section class="sRpn section" id="sRpn">
+					<div class="container">
+						<div class="sRpn__wrap">
+							<div class="sRpn__text">
+								<div class="section-title">
+									<h2>Мой роспотребнадзор</h2>
+								</div>
+								<div class="sRpn__subtitle">Вся информация для просмотра возможностей
+								</div>
+								<ul class="sRpn__info-list">
+									<li class="sRpn__info-item">Путеводитель по антикризисной поддержке МСП
+									</li>
+									<li class="sRpn__info-item">Актуальные новости о мерах господдержки и мероприятиях от центров «Мой бизнес»
+									</li>
+									<li class="sRpn__info-item">Пошаговые инструкции, подборки советов и сервисов
+									</li>
+									<li class="sRpn__info-item">«Горячие линии» для консультаций
+									</li>
+								</ul>
+								<div class="sRpn__btn btn btn-outline-secondary">
+									<svg class="icon icon-internet ">
+										<use xlink:href="img/svg/sprite.svg#internet"></use>
+									</svg>Найти центр в своем регионе
+								</div>
+							</div>
+							<div class="sRpn__img-wrap"><img src="img/rpn.jpg" alt="" loading="lazy"/>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sRpn-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

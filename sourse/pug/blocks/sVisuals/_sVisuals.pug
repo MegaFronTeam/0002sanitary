@@ -11,12 +11,12 @@ mixin visualItem(title, date="19.04.2023", size="1.6")
 					span= size
 					| mb
 
-mixin sVisuals(data)
+mixin sVisuals(title="Наглядные материалы")
 	// start sVisuals
 	+b.SECTION.sVisuals.section#sVisuals&attributes(attributes)
 		.container
 			+b.section-title
-				h2 Наглядные материалы
+				h2= title
 			+e.items-list.UL
 				+visualItem('Пример заголовка для названия документа в одну или несколько строк ')
 				+visualItem('Пример заголовка для названия документа в одну или несколько ример заголовка для названия документа в одну или несколько строк сример заголовка для названия документа в одну или несколько строк трок ')

@@ -19,3 +19,18 @@ mixin sApp(data)
 							| Скачать для iOs
 				+img('img/app-img.png').sApp__img.d-none.d-lg-block
 	// end sApp
+
+mixin sAppTest(data)
+	// start sApp
+	+b.SECTION.sApp--test.section#sApp&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Тесты для самопроверки
+			+e.container
+				+e.text
+					+e.subtitle Категория теста
+					+e.title.h2 Наименование теста в одну или несколько строк для наглядности отображения
+					p информационно-консультационного характера направленное на информационное сопровождение и обеспечение санитарноэпи
+					+e.btn.btn.btn-outline-secondary Пройти тест
+				+img('img/app-test-bg.svg').d-none.d-lg-block
+	// end sApp

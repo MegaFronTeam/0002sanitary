@@ -54,20 +54,23 @@
 		font-size: rem(20);
 		font-weight: 700;
 		line-height: 1;
+		cursor: pointer;
 		@include media-breakpoint-up(md) {
 			flex-wrap: nowrap;
 		}
-		&::before {
-			counter-increment: dd-head;
-			content: counter(dd-head, upper-roman) " этап";
-			flex-shrink: 0;
-			margin-right: 30px;
-			width: 100%;
-			margin-bottom: 10px;
-			color: $gray-600;
-			@include media-breakpoint-up(md) {
-				margin-bottom: 0;
-				width: auto;
+		&--rome {
+			&::before {
+				counter-increment: dd-head;
+				content: counter(dd-head, upper-roman) " этап";
+				flex-shrink: 0;
+				margin-right: 30px;
+				width: 100%;
+				margin-bottom: 10px;
+				color: $gray-600;
+				@include media-breakpoint-up(md) {
+					margin-bottom: 0;
+					width: auto;
+				}
 			}
 		}
 		span {

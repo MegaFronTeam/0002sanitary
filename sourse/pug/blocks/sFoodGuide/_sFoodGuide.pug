@@ -1,0 +1,16 @@
+mixin guideItem(img, title)
+	.col-sm-6.col-lg-3
+		+e.item(href="#")
+			+img(`img/guide-${img}.svg`)
+			+e.title= title
+
+mixin sFoodGuide(data)
+	// start sFoodGuide
+	+b.SECTION.sFoodGuide.section#sFoodGuide&attributes(attributes)
+		.container
+			+e.row.row
+				+guideItem('1','Как открыть пекарню')
+				+guideItem('2','Как открыть кондитерский цех')
+				+guideItem('3','Как открыть предприятие производства мясопродуктов')
+				+guideItem('4','Как открыть предприятие производства рыбопродуктов?')
+	// end sFoodGuide

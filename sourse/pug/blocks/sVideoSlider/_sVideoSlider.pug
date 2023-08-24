@@ -1,0 +1,66 @@
+mixin sVideoSlider(data)
+	// start sVideoSlider
+	+b.SECTION.sVideoSlider.section#sVideoSlider&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Видеоматериалы по теме
+			.slider-wrapper
+				+e.slider--js.swiper
+					.swiper-wrapper
+						.swiper-slide
+							+e.item
+								+e.video-wrap
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								+e.item-title Мытье рук персонала в общественном питании
+								+e.info-row
+									+e.date
+										+icon('calendar')
+										span 25.07.23г
+									+e.time
+										+icon('clock')
+										span 1:43
+						.swiper-slide
+							+e.item
+								+e.video-wrap
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								+e.item-title Мытье рук персонала в общественном питании
+								+e.info-row
+									+e.date
+										+icon('calendar')
+										span 25.07.23г
+									+e.time
+										+icon('clock')
+										span 1:43
+						.swiper-slide
+							+e.item
+								+e.video-wrap
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								+e.item-title Мытье рук персонала в общественном питании
+								+e.info-row
+									+e.date
+										+icon('calendar')
+										span 25.07.23г
+									+e.time
+										+icon('clock')
+										span 1:43
+						.swiper-slide
+							+e.item
+								+e.video-wrap
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								+e.item-title Мытье рук персонала в общественном питании
+								+e.info-row
+									+e.date
+										+icon('calendar')
+										span 25.07.23г
+									+e.time
+										+icon('clock')
+										span 1:43
+				.slider-controls
+					.swiper-pagination
+					.slider-buttons
+						.swiper-button-prev
+							+icon('slider-left')
+						.swiper-button-next
+							+icon('slider-right')
+			+e.row.row
+	// end sVideoSlider

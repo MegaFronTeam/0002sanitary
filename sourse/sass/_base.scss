@@ -143,11 +143,17 @@ main{
 	margin-bottom: var(--sTPB);
 }
 
+h1 {
+}
+
 h2 {
 	color: $gray-600;
 	font-size: rem(32);
 	font-weight: 700;
 	text-transform: uppercase;
+	@include media-breakpoint-down(sm) {
+		font-size: rem(24);
+	}
 }
 
 
@@ -559,4 +565,44 @@ iframe {
 	max-width: 340px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.slider-wrapper {
+	position: relative;
+}
+.slider-controls {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.swiper-pagination {
+	position: static;
+	width: auto !important;
+	// bottom: -30px;
+	text-align: left;
+}
+.swiper-pagination-bullet {
+	width: 7px;
+	height: 7px;
+	margin: 0 8px !important;
+}
+.slider-buttons {
+	display: flex;
+	& > * {
+		position: static;
+		margin-top: 0;
+		&::after {
+			content: none;
+		}
+	}
+	.icon {
+		width: 16px;
+		height: 16px;
+		stroke: $body-color;
+		fill: none;
+	}
+}
+.swiper-button-prev {
+	margin-right: 16px;
 }
