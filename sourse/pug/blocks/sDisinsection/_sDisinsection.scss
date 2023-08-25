@@ -47,28 +47,28 @@
 	&__list-title {
 		font-weight: 700;
 	}
-	&__alarm {
-		display: flex;
-		flex-direction: column;
-		padding: 16px;
-		margin-bottom: 24px;
-		border-radius: 12px;
-		background: $white;
-		font-size: 14px;
-		line-height: 140%;
-		.icon {
-			margin-bottom: 16px;
-			width: 24px;
-			height: 24px;
-			color: $red;
-		}
-		p {
-			margin-bottom: 0;
-		}
-		a {
-			text-decoration: underline;
-		}
-	}
+	// &__alarm {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	padding: 16px;
+	// 	margin-bottom: 24px;
+	// 	border-radius: 12px;
+	// 	background: $white;
+	// 	font-size: 14px;
+	// 	line-height: 140%;
+	// 	.icon {
+	// 		margin-bottom: 16px;
+	// 		width: 24px;
+	// 		height: 24px;
+	// 		color: $red;
+	// 	}
+	// 	p {
+	// 		margin-bottom: 0;
+	// 	}
+	// 	a {
+	// 		text-decoration: underline;
+	// 	}
+	// }
 	&__col{
 
 	}

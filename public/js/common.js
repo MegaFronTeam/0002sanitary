@@ -44,11 +44,23 @@ function eventHandler() {
 		},
 	}
 
-	new Swiper('.breadcrumb-slider--js', {
+	const breadcrumbs = document.querySelector('.breadcrumb-slider--js');
+
+	const breadcrumbsSlider =	new Swiper(breadcrumbs, {
 		slidesPerView: 'auto',
 		freeMode: true,
-		watchOverflow: true
+		watchOverflow: true,
+		init: false,
 	});
+
+
+	breadcrumbsSlider.on('init', function () {
+		breadcrumbsSlider.slideTo(breadcrumbsSlider.slides.length - 1)
+	});
+
+	if (breadcrumbsSlider) {
+		breadcrumbsSlider.init();
+	}
 
 	const swiper4 = new Swiper('.sBanners__slider--js', { // если не используешь методы swiper  - можно обращаться без нее к Swiper
 		// slidesPerView: 5,

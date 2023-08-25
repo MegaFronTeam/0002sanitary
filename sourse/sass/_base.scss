@@ -606,3 +606,31 @@ iframe {
 .swiper-button-prev {
 	margin-right: 16px;
 }
+
+// Белый блок с красной иконкой с ссылкой на законы
+
+.alarm-block {
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	margin-bottom: 8px;
+	border-radius: 12px;
+	background: $white;
+	font-size: 14px;
+	line-height: 140%;
+	&:last-child {
+		margin-bottom: 24px;
+	}
+	.icon {
+		margin-bottom: 16px;
+		width: 24px;
+		height: 24px;
+		color: $red;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	a {
+		text-decoration: underline;
+	}
+}

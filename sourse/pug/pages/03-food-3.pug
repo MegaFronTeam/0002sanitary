@@ -1,0 +1,38 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sApp/_sApp.pug
+include ../blocks/sDisinsection/_sDisinsection.pug
+include ../blocks/sSlider/_sSlider.pug
+include ../blocks/sChoosingShoes/_sChoosingShoes.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= 'Правила выбора и применения обуви на пищевом предприятии'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head('Правила выбора и применения обуви на пищевом предприятии', 'Нормативные документы', 'Пищевая промышленность', 'Как открыть пекарню')
+		+headerBlock3('Сотрудники предприятий пищевой промышленности обязаны надевать не только специальную одежду, но и обувь, потому что она, как и фартуки, перчатки и прочие средства защиты, имеет двойную функцию: защищает человека от вредных факторов и защищает продукты питания от контаминации.', 'header-shoes')
+		+sApp
+		+sChoosingShoes
+		+sSlider('Похожие материалы')
+	+parts('footer')
+		+sForm()
+      
+
+
+

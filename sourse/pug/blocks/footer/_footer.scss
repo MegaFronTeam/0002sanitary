@@ -114,18 +114,44 @@
 		height: 48px;
 		border-radius: $border-radius;
 		border: 1px solid $primary;
-		background-color: transparent;
 		color: $gray-600;
 		font-size: 16px;
 		font-weight: 600;
 		font-family: $default-font;
 		overflow: hidden;
+		background-color: transparent;
 		&:hover {
-			background-color: $yellow;
-			color: $white;
+			.form-wrap__btn-span {
+				background-color: $yellow;
+				color: $white;
+			}
+			.form-wrap__icon-span {
+				background-color: transparent;
+			}
 		}
-		span {
+		.form-wrap__btn-span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			background-color: transparent;
 			padding: rem(5) rem(24);
+			transition: background-color .3s ease-in-out;
+		}
+		.form-wrap__icon-span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			background-color: $primary;
+			height: 100%;
+			width: 48px;
+			transition: background-color .3s ease-in-out;
+			.icon {
+				fill: none;
+				stroke: $gray-600;
+				stroke-width:2px ;
+			}
 		}
 		img {
 			height: 48px;
