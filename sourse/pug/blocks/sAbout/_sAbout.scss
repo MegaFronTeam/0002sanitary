@@ -1,0 +1,181 @@
+// start .sAbout
+.sAbout {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		--bs-gutter-x: #{rem(24)};
+		--bs-gutter-y: #{rem(24)};
+		margin-bottom: rem(24);
+		@include media-breakpoint-up(md) {
+			margin-bottom: rem(40);
+		}
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: rem(16);
+		margin-bottom: 24px;
+		border-radius: 12px;
+		background: $white;
+		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+		@include media-breakpoint-up(lg) {
+			flex-direction: row;
+			padding: rem(40);
+		}
+		img {
+			margin-bottom: 16px;
+			width: 100%;
+			max-width: 172px;
+			@include media-breakpoint-up(lg) {
+				margin-right: rem(40);
+				margin-bottom: 0;
+			}
+		}
+	}
+	h1 {
+		margin-bottom: rem(24);
+		text-align: center;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+			text-align: left;
+		}
+	}
+	&__text {
+		// max-width: 278px;
+		@include media-breakpoint-up(lg) {
+			max-width: 278px;
+		}
+		p {
+			margin-bottom: 24px;
+			font-size: 14px;
+			line-height: 140%;
+		}
+	}
+
+	.section-title{
+		flex-grow: 1;
+		margin-bottom: 0;
+		@include media-breakpoint-up(lg) {
+			margin-right: 24px;
+		}
+	}
+	.slider-wrapper {
+		height: 100%;
+	}
+	&__slider {
+		height: 100%;
+	}
+	&__video-wrap {
+		position: relative;
+		border-radius: 12px;
+		overflow: hidden;
+		height: 100%;
+		video, video[poster] {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.00) 100%);
+		}
+	}
+	&__video-title {
+		position: absolute;
+		left: 50px;
+		bottom: 90px;
+		color: $white;
+		z-index: 10;
+	}
+	.slider-controls {
+		position: absolute;
+		bottom: 32px;
+		left: 44px;
+		z-index: 20;
+		.icon {
+			stroke: $white;
+		}
+	}
+	.swiper-pagination {
+    display: flex;
+    margin-right: 34px;
+    align-items: center;
+}
+	&__col{
+
+	}
+	&__item{
+		display: block;
+		padding: 27px 24px 24px;
+		height: 100%;
+		min-height: 144px;
+		border-radius: 12px;
+		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+		overflow: hidden;
+		&--well-being {
+			background-color: $primary;
+			background-image: url('../img/main-item-1.svg');
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			.sAbout__item-title {
+				max-width: 404px;
+				color: $body-color;
+			}
+		}
+		&--shield {
+			background-color: $red;
+			background-image: url('../img/main-item-2.svg');
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			.sAbout__item-title {
+				max-width: 243px;
+				color: $white;
+			}
+		}
+	}
+
+	.sApp__container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background-image: url('../img/emblem-bg.svg');
+		background-position: 50% 50%;
+		background-size: auto;
+		@include media-breakpoint-up(lg) {
+			background-position: 50% 200%;
+		}
+	}
+	.sApp__text {
+		padding: 24px;
+		@include media-breakpoint-up(lg) {
+			padding: 40px;
+		}
+	}
+
+	.sApp__btn {
+		width: 100%;
+		margin-right: 0 !important;
+		padding-left: 5px;
+		padding-right: 5px;
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+	.sApp__title {
+		margin-bottom: 24px;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sAbout

@@ -99,18 +99,34 @@ function eventHandler() {
 		},
 	});
 
-	const videoSlider = new Swiper('.sVideoSlider__slider--js', {
-		slidesPerView: 'auto',
-		spaceBetween: 24,
-		pagination: {
-			el: '.sVideoSlider .swiper-pagination',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.sVideoSlider .swiper-button-next',
-			prevEl: '.sVideoSlider .swiper-button-prev',
-		},
-	});
+	const videoWrap = document.querySelectorAll('.slider-wrapper--video');
+	for (let wrap of videoWrap) {
+		const videoSlider = new Swiper('.sVideoSlider__slider--js', {
+			slidesPerView: 'auto',
+			spaceBetween: 24,
+			pagination: {
+				el:  wrap.querySelector('.swiper-pagination'),
+				clickable: true,
+			},
+			navigation: {
+				nextEl: wrap.querySelector('.swiper-button-next'),
+				prevEl:  wrap.querySelector('.swiper-button-prev'),
+			},
+		});
+	}
+
+	// const videoSlider = new Swiper('.sVideoSlider__slider--js', {
+	// 	slidesPerView: 'auto',
+	// 	spaceBetween: 24,
+	// 	pagination: {
+	// 		el: '.sVideoSlider .swiper-pagination',
+	// 		clickable: true,
+	// 	},
+	// 	navigation: {
+	// 		nextEl: '.sVideoSlider .swiper-button-next',
+	// 		prevEl: '.sVideoSlider .swiper-button-prev',
+	// 	},
+	// });
 
 	const workSlider = new Swiper('.sWork__slider--js', {
 		breakpoints: {

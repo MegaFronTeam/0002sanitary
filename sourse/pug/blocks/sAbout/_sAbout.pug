@@ -1,0 +1,56 @@
+mixin sAbout(data)
+	// start sAbout
+	+b.SECTION.sAbout.section#sAbout&attributes(attributes)
+		.container
+			+e.container
+				+img('img/emblem-c.svg')
+				+b.section-title
+					h1 КЭП - консультация эпидемиолога
+				+e.text
+					p Портал консультационно-экспертной поддержки ориентирован на&nbsp;информационное сопровождение обеспечения санитарно-эпидемиологического благополучия в&nbsp;организациях и&nbsp;предприятиях с&nbsp;учетом особенностей различных отраслей экономической деятельности
+					+e.btn.btn.btn-primary Узнать больше
+			+e.row.row
+				.col-lg-8.col-xxl-9
+					.slider-wrapper.slider-wrapper--video
+						+e.slider--js.swiper.sVideoSlider__slider--js
+							.swiper-wrapper
+								.swiper-slide
+									+e.video-wrap
+										+e.video-title.h1 Промо-ролик
+										<video src="#" poster="img/video-main.jpg"></video> 
+								.swiper-slide
+									+e.video-wrap
+										+e.video-title.h1 Промо-ролик
+										<video src="#" poster="img/video-main.jpg"></video> 
+								.swiper-slide
+									+e.video-wrap
+										+e.video-title.h1 Промо-ролик
+										<video src="#" poster="img/video-main.jpg"></video>
+							.slider-controls
+								.swiper-pagination
+								.slider-buttons
+									.swiper-button-prev
+										+icon('slider-left')
+									.swiper-button-next
+										+icon('slider-right')
+				.col-lg-4.col-xxl-3
+					+b.sApp
+						+e.container
+							+e.text
+								+e.subtitle Мобильное приложение
+								+e.title.H2 КЭП на Ваше мобильное устройство
+								+e.buttons
+									+e.btn.btn.btn-outline-secondary
+										+icon('internet')
+										| Веб версия
+									+e.btn.btn.btn-outline-secondary
+										+icon('android')
+										| Скачать для Android
+							+img('img/app-img.png').sApp__img.d-none.d-lg-block
+				.col-lg-6
+					+e.item--well-being(href='#')
+						+e.item-title.h2 Что такое санитарно-эпидемиологическое благополучие?
+				.col-lg-6
+					+e.item--shield(href='#')
+						+e.item-title.h2 Что такое Санитарный щит страны?
+	// end sAbout
