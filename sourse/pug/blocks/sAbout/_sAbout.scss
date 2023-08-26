@@ -89,16 +89,23 @@
 	}
 	&__video-title {
 		position: absolute;
+		top: 10px;
 		left: 50px;
-		bottom: 90px;
 		color: $white;
 		z-index: 10;
+		@include media-breakpoint-up(sm) {
+			bottom: 90px;
+			top: auto;
+		}
 	}
 	.slider-controls {
 		position: absolute;
-		bottom: 32px;
+		bottom: 0px;
 		left: 44px;
 		z-index: 20;
+		@include media-breakpoint-up(sm) {
+			bottom: 32px;
+		}
 		.icon {
 			stroke: $white;
 		}
@@ -138,6 +145,12 @@
 				max-width: 243px;
 				color: $white;
 			}
+		}
+	}
+	&__btn {
+		width: 100%;
+		@include media-breakpoint-up(sm) {
+			width: auto;
 		}
 	}
 

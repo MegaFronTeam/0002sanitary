@@ -153,7 +153,27 @@
 	}
 	.alarm {
 	}
-
+	&--main {
+		.dd-group__head  {
+			border-radius: 0;
+			&::before {
+				content: none;
+			}
+		}
+		.dd-group__item {
+			margin: 2px;
+			p {
+				margin-bottom: 0;
+				font-family: $header-font;
+				font-size: 14px;
+				line-height: 140%;
+			}
+		}
+		.dd-group__content {
+			padding: 0 24px 24px;
+			border-radius: 0;
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

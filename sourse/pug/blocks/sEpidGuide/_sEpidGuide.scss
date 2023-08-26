@@ -1,0 +1,127 @@
+// start .sEpidGuide
+.sEpidGuide {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__container {
+		display: flex;
+		flex-direction: column;
+		border-radius: 12px;
+		background: $white;
+		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+		overflow: hidden;
+		@include media-breakpoint-up(lg) {
+			flex-direction: row;
+		}
+		
+	}
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	&__caption {
+		padding: 16px;
+		margin-right: 24px;
+		flex-shrink: 0;
+		border-right: 1px solid $gray-300;
+		@include media-breakpoint-up(sm) {
+			padding: 24px;
+		}
+	}
+	&__title {
+		padding: 24px 8px;
+		margin-bottom: 0;
+		line-height: 1;
+		color: $gray-600;
+		@include mt;
+		border-bottom: 1px solid $gray-300;
+		@include media-breakpoint-up(lg) {
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+		&.active {
+			border-color: $red;
+			.sEpidGuide__btn {
+				color: $body-color;
+				@include media-breakpoint-up(lg) {
+					transform: translateX(16px);
+				}
+			}
+		}
+	}
+	&__btn {
+		@include mt;
+	}
+	&__content {
+		width: 100%;
+		background-image: url('../img/epidguide-bg.png');
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+		background-size: auto 50%;
+		@include media-breakpoint-up(lg) {
+			background-size: 60% auto;
+		}
+	}
+	ul {
+		padding:24px 24px;
+		margin-bottom: 0;
+		max-width: 457px;
+		font-size: 16px;
+		font-style: normal;
+		list-style-type: none;
+		@include media-breakpoint-up(sm) {
+			padding: 48px 24px;
+			font-size: 18px;
+		}
+	}
+	li {
+		&::before {
+			content: '\2014';
+			margin-right: 7px;
+		}
+		a {
+			color: $body-color;
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	.swiper {
+		@include media-breakpoint-up(lg) {
+			margin-left: 0;
+		}
+	}
+	.swiper-wrapper {
+		height: auto;
+		@include media-breakpoint-up(lg) {
+			flex-direction: column;
+		}
+	}
+	.swiper-slide {
+		flex-shrink: 0;
+		width: auto;
+		height: auto;
+		@include media-breakpoint-up(lg) {
+			flex-shrink: 1;
+			width: auto;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sEpidGuide

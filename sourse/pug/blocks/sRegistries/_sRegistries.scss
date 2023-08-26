@@ -1,0 +1,85 @@
+// start .sRegistries
+.sRegistries {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		--bs-gutter-x: #{rem(24)};
+		--bs-gutter-y: #{rem(24)};
+		justify-content: center;
+	}
+	&__item {
+		position: relative;
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		padding: rem(16);
+		height: 100%;
+		border: 1px solid $gray-300;
+		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+		overflow: hidden;
+		@include mt;
+		color: $body-color;
+		&:hover {
+			color: $white;
+			background-color: $red;
+			.sRegistries__link {
+				color: inherit;
+			}
+		}
+		@include media-breakpoint-up(sm) {
+			padding: rem(24);
+			flex-direction: row;
+		}
+		img {
+			flex-shrink: 0;
+			margin-bottom: 8px;
+			width: 64px;
+			@include media-breakpoint-up(sm) {
+				margin-right: 24px;
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__text {
+		width: 100%;
+		text-align: center;
+		@include media-breakpoint-up(sm) {
+			text-align: start;
+			width: 75%;
+		}
+	}
+	&__title {
+		margin-bottom: 8px;
+		line-height: 1;
+		color: inherit;
+		@include mt;
+		@include media-breakpoint-up(sm) {
+			max-width: 274px;
+		}
+	}
+	&__link {
+		display: block;
+		width: 100%;
+		color: $gray-600;
+		font-size: 14px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		@include mt;
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sRegistries

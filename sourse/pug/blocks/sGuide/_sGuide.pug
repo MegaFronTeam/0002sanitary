@@ -1,0 +1,26 @@
+mixin guideItem(img,title)
+	.col-6.col-md-4.col-lg-3
+		+e.item(href='#')
+			+img(`img/guide-item-${img}.svg`).img-svg-js
+			+e.title= title
+
+mixin sGuide(data)
+	// start sGuide
+	+b.SECTION.sGuide.section#sGuide&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Санитарный справочник предпринимателя
+			+e.row.row
+				+guideItem('1','Общественное питание')
+				+guideItem('2','Пищевая промышленность')
+				+guideItem('3','Торговля')
+				+guideItem('4','Пассажирский транспорт')
+				+guideItem('5','Гостиницы')
+				+guideItem('6','Бьюти-сервис')
+				+guideItem('7','Спорт и отдых')
+				+guideItem('8','Бытовые услуги')
+				+guideItem('9','Образование детей')
+				+guideItem('10','Детский отдых')
+				+guideItem('11','Медицина')
+				+guideItem('12','Социальные организации')
+	// end sGuide

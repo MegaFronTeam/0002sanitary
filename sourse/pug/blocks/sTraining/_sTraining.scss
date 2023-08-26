@@ -1,0 +1,131 @@
+// start .sTraining
+.sTraining {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		--bs-gutter-x: #{rem(24)};
+		--bs-gutter-y: #{rem(24)};
+
+	}
+	.section-title {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		@include media-breakpoint-up(md) {
+			align-items: normal;
+		}
+		h2 {
+			color: $gray-600;
+			margin-right: 16px;
+		}
+	}
+	&__col{
+
+	}
+	&__item{
+		display: flex;
+		flex-direction: column;
+		padding: rem(24);
+		height: 100%;
+		border-radius: 12px;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		background-position: 230px -10px;
+		@include media-breakpoint-up(md) {
+			background-position: 330px -10px;
+		}
+		@include media-breakpoint-up(lg) {
+			background-position: 210px -10px;
+		}
+		@include media-breakpoint-up(xl) {
+			background-position: 270px -10px;
+		}
+		@include media-breakpoint-up(xxl) {
+			background-position: 345px -10px;
+		}
+		p, ul {
+			font-size: rem(18);
+		}
+		ul {
+			padding-left: 20px;
+		}
+		&--law {
+			color: $body-color;
+			background-color: $primary;
+			@include media-breakpoint-up(sm) {
+				background-image: url('../img/law-item-bg.png');
+			}
+			.sTraining__btn {
+				&:hover {
+					border: 1px solid $white;
+					color: $white;
+				}
+			}
+		}
+		&--certification {
+			color: $white;
+			background-color: $red;
+			@include media-breakpoint-up(sm) {
+				background-image: url('../img/sertf-item-bg.png');
+			}
+			.sTraining__btn {
+				&:hover {
+					border: 1px solid $body-color;
+					color: $body-color;
+					background-color: $red;
+				}
+			}
+		}
+	}
+	&__item-bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		flex-grow: 1;
+	}
+	&__item-title {
+		margin-bottom: 16px;
+		line-height: 1;
+		color: inherit;
+		@include media-breakpoint-up(sm) {
+			max-width: 360px;
+		}
+	}
+	&__item-info {
+		margin-bottom: rem(24);
+		font-size: 14px;
+	}
+	&__video-link {
+		display: flex;
+		align-items: center;
+		margin-bottom: rem(24);
+		font-size: rem(18);
+		color: inherit;
+		.icon {
+			margin-right: 12px;
+			width: 24px;
+			height: 24px;
+		}
+	}
+	&__btn {
+		padding: 13px 19px;
+		align-self: flex-start;
+		width: 100%;
+		font-size: rem(20);
+		color: inherit;
+		border-color: inherit;
+		@include media-breakpoint-up(sm) {
+			width: auto;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sTraining

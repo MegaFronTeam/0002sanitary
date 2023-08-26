@@ -6,12 +6,17 @@ mixin contentItem(img,title="Текст новости для нагляднос
 			+e.title= title
 			+e.date= date
 
-mixin sSlider(title)
+mixin sSlider(title, btn)
 	// start sSlider
 	+b.SECTION.sSlider.section#sSlider&attributes(attributes)
 		.container
-			+b.section-title
-				h2= title
+			if btn
+				+b.section-title
+					h2= title
+					+e.btn.btn.btn-primary Читать все
+			else
+				+b.section-title
+					h2= title
 			.slider-wrapper
 				+e.slider--js.swiper
 					.swiper-wrapper

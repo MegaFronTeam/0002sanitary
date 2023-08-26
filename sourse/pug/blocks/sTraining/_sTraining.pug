@@ -1,0 +1,31 @@
+mixin sTraining(data)
+	// start sTraining
+	+b.SECTION.sTraining.section#sTraining&attributes(attributes)
+		.container
+			+b.section-title
+				h2 ОБУЧЕНИЕ
+				+e.btn.btn.btn-primary Перейти в раздел
+			+e.row.row
+				.col-lg-6
+					+e.item--law
+						+e.item-title.h2 Углубленное изучение санитарно-эпидемиологического законодательства
+						ul
+							li анонсы обучающих мероприятий,
+							li видео-записи обучающих мероприятий
+						+e.item-bottom
+							+e.item-info 26 видеоуроков, 2 практических задания
+							+e.video-link
+								+icon('video')
+								| Вступительное видео
+							+e.btn.btn.btn-outline Перейти к обучению
+				.col-lg-6
+					+e.item--certification
+						+e.item-title.h2 Гигиеническая аттестация
+						p Реестр ЛМК
+						+e.item-bottom
+							+e.item-info 26 видеоуроков, 2 практических задания
+							+e.video-link
+								+icon('video')
+								| Вступительное видео
+							+e.btn.btn.btn-outline-secondary Перейти к обучению
+	// end sTraining

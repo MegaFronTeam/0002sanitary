@@ -115,19 +115,12 @@ function eventHandler() {
 		});
 	}
 
-	// const videoSlider = new Swiper('.sVideoSlider__slider--js', {
-	// 	slidesPerView: 'auto',
-	// 	spaceBetween: 24,
-	// 	pagination: {
-	// 		el: '.sVideoSlider .swiper-pagination',
-	// 		clickable: true,
-	// 	},
-	// 	navigation: {
-	// 		nextEl: '.sVideoSlider .swiper-button-next',
-	// 		prevEl: '.sVideoSlider .swiper-button-prev',
-	// 	},
-	// });
-
+	new Swiper('.freemode-slider--js', {
+		slidesPerView: 'auto',
+		freeMode: true,
+		watchOverflow: true
+	});
+	
 	const workSlider = new Swiper('.sWork__slider--js', {
 		breakpoints: {
 			768: {

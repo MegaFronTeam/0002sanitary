@@ -12,6 +12,11 @@
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
 	width: calc(27 / #{$h} *1em );
 }
+.iconC-guide-item-6 {
+	$h: 64;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(56 / #{$h} *1em );
+}
 .iconC-telegram {
 	$h: 16;
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);

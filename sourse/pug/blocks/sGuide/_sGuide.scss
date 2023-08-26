@@ -1,0 +1,57 @@
+// start .sGuide
+.sGuide {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		--bs-gutter-x: #{rem(24)};
+		--bs-gutter-y: #{rem(28)};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: rem(24);
+		height: 100%;
+		border-radius: 12px;
+		background: $white;
+		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+		overflow: hidden;
+		&:hover {
+			background-color: $red;
+			.sGuide__title {
+				color: $white;
+			}
+			[fill="#0A0A0A"],
+			[fill="black"] {
+				fill: $white;
+			}
+		}
+		svg {
+			margin-bottom: 20px;
+			width: 64px;
+			height: 64px;
+		}
+	}
+	&__title {
+		@extend h3;
+		text-align: center;
+		margin-bottom: 0;
+		color: $body-color;
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sGuide

@@ -57,9 +57,24 @@
 	// 	}
 	// }
 	// .swiper-button-prev {
-	// 	margin-right: 16px;
-	// }
-
+		// 	margin-right: 16px;
+		// }
+		&--main {
+			.section-title {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				align-items: center;
+				@include media-breakpoint-up(md) {
+					align-items: normal;
+				}
+				h2 {
+					color: $gray-600;
+					margin-right: 16px;
+				}
+			}
+		}
+	
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

@@ -306,7 +306,6 @@ class JSCCommon {
 	static imgToSVG() {
 		const convertImages = (query, callback) => {
 			const images = document.querySelectorAll(query);
-
 			images.forEach(image => {
 				fetch(image.src)
 					.then(res => res.text())
@@ -359,7 +358,7 @@ class JSCCommon {
 
 	static init() {
 		this.modalCall();
-		// this.tabscostume('tabs');
+		this.tabscostume('tabs');
 		this.mobileMenu();
 		this.inputMask();
 		// this.sendForm();
@@ -367,6 +366,7 @@ class JSCCommon {
 		this.makeDDGroup();
 		this.disabledBtn();
 		this.setScreen();
+		this.imgToSVG();
 		// JSCCommon.toggleShow(".catalog-block__toggle--desctop", '.catalog-block__dropdown');
 		// JSCCommon.animateScroll();
 

@@ -84,7 +84,8 @@
 		overflow: hidden;
 		img {
 			width: 100%;
-			height: auto;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 	.section-title{
@@ -96,7 +97,27 @@
 	&__item{
 
 	}
-
+	&--main {
+		.sRpn__wrap {
+			justify-content: space-between;
+			background-color: $red;
+		}
+		.sRpn__text {
+			@include media-breakpoint-up(sm) {
+				max-width: 418px;
+			}
+		}
+		h2, p {
+			color: $white;
+		}
+		p {
+			flex-grow: 1;
+		}
+		.sRpn__btn {
+			border-color: $white;
+			color: white;
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

@@ -10,10 +10,15 @@ include ../blocks/sAbout/_sAbout.pug
 include ../blocks/sApp/_sApp.pug
 include ../blocks/sSlider/_sSlider.pug
 //- include ../blocks/sCatalog/_sCatalog.pug
-//- include ../blocks/sStages/_sStages.pug
+include ../blocks/sStages/_sStages.pug
 //- include ../blocks/sTargetedLinks/_sTargetedLinks.pug
 //- include ../blocks/sVisuals/_sVisuals.pug
 include ../blocks/sRpn/_sRpn.pug
+include ../blocks/sGuide/_sGuide.pug
+include ../blocks/sEpidGuide/_sEpidGuide.pug
+include ../blocks/sTraining/_sTraining.pug
+include ../blocks/sRegistries/_sRegistries.pug
+include ../blocks/sPartners/_sPartners.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -29,8 +34,14 @@ block pagecontent
 	+parts('header')
 	main
 	+sAbout
-	+sSlider('ПОСЛЕДНИЕ НОВОСТИ')
-	+sRpn
+	+sSlider('ПОСЛЕДНИЕ НОВОСТИ','btn').sSlider--main
+	+sRpn('main').sRpn--main
+	+sGuide
+	+sEpidGuide
+	+sTraining
+	+sRegistries
+	+sPartners
+	+sStagesMain.sStages--main
 		//- +sCatalog
 		//- +sContact()
 		
