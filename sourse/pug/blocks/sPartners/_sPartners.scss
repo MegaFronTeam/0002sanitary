@@ -4,23 +4,8 @@
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
 	&__row{
-		// --bs-gutter-x: #{rem(8)};
-		// --bs-gutter-y: #{rem(8)};
-		display: flex;
-		flex-wrap: wrap;
-		// gap: 8px;
-		// display: grid;
-		// grid-template-columns: 24% 14% 24% 14% auto;
-		// grid-auto-rows: 70px;
-		@include media-breakpoint-up(sm) {
-		}
-		@include media-breakpoint-up(md) {
-			// grid-auto-rows: 100px;
-			// grid-template-columns: repeat(8, 1fr);
-		}
-		@include media-breakpoint-up(lg) {
-			// grid-auto-rows: 138px;			
-		}
+		 --bs-gutter-x: 8px;
+		 --bs-gutter-y: 8px;
 	}
 	.section-title {
 		display: flex;
@@ -36,64 +21,59 @@
 		}
 	}
 	&__col{
+		@include media-breakpoint-down(lg){
+			width: 55%;
+			&:nth-child(4n + 3) ,
+			&:nth-child(4n + 2) {
+				width: 45%;
+			} 
+
+			// &:nth-child(2n + 1) {
+			// 	width: 55%;
+			// }
+			
+			// &:nth-child(2n + 1) {
+			// 	width: 55%;
+			// }
+
+		}
+		@include media-breakpoint-up(lg){
+
+			width: var(--size, 25%);
+			
+			
+			
+			&:nth-child(9n + 2),
+			&:nth-child(9n + 4){
+				--size: calc( (184 + 7) / 1280 * 100%);
+			}
+			&:nth-child(9n + 10),
+			&:nth-child(9n + 5){
+				--size: calc( (251 + 7) / 1280 * 100%);
+			}
+			&:nth-child(9n + 13){
+				--size: 25%;
+			} 
+			&:nth-child(9n + 14){
+				--size: calc( (184 + 7) / 1280 * 100%);
+			}
+		}
 
 	}
-	&__item{
-		--gap: 8px;
-		@include media-breakpoint-up(md) {
-			--gap: 0.62%;
-		}
+	&__item{ 
+		height: 100%; 
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		height: 70px;
 		border-radius: 20px;
-		background: $white;
-		margin-right: var(--gap);
-		margin-bottom: var(--gap);
-		&:nth-child(2n) {
-			margin-right: 0;
-		}
-		@include media-breakpoint-up(md) {
-			height: 100px;
-			&:nth-child(2n) {
-				margin-right: auto;
-			}
-		}
-		@include media-breakpoint-up(lg) {
-			height: 138px;
-		}
-		&:last-child {
-			margin-right: 0;
-		}
-		&--lg {
-			width: calc((100% - var(--gap)) / 2);
-			@include media-breakpoint-up(md) {
-				width: 24.53%;
-			}
-			// grid-column: 2 span;
-		}
-		&--sm{
-			width: calc((100% - var(--gap)) / 2);
-			@include media-breakpoint-up(md) {
-				width: 14.37%;
-			}
-			// grid-column: 2 span;
-			// @include media-breakpoint-up(lg) {
-			// 		grid-column: 1 span;
-			// 	}
-			}
+		background: $white;  
+		// aspect-ratio:  314 / 138;
+		height: 138px;
+		width: 100%;
 			img {
-				max-width: 100%;
-				max-height: 100%;
-				object-fit: contain;
-			}
-			&--auto {
-				width: calc((100% - var(--gap)) / 2);
-				@include media-breakpoint-up(md) {
-					margin-right: 0;
-					width: 19.6%;
-				}
+				max-width: 88%;
+				max-height: 88%; 
 			}
 		}
 		

@@ -5,23 +5,33 @@ mixin sPartners(data)
 			+b.section-title
 				h2 Партнеры
 				+e.btn.btn.btn-primary Перейти в раздел
-			+e.row
-				+e.item--lg(href="#")
-					+img(`img/partner-1.png`)
-				+e.item--sm(href="#")
-					+img(`img/partner-2.png`)
-				+e.item--lg(href="#")
-					+img(`img/partner-3.png`)
-				+e.item--sm(href="#")
-					+img(`img/partner-2.png`)
-				+e.item--auto(href="#")
-					+img(`img/partner-4.png`)
-				+e.item--lg(href="#")
-					+img(`img/partner-1.png`)
-				+e.item--lg(href="#")
-					+img(`img/partner-4.png`)
-				+e.item--lg(href="#")
-					+img(`img/partner-3.png`)
-				+e.item--lg(href="#")
-					+img(`img/partner-3.png`)
+			+e.row.row
+				- for (var x = 0; x < 3; x++)
+					+e.col.col-12
+						+e.item(href="#")
+							+img(`img/partner-1.png`)
+					+e.col.col-12
+						+e.item(href="#")
+							+img(`img/partner-2.png`)
+					+e.col.col-12
+						+e.item(href="#")
+							+img(`img/partner-3.png`)
+					+e.col.col-12
+						+e.item(href="#")
+							+img(`img/partner-2.png`)
+					+e.col.col-12
+						+e.item(href="#")
+							+img(`img/partner-4.png`)
+					+e.col.col-12
+						+e.item(href="#")
+							+img(`img/partner-1.png`)
+					+e.col.col-12
+						+e.item(href="#")
+							+img(`img/partner-4.png`)
+					+e.col.col-12
+						+e.item(href="#")
+							+img(`img/partner-3.png`)
+					+e.col.col-12
+						+e.item(href="#")
+							+img(`img/partner-3.png`)
 	// end sPartners
