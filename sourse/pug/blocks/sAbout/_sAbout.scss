@@ -69,9 +69,11 @@
 	}
 	&__video-wrap {
 		position: relative;
+		@include block(601,953);
 		border-radius: 12px;
 		overflow: hidden;
 		height: 100%;
+		max-width: 100%;
 		video, video[poster] {
 			width: 100%;
 			height: 100%;
@@ -153,7 +155,9 @@
 			width: auto;
 		}
 	}
-
+	.sApp {
+		height: 100%;
+	}
 	.sApp__container {
 		display: flex;
 		flex-direction: column;
@@ -171,15 +175,35 @@
 			padding: 40px;
 		}
 	}
-
+	.sApp__buttons  {
+		flex-wrap: nowrap;
+		@include media-breakpoint-up(lg) {
+			flex-wrap: wrap;
+		}
+	}
 	.sApp__btn {
 		width: 100%;
-		margin-right: 0 !important;
+		margin-right: 0;
 		padding-left: 5px;
 		padding-right: 5px;
 		&:not(:last-child) {
 			margin-bottom: 8px;
+			@include media-breakpoint-down(lg) {
+				margin-right: 5px;
+			}
 		}
+		span {
+			display: none;
+			@include media-breakpoint-up(sm) {
+				display: inline;
+			}
+		}
+		.icon {
+			margin-right: 5px;
+		}
+	}
+	.sApp__btn:not(:last-child) {
+		margin-right: 0;
 	}
 	.sApp__title {
 		margin-bottom: 24px;

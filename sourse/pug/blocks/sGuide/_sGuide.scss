@@ -19,12 +19,15 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		padding: rem(24);
+		padding: rem(13);
 		height: 100%;
 		border-radius: 12px;
 		background: $white;
 		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
 		overflow: hidden;
+		@include media-breakpoint-up(sm) {
+			padding: rem(24);
+		} 
 		&:hover {
 			background-color: $red;
 			.sGuide__title {
@@ -46,6 +49,9 @@
 		text-align: center;
 		margin-bottom: 0;
 		color: $body-color;
+		@include media-breakpoint-down(sm) {
+			font-size: 16px;
+		} 
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

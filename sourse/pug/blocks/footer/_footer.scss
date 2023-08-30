@@ -58,6 +58,9 @@
 		a {
 			display: block;
 			color: inherit;
+			&:hover{
+				color: $primary;
+		 }
 		}
 	}
 	&__bottom {
@@ -123,10 +126,10 @@
 		&:hover {
 			.form-wrap__btn-span {
 				background-color: $yellow;
-				color: $white;
+				// color: $white;
 			}
 			.form-wrap__icon-span {
-				background-color: transparent;
+				// background-color: transparent;
 			}
 		}
 		.form-wrap__btn-span {

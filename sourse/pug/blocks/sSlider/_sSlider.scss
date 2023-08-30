@@ -20,8 +20,13 @@
 
 	}
 	// .slider-wrapper {
-	// 	position: relative;
-	// }
+		// 	position: relative;
+		// }
+		.swiper {
+			@include media-breakpoint-down(sm) {
+				overflow: visible;
+			}
+		}
 	&__slider {
 		margin: -8px;
 		padding: 8px;
@@ -74,7 +79,6 @@
 				}
 			}
 		}
-	
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
