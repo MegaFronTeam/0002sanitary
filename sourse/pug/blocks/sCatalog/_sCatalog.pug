@@ -1,41 +1,39 @@
-mixin product-item(i, t, p ,pr)
-	+b.ARTICLE.product-item
-		+e.img-wrap(href="#")
-			//- если надо картинку по центру  вывести использовать обертку .img-wrap-center  - если нет- убираем
-			.img-wrap-center 
-				+img(`img/prod-${i}.jpg`)
-		+e.caption
-			+e.title!= t
-			+e.text!= p
-			+e.price!= pr
-			+e.btn(href='#')
-	// /.product-item
+mixin catalog-item(i, t)
+	+e.item(href="#")
+		+e.img-wrap
+			+img(`img/${i}.svg`).img-svg-js
+		+e.title!= t
+	// /.catalog-item
 
 mixin sCatalog(data)
 	// start sCatalog
 	+b.sCatalog.section&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sCatalog
-				p Выкупаем проблемные автомобили в день обращения
-
 			+e.row.row
-				- const wrapClass="col-3"
+				- const wrapClass="col-12 col-sm-6 col-lg-3"
 				+e.col(class= wrapClass)
-					+product-item(`1`,``,``,``) 
+					+catalog-item(`medicine`,`Медицина`) 
 				+e.col(class= wrapClass)
-					+product-item(`2`,``,``,``) 
+					+catalog-item(`social`,`Социальные организации`) 
 				+e.col(class= wrapClass)
-					+product-item(`3`,``,``,``) 
+					+catalog-item(`utilities`,`Коммунальные услуги`) 
 				+e.col(class= wrapClass)
-					+product-item(`4`,``,``,``) 
+					+catalog-item(`person`,`Персональные услуги`) 
 				+e.col(class= wrapClass)
-					+product-item(`5`,``,``,``) 
+					+catalog-item(`hotels`,`Гостиницы и туризм`) 
 				+e.col(class= wrapClass)
-					+product-item(`6`,``,``,``) 
+					+catalog-item(`park`,`Культура, досуг и отдых`) 
 				+e.col(class= wrapClass)
-					+product-item(`7`,``,``,``) 
+					+catalog-item(`hand`,`Детские и молодежные организации`) 
 				+e.col(class= wrapClass)
-					+product-item(`8`,``,``,``) 
+					+catalog-item(`manufacturing`,`Пищевое производство`) 
+				+e.col(class= wrapClass)
+					+catalog-item(`dish`,`Общественное питание`) 
+				+e.col(class= wrapClass)
+					+catalog-item(`ice-cream`,`Торговля`) 
+				+e.col(class= wrapClass)
+					+catalog-item(`industry`,`Промышленность и сельское хозяйство`) 
+				+e.col(class= wrapClass)
+					+catalog-item(`bus`,`Транспорт`) 
 
 	// end sCatalog

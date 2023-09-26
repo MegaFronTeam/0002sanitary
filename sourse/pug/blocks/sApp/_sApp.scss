@@ -8,6 +8,7 @@
 		justify-content: space-between;
 		flex-direction: column;
 		border-radius: 12px;
+		color: $white;
 		background-color: $primary;
 		background-image: url('../img/app-bg.svg');
 		background-repeat: no-repeat;
@@ -27,13 +28,13 @@
 	}
 	&__subtitle {
 		margin-bottom: 16px;
-		color: $gray-600;
+		// color: $gray-600;
 		font-family: $header-font;
 		line-height: 87%;
 	}
 	&__title {
 		margin-bottom: 16px;
-		color: $body-color;
+		color: $white;
 	}
 	p  {
 		flex-grow: 1;

@@ -16,6 +16,7 @@ include ../blocks/sFoodGuide/_sFoodGuide.pug
 include ../blocks/sVideoSlider/_sVideoSlider.pug
 include ../blocks/sWork/_sWork.pug
 include ../blocks/sApp/_sApp.pug
+include ../blocks/sSlider/_sSlider.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -30,10 +31,15 @@ block pagecontent
 	
 	+parts('header')
 	main
-		+page-head('Пищевая промышленность', 'Пищевая промышленность', 'Нормативные документы')
+		.container
+			+breadcrumb('Главная', 'Пищевая промышленность', 'Нормативные документы')
+		+sCatalog
+		.container
+			h1 Пищевая промышленность
 		+sFoodGuide
 		+sVideoSlider
 		+sWork
+		+sSlider('Статьи по теме')
 		+sAppTest
 		+sVisuals('Основные нормативно-правовые документы')
 		+sRpn

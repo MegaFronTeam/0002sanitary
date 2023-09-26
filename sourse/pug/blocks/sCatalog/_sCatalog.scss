@@ -1,6 +1,6 @@
 // start .sCatalog
 .sCatalog {
-	// --sPT: #{rem()};
+	--sPT: #{rem(5)};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
 	&__row{
@@ -15,7 +15,44 @@
 
 	}
 	&__item{
-
+		display: flex;
+		align-items: center;
+		padding: rem(16);
+		height: 100%	;
+		border-radius: 12px;
+		background: $white;
+		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+		@include media-breakpoint-up(lg) {
+			padding: rem(24);
+		}
+		&:hover {
+			background-color: #BE1722;
+			[fill="#0A0A0A"],
+			[fill="black"],
+			[stroke="black"] {
+				fill: $white;
+			}
+			.sCatalog__title {
+				color: $white;
+			}
+		}
+	}
+	&__img-wrap {
+		flex-shrink: 0;
+		margin-right: 20px;
+		width: 32px;
+		height: 32px;
+		.img{
+			max-width: 100%;
+			@include mt;
+		}
+	}
+	&__title {
+		font-family: $header-font;
+		font-weight: 700;
+		line-height: 100%;
+		color: $body-color;
+		@include mt;
 	}
 	&__slide{
 		height: auto;
@@ -32,22 +69,22 @@
 
 
 
-.product-item{
-	display: flex;
-	flex-direction: column;
-	min-height: 100%;
-	background: #FFFFFF; 
-	border: 1px solid #E2E2E2;
-	border-radius: 15px;
-	overflow: hidden;
-	position: relative;
-	&__img-wrap{
-		@include block(298, 190);
-	}
-	&__caption{
-		flex-grow: 1;
-		display: flex;
-		flex-direction: column;
-		padding: rem(20);
-	}
-}
+// .product-item{
+// 	display: flex;
+// 	flex-direction: column;
+// 	min-height: 100%;
+// 	background: #FFFFFF; 
+// 	border: 1px solid #E2E2E2;
+// 	border-radius: 15px;
+// 	overflow: hidden;
+// 	position: relative;
+// 	&__img-wrap{
+// 		@include block(298, 190);
+// 	}
+// 	&__caption{
+// 		flex-grow: 1;
+// 		display: flex;
+// 		flex-direction: column;
+// 		padding: rem(20);
+// 	}
+// }

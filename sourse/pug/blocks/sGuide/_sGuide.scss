@@ -34,7 +34,8 @@
 				color: $white;
 			}
 			[fill="#0A0A0A"],
-			[fill="black"] {
+			[fill="black"],
+			[stroke="black"] {
 				fill: $white;
 			}
 		}

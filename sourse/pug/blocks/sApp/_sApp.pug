@@ -8,13 +8,13 @@ mixin sApp(data)
 					+e.title.H2 «КЭП» - консультации эпидемиолога
 					p информационно-консультационного характера направленное на&nbsp;информационное сопровождение и&nbsp;обеспечение санитарно-эпидемиологического благополучия в&nbsp;организациях и&nbsp;предприятиях
 					+e.buttons
-						+e.btn.btn.btn-outline-secondary
+						+e.btn.btn.btn-outline-info
 							+icon('internet')
 							| Веб версия
-						+e.btn.btn.btn-outline-secondary
+						+e.btn.btn.btn-outline-info
 							+icon('android')
 							| Скачать для Android
-						+e.btn.btn.btn-outline-secondary
+						+e.btn.btn.btn-outline-info
 							+icon('apple')
 							| Скачать для iOs
 				+img('img/app-img.png').sApp__img.d-none.d-lg-block
@@ -31,6 +31,6 @@ mixin sAppTest(data)
 					+e.subtitle Категория теста
 					+e.title.h2 Наименование теста в одну или несколько строк для наглядности отображения
 					p информационно-консультационного характера направленное на информационное сопровождение и обеспечение санитарноэпи
-					+e.btn.btn.btn-outline-secondary Пройти тест
+					+e.btn.btn.btn-outline-info Пройти тест
 				+img('img/app-test-bg.svg').d-none.d-lg-block
 	// end sApp

@@ -2,7 +2,7 @@
 .sAbout {
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	// --sTPB: #{rem(24)};
 	&__row{
 		--bs-gutter-x: #{rem(24)};
 		--bs-gutter-y: #{rem(24)};
@@ -10,6 +10,9 @@
 		@include media-breakpoint-up(md) {
 			margin-bottom: rem(40);
 		}
+	}
+	&__logo-row {
+		align-items: center;
 	}
 	&__container {
 		display: flex;
@@ -24,42 +27,47 @@
 			flex-direction: row;
 			padding: rem(40);
 		}
-		img {
-			margin-bottom: 16px;
-			width: 100%;
-			max-width: 172px;
-			@include media-breakpoint-up(lg) {
-				margin-right: rem(40);
-				margin-bottom: 0;
-			}
-		}
 	}
 	h1 {
 		margin-bottom: rem(24);
 		text-align: center;
+		font-size: 40px;
 		@include media-breakpoint-up(lg) {
-			margin-bottom: 0;
+			// margin-bottom: 0;
 			text-align: left;
 		}
 	}
 	&__text {
 		// max-width: 278px;
-		@include media-breakpoint-up(lg) {
-			max-width: 278px;
-		}
+		// @include media-breakpoint-up(lg) {
+		// 	max-width: 278px;
+		// }
 		p {
 			margin-bottom: 24px;
 			font-size: 14px;
 			line-height: 140%;
 		}
 	}
-
+	
 	.section-title{
 		flex-grow: 1;
 		margin-bottom: 0;
 		@include media-breakpoint-up(lg) {
 			margin-right: 24px;
 		}
+	}
+	&__img-wrap {
+		margin-bottom: 20px;
+		text-align: center;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: 0;
+			text-align: left;
+		}
+		img {
+			max-width: 386px;
+			max-width: 100%;
+		}
+		
 	}
 	.slider-wrapper {
 		height: 100%;
@@ -121,6 +129,7 @@
 
 	}
 	&__item{
+		position: relative;
 		display: block;
 		padding: 27px 24px 24px;
 		height: 100%;
@@ -130,24 +139,39 @@
 		overflow: hidden;
 		&--well-being {
 			background-color: $primary;
-			background-image: url('../img/main-item-1.svg');
-			background-repeat: no-repeat;
-			background-position: bottom right;
 			.sAbout__item-title {
+				position: relative;
 				max-width: 404px;
-				color: $body-color;
+				color: $white;
+				z-index: 5;
+			}
+			.sAbout__item-img {
+				background-image: url('../img/main-item-1.png');
+				background-repeat: no-repeat;
+				// background-position: bottom right;
 			}
 		}
 		&--shield {
 			background-color: $red;
-			background-image: url('../img/main-item-2.svg');
-			background-repeat: no-repeat;
-			background-position: bottom right;
 			.sAbout__item-title {
 				max-width: 243px;
 				color: $white;
 			}
+			.sAbout__item-img {
+				background-image: url('../img/main-item-2.png');
+				background-repeat: no-repeat;
+				// background-position: bottom right;
+			}
 		}
+	}
+	&__item-img {
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 50%;
+		top: 0;
+		right: 0;
+		background-size: cover;
 	}
 	&__btn {
 		width: 100%;
