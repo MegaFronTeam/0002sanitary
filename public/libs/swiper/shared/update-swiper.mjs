@@ -170,7 +170,6 @@ function updateSwiper(_ref) {
     if (swiper.isElement && (!paginationEl || typeof paginationEl === 'string')) {
       paginationEl = document.createElement('div');
       paginationEl.classList.add('swiper-pagination');
-      paginationEl.part.add('pagination');
       swiper.el.appendChild(paginationEl);
     }
     if (paginationEl) currentParams.pagination.el = paginationEl;
@@ -182,7 +181,6 @@ function updateSwiper(_ref) {
     if (swiper.isElement && (!scrollbarEl || typeof scrollbarEl === 'string')) {
       scrollbarEl = document.createElement('div');
       scrollbarEl.classList.add('swiper-scrollbar');
-      scrollbarEl.part.add('scrollbar');
       swiper.el.appendChild(scrollbarEl);
     }
     if (scrollbarEl) currentParams.scrollbar.el = scrollbarEl;
@@ -195,15 +193,13 @@ function updateSwiper(_ref) {
       if (!nextEl || typeof nextEl === 'string') {
         nextEl = document.createElement('div');
         nextEl.classList.add('swiper-button-next');
-        nextEl.innerHTML = swiper.hostEl.constructor.nextButtonSvg;
-        nextEl.part.add('button-next');
+        nextEl.innerHTML = swiper.hostEl.nextButtonSvg;
         swiper.el.appendChild(nextEl);
       }
       if (!prevEl || typeof prevEl === 'string') {
         prevEl = document.createElement('div');
         prevEl.classList.add('swiper-button-prev');
-        prevEl.innerHTML = swiper.hostEl.constructor.prevButtonSvg;
-        prevEl.part.add('button-prev');
+        nextEl.innerHTML = swiper.hostEl.prevButtonSvg;
         swiper.el.appendChild(prevEl);
       }
     }

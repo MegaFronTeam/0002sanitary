@@ -82,6 +82,11 @@
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
 	width: calc(16 / #{$h} *1em );
 }
+.icon-link-arrow {
+	$h: 9;
+	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);
+	width: calc(14 / #{$h} *1em );
+}
 .icon-mail {
 	$h: 24;
 	font-size:calc( #{$h} / #{$rfs-rem-value} * 1rem);

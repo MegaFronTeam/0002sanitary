@@ -115,6 +115,48 @@ function eventHandler() {
 		});
 	}
 
+	// Tooltips
+	
+	const tooltipBtn = document.querySelectorAll('.tooltip-btn')
+	tooltipBtn.forEach((btn) => {
+		let tooltip = btn.nextElementSibling;
+		const popperInstance = Popper.createPopper(btn, tooltip, {
+			placement: 'top-end',
+		});
+		function show() {
+			tooltip.setAttribute('data-show', '');
+			popperInstance.setOptions((options) => ({
+				...options,
+				modifiers: [
+					...options.modifiers,
+					{ name: 'eventListeners', enabled: true },
+				],
+			}));
+			popperInstance.update();
+		}
+		
+		function hide() {
+			tooltip.removeAttribute('data-show');
+			popperInstance.setOptions((options) => ({
+				...options,
+				modifiers: [
+					...options.modifiers,
+					{ name: 'eventListeners', enabled: false },
+				],
+			}));
+		}
+		const showEvents = ['mouseenter', 'focus'];
+		const hideEvents = ['mouseleave', 'blur'];
+			
+		showEvents.forEach((event) => {
+			btn.addEventListener(event, show);
+		});
+		
+		hideEvents.forEach((event) => {
+			btn.addEventListener(event, hide);
+		});
+	});
+
 	new Swiper('.freemode-slider--js', {
 		slidesPerView: 'auto',
 		freeMode: true,
