@@ -32,9 +32,9 @@
 
 
 .toggle-menu-mobile {
-	--h: #{em(2)};
-	--color: #{$primary};
-	--position: calc(var(--h) * 2);
+	--h: 1px;
+	--color: #{$body-color};
+	--position: calc(var(--h) * 4);
 	&.on span {
 		--color: transparent;
 	}
@@ -46,7 +46,7 @@
 	display: block;
 	height: calc(var(--h)* 12);
 	position: relative; 
-	font-size: 32px;
+	font-size: 18px;
 	width: 1em;
 	cursor: pointer;
 	span:after,

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Статья</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<div class="container">
+					<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+						<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+							<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+									<meta itemprop="position" content="1"/></a></li>
+							<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Новости</span>
+									<meta itemprop="position" content="2"/></a></li>
+							<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">А. Попова открыла II международные учения мобильных лабораторий быстрого реагирования</span>
+									<meta itemprop="position" content="3"/></a></li>
+						</ol>
+					</nav>
+				</div>
+				<!-- start sContent-->
+				<section class="sContent section" id="sContent">
+					<div class="sContent__container container">
+						<div class="section-title">
+							<h1>А. Попова открыла II международные учения мобильных лабораторий быстрого реагирования</h1>
+							<div class="section-title__subtitle">25 октября 2023
+							</div>
+						</div>
+						<div class="sContent__img-wrap sContent__img-wrap--full"><img src="img/article-1.jpg" alt="" loading="lazy"/>
+						</div>
+						<p>27&nbsp;сентября в&nbsp;Астрахани состоялась церемония открытия&nbsp;II международных учений быстрого реагирования на&nbsp;чрезвычайные ситуации санитарно-эпидемиологического характера с&nbsp;использованием мобильных лабораторий.</p>
+						<p>В&nbsp;ней приняли участие руководитель Роспотребнадзора Анна Попова и&nbsp;губернатор Астраханской области Игорь Бабушкин. Участникам учений Анна Попова зачитала обращение Президента РФ&nbsp;Владимира Путина.</p>
+						<blockquote>&laquo;Приветствую вас по&nbsp;случаю открытия международных учений команд быстрого реагирования на&nbsp;чрезвычайные санитарно-эпидемиологические ситуации, которые во&nbsp;второй раз пройдут на&nbsp;российской территории. Угроза опасных инфекционных заболеваний носит трансграничный характер, и&nbsp;противостояние&nbsp;ей, несомненно, обуславливает необходимость конструктивного международного сотрудничества по&nbsp;линии санитарно-эпидемиологических служб. Важнейшей задачей является регулярная обработка практических совместных действий по&nbsp;своевременному выявлению и&nbsp;ликвидации очагов инфекций, имеющих пандемический потенциал&raquo;,&nbsp;&mdash; говорится в&nbsp;обращении Президента.</blockquote>
+						<h2>С видеообращением к участникам выступила заместитель Председателя Правительства РФ Татьяна Голикова</h2>
+						<div class="sContent__img-wrap">
+							<picture>
+								<source srcset="img/article-2-sm.jpg" media="(max-width: 576px)"/><img src="img/article-2.jpg"/>
+							</picture>
+						</div>
+						<blockquote>&laquo;В&nbsp;результате работы с&nbsp;нашими зарубежными коллегами в&nbsp;рамках &bdquo;Санитарного щита&ldquo; создали 4&nbsp;центра изучения инфекционных болезней&nbsp;&mdash; в&nbsp;Гвинее, Вьетнаме, Венесуэле и&nbsp;Бурунди. Плодотворно работаем с&nbsp;нашими ближайшими соседям по&nbsp;Содружеству Независимых Государств, с&nbsp;которыми нас связывает единое эпидемиологическое пространство. В&nbsp;6&nbsp;странах СНГ, а&nbsp;также Монголии, Вьетнаме, Демократической Республике Конго сегодня работают мобильные лаборатории, разработанные Роспотребнадзором. До&nbsp;конца года такие лаборатории будут поставлены в&nbsp;Бурунди и&nbsp;Уганду. Это позволит своевременно выявлять и&nbsp;реагировать на&nbsp;инфекции практически в&nbsp;любой точке мира, не&nbsp;допустить их&nbsp;распространения и&nbsp;осложнения эпидемиологической ситуации&raquo;,&nbsp;&mdash; отметила вице-премьер РФ&nbsp;Татьяна Голикова.</blockquote>
+						<p>В&nbsp;международных учениях примут участие почти 120 ведущих российских и&nbsp;зарубежных специалистов из&nbsp;19&nbsp;стран. Многие из&nbsp;участников учений имеют практический опыт по&nbsp;ликвидации вспышек инфекционных болезней в&nbsp;разных странах мира.</p>
+						<p>В&nbsp;течение четырех дней команды специалистов будут отрабатывать навыки практического взаимодействия специалистов мобильных лабораторий по&nbsp;совместному реагированию в&nbsp;случае вспышки инфекционного заболевания. Для команд разработаны специальные вводные по&nbsp;которым им&nbsp;предстоит отработать алгоритм действий при получении информации о&nbsp;регистрации инфекционных заболеваний.</p>
+						<p>&laquo;Осенью 2021 года в&nbsp;Казани мы&nbsp;провели первые широкомасштабные международные учения команд быстрого реагирования на&nbsp;биологические угрозы. Разработанные нами стандарты в&nbsp;настоящее время активно используются странами СНГ и&nbsp;эксплуатируются ВОЗ&raquo;,&nbsp;&mdash; отметила руководитель Службы Анна Попова.</p>
+						<p>Губернатор Астраханской области Игорь Бабушкин отметил, что международные учения станут отличной площадкой для наработки навыков ликвидации возможных&nbsp;ЧС с&nbsp;применением самого современного оборудования, а&nbsp;команды смогут приобрести бесценный опыт совместной работы</p>
+						<p>Директор Российского противочумного института &laquo;Микроб&raquo; Роспотребнадзора Владимир Кутырев указал, что мобильные формирования&nbsp;&mdash; ключевое звено системы реагировании на&nbsp;биологические угрозы в&nbsp;РФ и&nbsp;за&nbsp;рубежом.</p>
+						<p>В&nbsp;рамках учений Роспотребнадзор представит современный мобильный комплекс специализированной противоэпидемической бригады (МК&nbsp;СПЭБ), а&nbsp;также мобильные лаборатории различного формата: мобильная лаборатория индикации и&nbsp;мониторинга особо опасных инфекций на&nbsp;базе автошасси (МЛИМ), переносная мобильная лаборатория на&nbsp;базе пневмокаркасного модуля (ПМЛ), мобильная лаборатория мониторинга и&nbsp;диагностики на&nbsp;базе автошасси (МЛМД). В&nbsp;учениях примет участие и&nbsp;мобильная лаборатория Республики Казахстан.</p>
+						<p>Кроме того, будет рассмотрен опыт разных стран в&nbsp;организации противоэпидемических мероприятий в&nbsp;зонах&nbsp;ЧС санитарно-эпидемиологического характера, принципы формирования и&nbsp;организация работы команд быстрого реагирования, а&nbsp;также использование мобильных лабораторий.</p>
+						<p>Также пройдет пленарное заседание и&nbsp;ряд выступлений в&nbsp;ходе деловой программы.</p>
+					</div>
+				</section>
+				<!-- end sContent-->
+				<!-- start sSlider-->
+				<section class="sSlider section sSlider-light" id="sSlider">
+					<div class="container">
+						<div class="section-title">
+							<h2>ДРУГИЕ НОВОСТИ</h2>
+						</div>
+						<div class="slider-wrapper">
+							<div class="sSlider__slider sSlider__slider--js swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-1.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-2.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-3.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-4.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-1.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-2.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-3.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="swiper-slide">
+										<a class="content-item" href="#">
+											<div class="content-item__img-wrap"><img src="img/content-4.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="content-item__text-wrap">
+												<div class="content-item__title">Текст новости для наглядности отображения контента в одну или несколько строк как пример
+												</div>
+												<div class="content-item__date">25 октября 2023
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slider-controls">
+								<div class="swiper-pagination"></div>
+								<div class="slider-buttons">
+									<div class="swiper-button-prev">
+										<svg class="icon icon-slider-left ">
+											<use xlink:href="img/svg/sprite.svg#slider-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-next">
+										<svg class="icon icon-slider-right ">
+											<use xlink:href="img/svg/sprite.svg#slider-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- end sSlider-->
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/@popperjs/core/umd/popper.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

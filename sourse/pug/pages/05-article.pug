@@ -1,0 +1,37 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sApp/_sApp.pug
+include ../blocks/sDisinsection/_sDisinsection.pug
+include ../blocks/sSlider/_sSlider.pug
+include ../blocks/sNews/_sNews.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= 'Статья'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		.container
+			+breadcrumb('Главная','Новости','А. Попова открыла II международные учения мобильных лабораторий быстрого реагирования')
+		+sContent
+		+sSlider('ДРУГИЕ НОВОСТИ').sSlider-light
+	+parts('footer')
+		+sForm()
+      
+
+
+

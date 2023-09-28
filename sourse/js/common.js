@@ -115,6 +115,21 @@ function eventHandler() {
 		});
 	}
 
+	document.addEventListener('click', (event)=> {
+		let searchBtn = event.target.closest('.mobile-search-open');
+		console.log(searchBtn);
+		let searchBlock = event.target.closest('.search-block');
+		console.log(searchBlock);
+		if (searchBtn) {
+			document.querySelector('.search-block').classList.toggle('active');
+			document.querySelector('.mobile-search-open').classList.toggle('active');
+		} 
+		else if (!searchBlock) {
+			document.querySelector('.search-block').classList.remove('active');
+			document.querySelector('.mobile-search-open').classList.remove('active');
+		}
+	});
+
 	// Tooltips
 	
 	const tooltipBtn = document.querySelectorAll('.tooltip-btn')

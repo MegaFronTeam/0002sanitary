@@ -3,6 +3,11 @@
 	--sPT: #{rem(0)};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
+	&-light {
+		.container .section-title h2 {
+			color:$gray-600;
+		}
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
@@ -114,7 +119,8 @@
 		-webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical; 
-		margin-bottom: 50px;
+		margin-bottom: 46px;
+		padding-bottom: 4px;
     overflow: hidden;
 		font-family: $header-font;
 		font-size: rem(24);

@@ -57,17 +57,32 @@
 		}
 	}
 	&__img-wrap {
-		margin-bottom: 20px;
+		position: relative;
+		margin: 0 auto 20px;
 		text-align: center;
+		max-width: 386px;
 		@include media-breakpoint-up(lg) {
-			margin-bottom: 0;
+			margin: 0;
 			text-align: left;
 		}
 		img {
 			max-width: 386px;
 			max-width: 100%;
+		}		
+	}
+	&__link {
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		width: 50%;
+		height: 100%;
+		transform: translateY(-50%);
+		&--rpn {
+			left: 0;
 		}
-		
+		&--shield {
+			right: 0;
+		}
 	}
 	.slider-wrapper {
 		height: 100%;

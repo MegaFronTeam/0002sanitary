@@ -4,12 +4,78 @@
 	
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sTPB: #{rem(40)};
+	@include media-breakpoint-up(md) {
+		--sTPB: #{rem(64)};
+	}
+	& .sContent__container {
+		@include media-breakpoint-up(xl) {
+			max-width: 843px;
+		}
+	}
+	h1 {
+		margin-bottom: 24px;
+		font-size: rem(24);
+		text-transform: uppercase;
+		@include media-breakpoint-up(md) {
+			font-size: rem(32);
+		}
+	}
+	.section-title__subtitle {
+		font-size: 14px;
+		font-weight: 400;
+		font-family: $header-font;
+		opacity: 0.5;
+	}
+	&__img-wrap {
+		margin-bottom: 24px;
+		border-radius: 12px;
+		overflow: hidden;
+		&--full {
+			margin-bottom: 40px;
+			@include media-breakpoint-up(md) {
+				margin-bottom: 64px;
+			}
+			img {
+				width: 100%;
+			}
+		}
+		img {
+			border-radius: 12px;
+		}
+	}
+	p {
+	font-size: 16px;
+	line-height: 140%;
+	@include media-breakpoint-up(md) {
+		font-size: rem(18);
+		}
+	}
+	blockquote {
+		margin: 24px 0;
+		padding: 24px;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 140%;
+		border-radius: 12px;
+		background: $white;
+		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: var(--bs-gutter-x);
 
 	}
+	h2 {
+	margin-bottom: 24px;
+	font-size:16px;
+	line-height: 100%;
+	color: $body-color;
+	text-transform: none;
+	@include media-breakpoint-up(md) {
+		font-size: rem(20);
+	}
+}
 	.section-title{
 		
 	}

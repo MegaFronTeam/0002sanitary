@@ -3,11 +3,16 @@ mixin topLine()
 	+b.topLine.section#topLine&attributes(attributes)
 		.container.container--wide
 			+e.row.row
+				.col-auto.d-lg-none
+					+menu-toggle()
 				.col
 						+b.logo(href="/")
 							img(src="img/logo.svg", alt="").res-i
-				+e.search-col.col-auto.d-none.d-lg-block
-						+search()
-				.col-auto
-						+btn('Отправить обращение').btn.btn-primary
+				.col-auto.d-lg-none
+					+btn('Обращение').--sm.btn.btn-primary
+				+e.search-col.col-auto
+					button.btn.mobile-search-open.d-md-none
+					+search()
+				.col-auto.d-none.d-lg-block
+					+btn('Отправить обращение').btn.btn-primary
 	// end topLine

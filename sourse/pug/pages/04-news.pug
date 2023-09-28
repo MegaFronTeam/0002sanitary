@@ -1,0 +1,35 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sApp/_sApp.pug
+include ../blocks/sDisinsection/_sDisinsection.pug
+include ../blocks/sSlider/_sSlider.pug
+include ../blocks/sNews/_sNews.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= 'Новости'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head('Новости', 'Новости')
+		+sNews
+	+parts('footer')
+		+sForm()
+      
+
+
+
