@@ -103,11 +103,12 @@
 		background-color: $white;
 		color: var(--bl, #0A0A0A);
 		font-family: $header-font;
-		font-size: rem(20);
+		font-size: rem(16);
 		font-weight: 700;
 		line-height: 1;
 		cursor: pointer;
 		@include media-breakpoint-up(md) {
+			font-size: rem(20);
 			flex-wrap: nowrap;
 		}
 		&--rome {

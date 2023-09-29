@@ -30,15 +30,16 @@
 	}
 	h1 {
 		margin-bottom: rem(24);
-		text-align: center;
-		font-size: 40px;
-		@include media-breakpoint-up(lg) {
-			// margin-bottom: 0;
-			text-align: left;
+		text-align: left;
+		font-size: rem(40);
+		@include media-breakpoint-down(md) {
+			font-size: rem(24);
 		}
 	}
 	&__text {
-		p {
+	}
+	p {
+		@include media-breakpoint-down(md) {
 			margin-bottom: 24px;
 			font-size: 14px;
 			line-height: 140%;
@@ -199,10 +200,7 @@
 		background-size: cover;
 	}
 	&__btn {
-		width: 100%;
-		@include media-breakpoint-up(sm) {
-			width: auto;
-		}
+		width: auto;
 	}
 	.sApp {
 		height: 100%;
