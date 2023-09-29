@@ -38,10 +38,6 @@
 		}
 	}
 	&__text {
-		// max-width: 278px;
-		// @include media-breakpoint-up(lg) {
-		// 	max-width: 278px;
-		// }
 		p {
 			margin-bottom: 24px;
 			font-size: 14px;
@@ -92,11 +88,14 @@
 	}
 	&__video-wrap {
 		position: relative;
-		@include block(601,953);
+		@include block(327,343);
 		border-radius: 12px;
 		overflow: hidden;
 		height: 100%;
 		max-width: 100%;
+		@include media-breakpoint-up(sm) {
+			@include block(601,953);
+		}
 		video, video[poster] {
 			width: 100%;
 			height: 100%;
@@ -114,21 +113,27 @@
 	}
 	&__video-title {
 		position: absolute;
-		top: 10px;
-		left: 50px;
+		bottom: 40px;
+		left: 14px;
 		color: $white;
 		z-index: 10;
+		font-size: rem(32);
+		text-transform: none;
 		@include media-breakpoint-up(sm) {
+			left: 50px;
 			bottom: 90px;
-			top: auto;
+			font-size: rem(40);
 		}
 	}
 	.slider-controls {
 		position: absolute;
 		bottom: 0px;
-		left: 44px;
+		left: 14px;
+		width: calc(100% - 28px);
 		z-index: 20;
 		@include media-breakpoint-up(sm) {
+			width: auto;
+			left: 44px;
 			bottom: 32px;
 		}
 		.icon {
@@ -148,10 +153,12 @@
 		display: block;
 		padding: 27px 24px 24px;
 		height: 100%;
-		min-height: 144px;
 		border-radius: 12px;
 		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
 		overflow: hidden;
+		@include media-breakpoint-up(sm) {
+			min-height: 144px;
+		}
 		&--well-being {
 			background-color: $primary;
 			.sAbout__item-title {
@@ -163,7 +170,7 @@
 			.sAbout__item-img {
 				background-image: url('../img/main-item-1.png');
 				background-repeat: no-repeat;
-				// background-position: bottom right;
+				background-size: cover;
 			}
 		}
 		&--shield {
@@ -173,9 +180,12 @@
 				color: $white;
 			}
 			.sAbout__item-img {
-				background-image: url('../img/main-item-2.png');
+				background-image: url('../img/main-item-2-sm.png');
 				background-repeat: no-repeat;
-				// background-position: bottom right;
+				background-size: cover;
+				@include media-breakpoint-up(sm) {
+					background-image: url('../img/main-item-2.png');
+				}
 			}
 		}
 	}
@@ -198,6 +208,7 @@
 		height: 100%;
 	}
 	.sApp__container {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
@@ -207,17 +218,51 @@
 		@include media-breakpoint-up(lg) {
 			background-position: 50% 200%;
 		}
+		img {
+			position: absolute;
+			bottom: 0;
+			left: calc(16px + 259px - 40px) ;
+			max-height: calc(100% - 16px);
+			@include media-breakpoint-up(sm) {
+				left: auto;
+				right: 0;
+				max-width: 50%;
+			}
+			@include media-breakpoint-up(lg) {
+				position: static;
+				max-width: none;
+			}
+		}
 	}
 	.sApp__text {
-		padding: 24px;
+		padding: 16px;
+		@include media-breakpoint-up(sm) {
+			padding: 24px;
+		}
 		@include media-breakpoint-up(lg) {
 			padding: 40px;
 		}
 	}
+	.sApp__title {
+		max-width: 259px;
+		@include media-breakpoint-up(sm) {
+			max-width: 50%;
+		}
+		@include media-breakpoint-up(lg) {
+			max-width: none;
+		}
+	}
 	.sApp__buttons  {
 		flex-wrap: nowrap;
+		flex-direction: column;
+		max-width: 201px;
+		@include media-breakpoint-up(sm) {
+			max-width: 50%;
+		}
 		@include media-breakpoint-up(lg) {
+			flex-direction: row;
 			flex-wrap: wrap;
+			max-width: none;
 		}
 	}
 	.sApp__btn {

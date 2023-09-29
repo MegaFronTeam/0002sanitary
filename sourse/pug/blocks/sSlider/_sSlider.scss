@@ -24,51 +24,19 @@
 	&__item{
 
 	}
-	// .slider-wrapper {
-		// 	position: relative;
-		// }
-		.swiper {
-			@include media-breakpoint-down(sm) {
-				overflow: visible;
-			}
+
+	.swiper {
+		@include media-breakpoint-down(sm) {
+			overflow: visible;
 		}
+	}
+	.swiper-slide {
+		max-width: 314px;
+	}
 	&__slider {
 		margin: -8px;
 		padding: 8px;
 	}
-	// .slider-controls {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	justify-content: space-between;
-	// }
-	// .swiper-pagination {
-	// 	position: static;
-	// 	// bottom: -30px;
-	// 	text-align: left;
-	// }
-	// .swiper-pagination-bullet {
-	// 	width: 7px;
-	// 	height: 7px;
-	// 	margin: 0 8px !important;
-	// }
-	// .slider-buttons {
-	// 	display: flex;
-	// 	& > * {
-	// 		position: static;
-	// 		margin-top: 0;
-	// 		&::after {
-	// 			content: none;
-	// 		}
-	// 	}
-	// 	.icon {
-	// 		width: 16px;
-	// 		height: 16px;
-	// 		stroke: $body-color;
-	// 	}
-	// }
-	// .swiper-button-prev {
-		// 	margin-right: 16px;
-		// }
 		&--main {
 			.section-title {
 				display: flex;

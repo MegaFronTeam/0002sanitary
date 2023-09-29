@@ -27,65 +27,53 @@
 	&__item{
 		display: flex;
 		flex-direction: column;
-		padding: rem(24);
+		padding: rem(16);
 		height: 100%;
 		border-radius: 12px;
 		overflow: hidden;
 		background-repeat: no-repeat;
-		background-position: right bottom;
-		// text-shadow: 1px 1px 1px $body-color;
-		// @include media-breakpoint-up(md) {
-		// 	background-position: 330px -10px;
-		// }
-		// @include media-breakpoint-up(lg) {
-		// 	background-position: 210px -10px;
-		// }
-		// @include media-breakpoint-up(xl) {
-		// 	background-position: 270px -10px;
-		// }
-		// @include media-breakpoint-up(xxl) {
-		// 	background-position: 345px -10px;
-		// }
-		p, ul {
-			font-size: rem(18);
+		background-position: 100% 100%;
+		@media (max-width: 450px) {
+			background-position: 145% 100%;
 		}
-		ul {
-			padding-left: 20px;
-			max-width: 70%;
+		// background-size: contain;
+		@include media-breakpoint-up(lg) {
+			padding: rem(24);
 		}
 		&--law {
 			color: $white;
 			background-color: $primary;
-			@include media-breakpoint-up(sm) {
-				background-image: url('../img/law-item-bg.png');
-				// background-size: 33% 100%;
-			}
-			.sTraining__btn {
-				// &:hover {
-				// 	border: 1px solid $white;
-				// 	color: $white;
-				// }
-			}
+			background-image: url('../img/law-item-bg.png');
 		}
 		&--certification {
 			color: $white;
-			background-color: $red;
-			@include media-breakpoint-up(sm) {
-				background-image: url('../img/sertf-item-bg.png');
-				background-size: contain;
-				background-position: 100% 10px;
-			}
+			background-color: #BE1722;
+			background-image: url('../img/sertf-item-bg.png');
+			// background-position: 100% 10px;
 			@include media-breakpoint-up(lg) {
 				background-size: auto;
 				background-position: right bottom;
 			}
-			.sTraining__btn {
-				// &:hover {
-				// 	border: 1px solid $body-color;
-				// 	color: $body-color;
-				// 	background-color: $red;
-				// }
+		}
+
+		p, ul {
+			font-size: rem(18);
+			@include media-breakpoint-down(lg) {
+				font-size: rem(16);
 			}
+		}
+		ul {
+			padding-left: 20px;
+			max-width: 70%;
+			line-height: 140%;
+			li {
+				margin-bottom: 5px;
+			}
+		}
+	}
+	&__item-body {
+		@include media-breakpoint-down(lg) {
+			min-height: 130px;
 		}
 	}
 	&__item-bottom {
@@ -98,6 +86,7 @@
 		margin-bottom: 16px;
 		line-height: 1;
 		color: inherit;
+		max-width: 256px;
 		@include media-breakpoint-up(sm) {
 			max-width: 360px;
 		}
@@ -105,6 +94,9 @@
 	&__item-info {
 		margin-bottom: rem(24);
 		font-size: 14px;
+		@include media-breakpoint-down(sm) {
+			max-width: 200px;
+		}
 	}
 	&__video-link {
 		display: flex;
@@ -112,6 +104,10 @@
 		margin-bottom: rem(24);
 		font-size: rem(18);
 		color: inherit;
+		@include media-breakpoint-down(sm) {
+			max-width: 200px;
+			font-size: 16px;
+		}
 		.icon {
 			margin-right: 12px;
 			width: 24px;
@@ -121,12 +117,13 @@
 	&__btn {
 		padding: 13px 19px;
 		align-self: flex-start;
-		width: 100%;
+		width: auto;
 		font-size: rem(20);
 		color: inherit;
 		border-color: inherit;
-		@include media-breakpoint-up(sm) {
-			width: auto;
+		@include media-breakpoint-down(sm) {
+			padding: 7px 19px;
+			font-size: 16px;
 		}
 	}
 

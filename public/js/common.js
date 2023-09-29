@@ -117,9 +117,7 @@ function eventHandler() {
 
 	document.addEventListener('click', (event)=> {
 		let searchBtn = event.target.closest('.mobile-search-open');
-		console.log(searchBtn);
 		let searchBlock = event.target.closest('.search-block');
-		console.log(searchBlock);
 		if (searchBtn) {
 			document.querySelector('.search-block').classList.toggle('active');
 			document.querySelector('.mobile-search-open').classList.toggle('active');
@@ -176,6 +174,35 @@ function eventHandler() {
 		slidesPerView: 'auto',
 		freeMode: true,
 		watchOverflow: true
+	});
+
+	const guideSwiper = new Swiper('.sGuide__swiper', {
+		spaceBetween: 8,
+		slidesPerView: 'auto',
+		freeMode: true,
+		grid: {
+			fill: 'row',
+			rows: 3,
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 4,
+				spaceBetween: 24,
+				grid: {
+					fill: 'row',
+					rows: 3,
+				},
+			},
+		},
+	});
+
+	const fieldSliders = document.querySelectorAll('.sEpidGuide__swiper');
+	fieldSliders.forEach((fieldSlider) => {
+		fieldSlider = new Swiper('.sEpidGuide__swiper',{
+		 spaceBetween: 8,
+		 freeMode: true,
+			 slidesPerView: 'auto',
+	 });
 	});
 	
 	const workSlider = new Swiper('.sWork__slider--js', {

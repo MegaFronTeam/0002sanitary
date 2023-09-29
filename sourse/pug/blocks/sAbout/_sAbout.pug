@@ -21,15 +21,15 @@ mixin sAbout(data)
 							.swiper-wrapper
 								.swiper-slide
 									+e.video-wrap
-										+e.video-title.h1 Промо-ролик
+										+e.video-title.h2 Промо-ролик
 										<video src="#" poster="img/video-main.jpg"></video> 
 								.swiper-slide
 									+e.video-wrap
-										+e.video-title.h1 Промо-ролик
+										+e.video-title.h2 Промо-ролик
 										<video src="#" poster="img/video-main.jpg"></video> 
 								.swiper-slide
 									+e.video-wrap
-										+e.video-title.h1 Промо-ролик
+										+e.video-title.h2 Промо-ролик
 										<video src="#" poster="img/video-main.jpg"></video>
 							.slider-controls
 								.swiper-pagination
@@ -51,13 +51,13 @@ mixin sAbout(data)
 									+e.btn.btn.btn-outline-info
 										+icon('android')
 										| #[span Скачать ]&nbsp;для Android
-							+img('img/app-img.png').sApp__img.d-none.d-lg-block
+							+img('img/app-img-main.png').sApp__img
 				.col-lg-6
 					+e.item--well-being(href='#')
 						+e.item-title.h2 Что такое санитарно-эпидемиологическое благополучие?
-						+e.item-img.d-none.d-sm-block
+						+e.item-img
 				.col-lg-6
 					+e.item--shield(href='#')
-						+e.item-title.h2 Что такое Санитарный щит страны?
-						+e.item-img.d-none.d-sm-block
+						+e.item-title.h2 Что такое Санитарный щит&nbsp;страны?
+						+e.item-img
 	// end sAbout

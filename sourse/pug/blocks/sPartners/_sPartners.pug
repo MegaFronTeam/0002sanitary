@@ -5,33 +5,34 @@ mixin sPartners(data)
 			+b.section-title
 				h2 Партнеры
 				+e.btn.btn.btn-primary Перейти в раздел
-			+e.row.row
-				- for (var x = 0; x < 3; x++)
-					+e.col.col-12
+			.sEpidGuide__swiper.swiper
+				//- - for (var x = 0; x < 3; x++)
+				.swiper-wrapper
+					.swiper-slide
 						+e.item(href="#")
 							+img(`img/partner-1.png`)
-					+e.col.col-12
+					.swiper-slide
 						+e.item(href="#")
 							+img(`img/partner-2.png`)
-					+e.col.col-12
+					.swiper-slide
 						+e.item(href="#")
 							+img(`img/partner-3.png`)
-					+e.col.col-12
+					.swiper-slide
 						+e.item(href="#")
 							+img(`img/partner-2.png`)
-					+e.col.col-12
+					.swiper-slide
 						+e.item(href="#")
 							+img(`img/partner-4.png`)
-					+e.col.col-12
+					.swiper-slide
 						+e.item(href="#")
 							+img(`img/partner-1.png`)
-					+e.col.col-12
+					.swiper-slide
 						+e.item(href="#")
 							+img(`img/partner-4.png`)
-					+e.col.col-12
+					.swiper-slide
 						+e.item(href="#")
 							+img(`img/partner-3.png`)
-					+e.col.col-12
+					.swiper-slide
 						+e.item(href="#")
 							+img(`img/partner-3.png`)
 	// end sPartners

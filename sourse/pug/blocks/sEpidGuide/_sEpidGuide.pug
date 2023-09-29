@@ -2,79 +2,113 @@ mixin sEpidGuide(data)
 	+b.SECTION.sEpidGuide.section#sEpidGuide&attributes(attributes)
 		.container
 			+b.section-title
-				h2 Эпидемиологический справочник предпринимателя
+				h2 ОТ а до я
+			p Наши эпидемиологические знания&nbsp;&mdash; надежное руководство для предпринимателей. В&nbsp;&laquo;Эпидемиологическом Справочнике&raquo; вы&nbsp;найдете ключевые сведения о&nbsp;различных заболеваниях, их&nbsp;воздействии на&nbsp;бизнес, и&nbsp;применимые меры предосторожности.
 			+e.container
 				h3 Сфера деятельности
-				+e.btn-row
-						+in-c('checkbox','ВСЕ','field')
-						+in-c('checkbox','Медицина','field')(checked)
-						+in-c('checkbox','Социальные организации','field')(checked)
-						+in-c('checkbox','Коммунальные услуги','field')
-						+in-c('checkbox','Персональные услуги','field')
-						+in-c('checkbox','Гостиницы и туризм','field')
-						+in-c('checkbox','Культура, досуг и отдых','field')
-						+in-c('checkbox','Детские и молодежные организации','field')
-						+in-c('checkbox','Пищевое производство','field')
-						+in-c('checkbox','Общественное питание','field')
-						+in-c('checkbox','Торговля','field')
-						+in-c('checkbox','Промышленность и сельское хозяйство','field')
-						+in-c('checkbox','Транспорт','field')
+				+e.swiper.swiper
+					.swiper-wrapper
+						.swiper-slide
+							+in-c('checkbox','ВСЕ','field')
+						.swiper-slide
+							+in-c('checkbox','Медицина','field')(checked)
+						.swiper-slide
+							+in-c('checkbox','Социальные организации','field')(checked)
+						.swiper-slide
+							+in-c('checkbox','Коммунальные услуги','field')
+						.swiper-slide
+							+in-c('checkbox','Персональные услуги','field')
+						.swiper-slide
+							+in-c('checkbox','Гостиницы и туризм','field')
+						.swiper-slide
+							+in-c('checkbox','Культура, досуг и отдых','field')
+						.swiper-slide
+							+in-c('checkbox','Детские и молодежные организации','field')
+						.swiper-slide
+							+in-c('checkbox','Пищевое производство','field')
+						.swiper-slide
+							+in-c('checkbox','Общественное питание','field')
+						.swiper-slide
+							+in-c('checkbox','Торговля','field')
+						.swiper-slide
+							+in-c('checkbox','Промышленность и сельское хозяйство','field')
+						.swiper-slide
+							+in-c('checkbox','Транспорт','field')
 				h3 Наименование заболеваний:
-				+e.btn-row--letters
-					+in-c('checkbox','ВСЕ','letter')
-					+in-c('checkbox','Б','letter')
-					+in-c('checkbox','В','letter')
-					+in-c('checkbox','Г','letter')(checked)
-					+in-c('checkbox','Д','letter')
-					+in-c('checkbox','И','letter')(disabled)
-					+in-c('checkbox','К','letter')(disabled)
-					+in-c('checkbox','Л','letter')
-					+in-c('checkbox','М','letter')
-					+in-c('checkbox','О','letter')
-					+in-c('checkbox','П','letter')
-					+in-c('checkbox','С','letter')(disabled)
-					+in-c('checkbox','Т','letter')(disabled)
-					+in-c('checkbox','Х','letter')
-					+in-c('checkbox','Ч','letter')
-					+in-c('checkbox','Э','letter')
+				+e.swiper.swiper
+					.swiper-wrapper
+						.swiper-slide
+							+in-c('checkbox','ВСЕ','letter')
+						.swiper-slide
+							+in-c('checkbox','Б','letter')
+						.swiper-slide
+							+in-c('checkbox','В','letter')
+						.swiper-slide
+							+in-c('checkbox','Г','letter')(checked)
+						.swiper-slide
+							+in-c('checkbox','Д','letter')
+						.swiper-slide
+							+in-c('checkbox','И','letter')(disabled)
+						.swiper-slide
+							+in-c('checkbox','К','letter')(disabled)
+						.swiper-slide
+							+in-c('checkbox','Л','letter')
+						.swiper-slide
+							+in-c('checkbox','М','letter')
+						.swiper-slide
+							+in-c('checkbox','О','letter')
+						.swiper-slide
+							+in-c('checkbox','П','letter')
+						.swiper-slide
+							+in-c('checkbox','С','letter')(disabled)
+						.swiper-slide
+							+in-c('checkbox','Т','letter')(disabled)
+						.swiper-slide
+							+in-c('checkbox','Х','letter')
+						.swiper-slide
+							+in-c('checkbox','Ч','letter')
+						.swiper-slide
+							+in-c('checkbox','Э','letter')
 				h3 Заболевания
-				+e.disease-list.UL
-					+e.disease-item.LI 
-						//- +e.disease-link  
-						.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Гельминтозы, передающиеся через мясо и мясные продукты
-						.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
-						+e.disease-link(href="#")
-							+icon('link-arrow')
-					+e.disease-item.LI 
-						//- +e.disease-link  
-						.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Гельминтозы, передающиеся через рыбу, ракообразных, моллюсков, земноводных, пресмыкающихся
-						.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
-						+e.disease-link(href="#")
-							+icon('link-arrow')
-					+e.disease-item.LI 
-						//- +e.disease-link  
-						.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Геморрагическая лихорадка с почечным синдромом (ГЛПС)
-						.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
-						+e.disease-link(href="#")
-							+icon('link-arrow')
-					+e.disease-item.LI 
-						//- +e.disease-link  
-						.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Геогельминтозы (аскаридоз, трихоцефалез, токсокароз)
-						.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
-						+e.disease-link(href="#")
-							+icon('link-arrow')
-					+e.disease-item.LI 
-						//- +e.disease-link  
-						.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Гепатиты В и С.
-						.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
-						+e.disease-link(href="#")
-							+icon('link-arrow')
-					+e.disease-item.LI 
-						//- +e.disease-link  
-						.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Грипп и другие ОРВИ
-						.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
-						+e.disease-link(href="#")
-							+icon('link-arrow')
+					//- +e.disease-list.UL
+				+e.swiper--disease.swiper
+					.swiper-wrapper
+						.swiper-slide
+							+e.disease-item
+								.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Гельминтозы, передающиеся через мясо и мясные продукты
+								.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
+								+e.disease-link(href="#")
+									+icon('link-arrow')
+						.swiper-slide
+							+e.disease-item
+								.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Гельминтозы, передающиеся через рыбу, ракообразных, моллюсков, земноводных, пресмыкающихся
+								.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
+								+e.disease-link(href="#")
+									+icon('link-arrow')
+						.swiper-slide
+							+e.disease-item 
+								.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Геморрагическая лихорадка с почечным синдромом (ГЛПС)
+								.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
+								+e.disease-link(href="#")
+									+icon('link-arrow')
+						.swiper-slide
+							+e.disease-item
+								.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Геогельминтозы (аскаридоз, трихоцефалез, токсокароз)
+								.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
+								+e.disease-link(href="#")
+									+icon('link-arrow')
+						.swiper-slide
+							+e.disease-item
+								.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Гепатиты В и С.
+								.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
+								+e.disease-link(href="#")
+									+icon('link-arrow')
+						.swiper-slide
+							+e.disease-item
+								.tooltip-btn.btn.BUTTON(aria-describedby="tooltip") Грипп и другие ОРВИ
+								.tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
+								+e.disease-link(href="#")
+									+icon('link-arrow')
 				+e.more(href="#") Показать все 8
 mixin sEpidGuideOld(data)
 	// start sEpidGuide

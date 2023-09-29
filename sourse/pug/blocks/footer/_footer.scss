@@ -49,12 +49,9 @@
 	&__contacts {
 		color: $gray-300;
 		font-family: $header-font;
-		font-size: rem(20);
+		font-size: rem(32);
 		font-weight: 700;
 		line-height: 87.188%; 
-		@include media-breakpoint-up(lg) {
-			font-size: rem(32);
-		}
 		a {
 			display: block;
 			color: inherit;
@@ -68,7 +65,7 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		padding: rem(24) 0;
+		padding: rem(40) 0;
 		color: $gray-600;
 		font-size: 11px;
 		font-weight: 400;
@@ -83,8 +80,8 @@
 	&__privacy {
 		margin-right: rem(30);
 		color: inherit;
-		width: 50%;
-		@include media-breakpoint-up(md) {
+		width: 100%;
+		@include media-breakpoint-up(sm) {
 			width: auto;
 		}
 		@include media-breakpoint-up(lg) {
@@ -123,6 +120,9 @@
 		font-family: $default-font;
 		overflow: hidden;
 		background-color: transparent;
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+		}
 		&:hover {
 			color: $gray-600;
 			.form-wrap__btn-span {
@@ -140,6 +140,9 @@
 			background-color: transparent;
 			padding: rem(5) rem(24);
 			transition: background-color .3s ease-in-out;
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
 		}
 		.form-wrap__icon-span {
 			display: flex;
@@ -161,13 +164,13 @@
 		}
 	}
 	.form-wrap__policy {
-		max-width: 300px;
 		color: #000;
 		font-size: 11px;
 		font-weight: 400;
 		line-height: 140%;
 		margin-bottom: 15px;
 		@include media-breakpoint-up(md) {
+			max-width: 300px;
 			margin-bottom: 0;
 		}
 		a {
@@ -183,12 +186,30 @@
 	}
 	.soc {
 		margin-bottom: 15px;
+		order: -2;
+		width: 100%;
+		margin-bottom: 40px;
 		@include media-breakpoint-up(md) {
+			width: auto;
+			order: 0;
 			margin-bottom: 0;
+		}
+		@include media-breakpoint-up(md) {
 			margin-right: auto;
 		}
 	}
+	.soc__item:not(:last-child) {
+		@include media-breakpoint-down(md) {
+			margin-right: 24px;
+		}
+}
 	&__copyright {
+		order: -1;
+		margin-bottom: 9px;
+		@include media-breakpoint-up(sm) {
+			order: 0;
+			margin-bottom: 0;
+		}
 		@include media-breakpoint-up(lg) {
 			margin-right: 60px;
 		}

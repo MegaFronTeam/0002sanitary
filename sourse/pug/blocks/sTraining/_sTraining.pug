@@ -9,11 +9,12 @@ mixin sTraining(data)
 				.col-lg-6
 					+e.item--law
 						+e.item-title.h2 Углубленное изучение санитарно-эпидемиологического законодательства
-						ul
-							li анонсы обучающих мероприятий,
-							li видео-записи обучающих мероприятий
+						+e.item-body
+							ul
+								li анонсы обучающих мероприятий,
+								li видео-записи обучающих мероприятий
 						+e.item-bottom
-							+e.item-info 26 видеоуроков, 2 практических задания
+							+e.item-info 26 видеоуроков, 2&nbsp;практических задания
 							+e.video-link
 								+icon('video')
 								| Вступительное видео
@@ -21,9 +22,10 @@ mixin sTraining(data)
 				.col-lg-6
 					+e.item--certification
 						+e.item-title.h2 Гигиеническая аттестация
-						p Реестр ЛМК
+						+e.item-body
+							p Реестр ЛМК
 						+e.item-bottom
-							+e.item-info 26 видеоуроков, 2 практических задания
+							+e.item-info 26 видеоуроков, 2&nbsp;практических задания
 							+e.video-link
 								+icon('video')
 								| Вступительное видео

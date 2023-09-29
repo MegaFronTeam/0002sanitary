@@ -1,5 +1,5 @@
 mixin regItem(img, title, link)
-	.col-md-6.col-xl-4
+	.swiper-slide
 		+e.item(href=`link`)
 			+img(`img/${img}`)
 			+e.text
@@ -13,13 +13,14 @@ mixin sRegistries(data)
 		.container
 			+b.section-title
 				h2 Полезные информационные ресурсы и Реестры				
-			+e.row.row
-				+regItem('emblem-c.svg', 'Единый реестр свидетельств обязательной регистрации', 'https://portal.eaeunion.org/sites/odata/_layouts/15/Portal.EEC.Registry.Ui/DirectoryForm.aspx?ListId=0e3ead06-5475-466a-a340-6f69c01b5687&ItemId=231#')
-				+regItem('reg-1.svg', 'Государственный информационный ресурс в сфере защиты прав потребителя', 'https://zpp.rospotrebnadzor.ru/')
-				+regItem('emblem-c.svg', 'Реестр обязательных требований', 'ot.gov.ru')
-				+regItem('reg-2.png', 'Здоровое питание', 'Здоровое-питание.рф')
-				+regItem('emblem-c.svg', 'Единый Реестр видов контроля', 'ervk.gov.ru')
-				+regItem('emblem-c.svg', 'Интерактивная карта контроля качества питьевой воды в Российской Федерации', 'https://питьеваявода.рус')
-				+regItem('emblem-c.svg', 'Единый Реестр контрольных (надзорных) мероприятий', 'proverki.gov.ru/portal')
-				+regItem('emblem-c.svg', 'Реестр Роспотребнадзора категорированных объектов', 'https://risk.rospotrebnadzor.ru/search')
+			.sEpidGuide__swiper.swiper
+				.swiper-wrapper
+					+regItem('emblem-c.svg', 'Единый реестр свидетельств обязательной регистрации', 'https://portal.eaeunion.org/sites/odata/_layouts/15/Portal.EEC.Registry.Ui/DirectoryForm.aspx?ListId=0e3ead06-5475-466a-a340-6f69c01b5687&ItemId=231#')
+					+regItem('reg-1.svg', 'Государственный информационный ресурс в сфере защиты прав потребителя', 'https://zpp.rospotrebnadzor.ru/')
+					+regItem('emblem-c.svg', 'Реестр обязательных требований', 'ot.gov.ru')
+					+regItem('reg-2.png', 'Здоровое питание', 'Здоровое-питание.рф')
+					+regItem('emblem-c.svg', 'Единый Реестр видов контроля', 'ervk.gov.ru')
+					+regItem('emblem-c.svg', 'Интерактивная карта контроля качества питьевой воды в Российской Федерации', 'https://питьеваявода.рус')
+					+regItem('emblem-c.svg', 'Единый Реестр контрольных (надзорных) мероприятий', 'proverki.gov.ru/portal')
+					+regItem('emblem-c.svg', 'Реестр Роспотребнадзора категорированных объектов', 'https://risk.rospotrebnadzor.ru/search')
 	// end sRegistries
