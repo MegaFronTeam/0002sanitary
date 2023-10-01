@@ -9,31 +9,31 @@ mixin sCatalog(data)
 	// start sCatalog
 	+b.sCatalog.section&attributes(attributes)
 		.container
-			+e.row.row
-				- const wrapClass="col-12 col-sm-6 col-lg-3"
-				+e.col(class= wrapClass)
-					+catalog-item(`medicine`,`Медицина`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`social`,`Социальные организации`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`utilities`,`Коммунальные услуги`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`person`,`Персональные услуги`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`hotels`,`Гостиницы и туризм`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`park`,`Культура, досуг и отдых`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`hand`,`Детские и молодежные организации`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`manufacturing`,`Пищевое производство`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`dish`,`Общественное питание`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`ice-cream`,`Торговля`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`industry`,`Промышленность и сельское хозяйство`) 
-				+e.col(class= wrapClass)
-					+catalog-item(`bus`,`Транспорт`) 
+			+e.swiper.swiper.sEpidGuide__swiper
+				+e.wrapper.swiper-wrapper
+					+e.slide.swiper-slide
+						+catalog-item(`medicine`,`Медицина`) 
+					+e.slide.swiper-slide
+						+catalog-item(`social`,`Социальные организации`) 
+					+e.slide.swiper-slide
+						+catalog-item(`utilities`,`Коммунальные услуги`) 
+					+e.slide.swiper-slide
+						+catalog-item(`person`,`Персональные услуги`) 
+					+e.slide.swiper-slide
+						+catalog-item(`hotels`,`Гостиницы и туризм`) 
+					+e.slide.swiper-slide
+						+catalog-item(`park`,`Культура, досуг и отдых`) 
+					+e.slide.swiper-slide
+						+catalog-item(`hand`,`Детские и молодежные организации`) 
+					+e.slide.swiper-slide
+						+catalog-item(`manufacturing`,`Пищевое производство`) 
+					+e.slide.swiper-slide
+						+catalog-item(`dish`,`Общественное питание`) 
+					+e.slide.swiper-slide
+						+catalog-item(`ice-cream`,`Торговля`) 
+					+e.slide.swiper-slide
+						+catalog-item(`industry`,`Промышленность и сельское хозяйство`) 
+					+e.slide.swiper-slide
+						+catalog-item(`bus`,`Транспорт`) 
 
 	// end sCatalog

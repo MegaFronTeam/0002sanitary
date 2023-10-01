@@ -1,7 +1,7 @@
 // start .sCatalog
 .sCatalog {
 	--sPT: #{rem(5)};
-	// --sPB: #{rem()};
+	--sPB: #{rem(24)};
 	// --sTPB: #{rem()};
 	&__row{
 		// --bs-gutter-x: #{rem()};
@@ -13,6 +13,23 @@
 	}
 	&__col{
 
+	}
+	&__wrapper {
+		@include media-breakpoint-up(lg) {
+
+		}
+	}
+	&__slide {
+		@include media-breakpoint-up(lg) {			
+			flex-basis: calc((100% - 24px * 3) / 4);
+			margin-bottom: 24px;
+			&:not(:nth-child(4n)) {
+				margin-right: 24px !important;
+			}
+			&:nth-child(4n) {
+				margin-right: 0 !important;
+			}
+		}
 	}
 	&__item{
 		display: flex;

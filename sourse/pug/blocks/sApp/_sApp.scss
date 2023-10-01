@@ -4,9 +4,10 @@
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
 	&__container {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
-		flex-direction: column;
+		// flex-direction: column;
 		border-radius: 12px;
 		color: $white;
 		background-color: $primary;
@@ -25,6 +26,12 @@
 		padding: rem(10);
 		@include media-breakpoint-up(sm) {
 			padding: rem(40);
+		}
+		@include media-breakpoint-up(md) {
+			width: 75%;
+		}
+		@include media-breakpoint-up(lg) {
+			width: auto;
 		}
 	}
 	&__subtitle {
@@ -79,9 +86,15 @@
 		}
 	}
 	&__img {
+		position: absolute;
+		bottom: 0;
+		left: 75%;
 		flex-shrink: 0;
 		object-fit: contain;
 		object-position: right bottom;
+		@include media-breakpoint-up(lg) {
+			position: static;
+		}
 	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
@@ -109,6 +122,25 @@
 	&--test {
 		.sApp__container {
 			background-image: none;
+			max-width: 100%;
+		}
+		.sApp__text {
+			flex-shrink: 0;
+			width: 100%;
+			@include media-breakpoint-up(sm) {
+				width: 70%;
+			}
+			@include media-breakpoint-up(xl) {
+				flex-shrink: 1;
+			}
+		}
+		img {
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			@include media-breakpoint-up(lg) {
+				position: static;
+			}
 		}
 	}
 } // end.sApp
