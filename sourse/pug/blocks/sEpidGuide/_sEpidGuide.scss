@@ -145,7 +145,7 @@
 		}
 	}
 	.tooltip-btn {
-		position: relative;
+		// position: relative;
 		padding: 0;
 		padding-right: 20px;
 		border: none;
@@ -155,6 +155,7 @@
 		border: none;
 		text-align: left;
 		line-height: 140%;
+		// z-index: 1;
 		@include mt;
 		@include media-breakpoint-up(lg) {
 			padding-right: 0;
@@ -168,6 +169,7 @@
 			}
 		}
 		&::after {
+			position: relative;
 			display: inline-flex;
 			align-items: center;
 			justify-content: center;
@@ -179,6 +181,7 @@
 			background: $gray-200;
 			font-size: 11px;
 			font-weight: 400;
+			// z-index: 1;
 			@include media-breakpoint-down(lg) {
 				position: absolute;
 				top: 0;
@@ -192,6 +195,7 @@
 		}
 	}
 	.tooltip {
+		position: relative;
 		padding: 10px;
 		max-width: 422px;
 		border-radius: 4px;
@@ -200,109 +204,18 @@
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 140%;
+		z-index: 100;
 	}
 	&__more {
 		color: #BE1722;
 		font-size: 14px;
 		font-weight: 400;
 	}
-	// &__caption {
-	// 	padding: 16px;
-	// 	margin-right: 24px;
-	// 	flex-shrink: 0;
-	// 	border-right: 1px solid $gray-300;
-	// 	@include media-breakpoint-up(sm) {
-	// 		padding: 24px;
-	// 	}
-	// }
-	// &__title {
-	// 	padding: 24px 8px;
-	// 	margin-bottom: 0;
-	// 	line-height: 1;
-	// 	color: $gray-600;
-	// 	@include mt;
-	// 	border-bottom: 1px solid $gray-300;
-	// 	@include media-breakpoint-up(lg) {
-	// 		&:last-child {
-	// 			border-bottom: none;
-	// 		}
-	// 	}
-	// 	&.active {
-	// 		border-color: $red;
-	// 		.sEpidGuide__btn {
-	// 			color: $body-color;
-	// 			@include media-breakpoint-up(lg) {
-	// 				transform: translateX(16px);
-	// 			}
-	// 		}
-	// 	}
-	// }
-	// &__btn {
-	// 	@include mt;
-	// }
-	// &__content {
-	// 	width: 100%;
-	// 	background-image: url('../img/epidguide-bg.png');
-	// 	background-repeat: no-repeat;
-	// 	background-position: 100% 100%;
-	// 	background-size: auto 50%;
-	// 	@include media-breakpoint-up(lg) {
-	// 		background-size: 60% auto;
-	// 	}
-	// }
-	// ul {
-	// 	padding:24px 24px;
-	// 	margin-bottom: 0;
-	// 	max-width: 457px;
-	// 	font-size: 16px;
-	// 	font-style: normal;
-	// 	list-style-type: none;
-	// 	@include media-breakpoint-up(sm) {
-	// 		padding: 48px 24px;
-	// 		font-size: 18px;
-	// 	}
-	// }
-	// li {
-	// 	&::before {
-	// 		content: '\2014';
-	// 		margin-right: 7px;
-	// 	}
-	// 	a {
-	// 		color: $body-color;
-	// 		&:hover {
-	// 			color: $red;
-	// 		}
-	// 	}
-	// }
-	// .section-title{
-		
-	// }
-	// &__col{
-
-	// }
-	// &__item{
-
-	// }
-	// .swiper {
-	// 	@include media-breakpoint-up(lg) {
-	// 		margin-left: 0;
-	// 	}
-	// }
-	// .swiper-wrapper {
-	// 	height: auto;
-	// 	@include media-breakpoint-up(lg) {
-	// 		flex-direction: column;
-	// 	}
-	// }
-	// .swiper-slide {
-	// 	flex-shrink: 0;
-	// 	width: auto;
-	// 	height: auto;
-	// 	@include media-breakpoint-up(lg) {
-	// 		flex-shrink: 1;
-	// 		width: auto;
-	// 	}
-	// }
+	&__swiper--disease {
+		@include media-breakpoint-up(lg) {
+			overflow: visible !important;
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
@@ -311,3 +224,69 @@
 	@include media-breakpoint-only(xl) {}
 	@include media-breakpoint-down(xl) {}
 } // end.sEpidGuide
+.sEpidGuideBanner {
+	color: $white;
+	&__container {
+		position: relative;
+		padding: 24px;
+		border-radius: 12px;
+		background: $primary;
+		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+		overflow: hidden;
+	}
+	.section-title {
+		margin-bottom: 24px;
+		max-width: 505px;
+	}
+	h2 {
+		color: $white;
+	}
+	p {
+		margin-bottom: 34px;
+		font-size:rem(18);
+		line-height: 140%; 
+		@include media-breakpoint-up(sm) {
+			max-width:70%;
+		}
+		@include media-breakpoint-up(lg) {
+			max-width: 663px;
+		}
+	}
+	&__btn {
+		padding:12px 18px;
+		font-size: 20px;
+		width: 100%;
+		@include media-breakpoint-up(sm) {
+			width: auto;
+		}
+	}
+	&__img-wrap {
+		position: absolute;
+		width: 30%;
+		top: 10px;
+		left: 60%;
+		img {
+			height: 100%;
+			object-fit: contain;
+		}
+		@include media-breakpoint-up(md) {
+			top: 50%;
+			left: auto;
+			transform: translateY(-50%);
+			right: 0;
+			max-height: 100%;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+		@include media-breakpoint-up(xxl) {
+			width: auto;
+			max-height: none;
+			right: -6%;
+			top: -16%;
+			transform: none;
+		}
+	}
+}

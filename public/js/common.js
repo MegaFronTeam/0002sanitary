@@ -135,6 +135,8 @@ function eventHandler() {
 		let tooltip = btn.nextElementSibling;
 		const popperInstance = Popper.createPopper(btn, tooltip, {
 			placement: 'top-end',
+			container: 'body',
+			boundary: document.body,
 		});
 		function show() {
 			tooltip.setAttribute('data-show', '');

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Эпидемиологический справочник</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main></main>
+			<div class="page-head">
+				<div class="container">
+					<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+						<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+							<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+									<meta itemprop="position" content="1"/></a></li>
+							<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Пищевая промыленность</span>
+									<meta itemprop="position" content="2"/></a></li>
+						</ol>
+					</nav>
+					<h1>Эпидемиологический справочник</h1>
+				</div>
+			</div>
+			<section class="sEpidGuide section" id="sEpidGuide">
+				<div class="container">
+					<p>Наши эпидемиологические знания&nbsp;&mdash; надежное руководство для предпринимателей. В&nbsp;&laquo;Эпидемиологическом Справочнике&raquo; вы&nbsp;найдете ключевые сведения о&nbsp;различных заболеваниях, их&nbsp;воздействии на&nbsp;бизнес, и&nbsp;применимые меры предосторожности.</p>
+					<div class="sEpidGuide__container">
+						<h3>Сфера деятельности</h3>
+						<div class="sEpidGuide__swiper swiper mobile-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">ВСЕ</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox" checked="checked"/><span class="custom-input__text form-check-label">Медицина</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox" checked="checked"/><span class="custom-input__text form-check-label">Социальные организации</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Коммунальные услуги</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Персональные услуги</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Гостиницы и туризм</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Культура, досуг и отдых</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Детские и молодежные организации</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Пищевое производство</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Общественное питание</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Торговля</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Промышленность и сельское хозяйство</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Транспорт</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<h3>Наименование заболеваний:</h3>
+						<div class="sEpidGuide__swiper swiper mobile-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">ВСЕ</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Б</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">В</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" checked="checked"/><span class="custom-input__text form-check-label">Г</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Д</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" disabled="disabled"/><span class="custom-input__text form-check-label">И</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" disabled="disabled"/><span class="custom-input__text form-check-label">К</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Л</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">М</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">О</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">П</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" disabled="disabled"/><span class="custom-input__text form-check-label">С</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" disabled="disabled"/><span class="custom-input__text form-check-label">Т</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Х</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Ч</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Э</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<h3>Заболевания</h3>
+						<div class="sEpidGuide__swiper sEpidGuide__swiper--disease swiper mobile-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Гельминтозы, передающиеся через мясо и мясные продукты</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Гельминтозы, передающиеся через рыбу, ракообразных, моллюсков, земноводных, пресмыкающихся</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item"> 
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Геморрагическая лихорадка с почечным синдромом (ГЛПС)</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Геогельминтозы (аскаридоз, трихоцефалез, токсокароз)</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Гепатиты В и С.</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Грипп и другие ОРВИ</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="sEpidGuide__more" href="#">Показать все 8
+						</a>
+					</div>
+				</div>
+			</section>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/@popperjs/core/umd/popper.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

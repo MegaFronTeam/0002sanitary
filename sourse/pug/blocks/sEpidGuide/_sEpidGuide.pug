@@ -1,8 +1,8 @@
 mixin sEpidGuide(data)
 	+b.SECTION.sEpidGuide.section#sEpidGuide&attributes(attributes)
 		.container
-			+b.section-title
-				h2 ОТ а до я
+			//- +b.section-title
+			//- 	h2 ОТ а до я
 			p Наши эпидемиологические знания&nbsp;&mdash; надежное руководство для предпринимателей. В&nbsp;&laquo;Эпидемиологическом Справочнике&raquo; вы&nbsp;найдете ключевые сведения о&nbsp;различных заболеваниях, их&nbsp;воздействии на&nbsp;бизнес, и&nbsp;применимые меры предосторожности.
 			+e.container
 				h3 Сфера деятельности
@@ -110,61 +110,15 @@ mixin sEpidGuide(data)
 								+e.disease-link(href="#")
 									+icon('link-arrow')
 				+e.more(href="#") Показать все 8
-mixin sEpidGuideOld(data)
+mixin sEpidBanner(data)
 	// start sEpidGuide
-	+b.SECTION.sEpidGuide.section#sEpidGuide&attributes(attributes)
+	+b.SECTION.sEpidGuideBanner.section#sEpidGuide&attributes(attributes)
 		.container
-			+b.section-title
-				h2 Эпидемиологический справочник предпринимателя
-			+e.container.tabs
-					+e.caption.tabs__caption.swiper.freemode-slider--js
-						.swiper-wrapper
-							+e.title.swiper-slide.tabs__btn.active.h3
-								+e.btn Основные понятия
-							+e.title.swiper-slide.tabs__btn.h3
-								+e.btn Кишечные инфекции
-							+e.title.swiper-slide.tabs__btn.h3
-								+e.btn Инфекции дыхательных путей
-							+e.title.swiper-slide.tabs__btn.h3
-								+e.btn Кровяные инфекции
-							+e.title.swiper-slide.tabs__btn.h3
-								+e.btn Трансмиссивные инфекции
-							+e.title.swiper-slide.tabs__btn.h3
-								+e.btn Инфекции наружных покровов
-					+e.content.tabs__content.active
-						ul
-							li: a(href="#") Эпидемиология
-							li: a(href="#") Специфическая профилактика
-							li: a(href="#") Неспецифическая профилактика
-							li: a(href="#") Пути, факторы и механизмы передачи инфекции и т.д.
-					.tabs__content
-						ul
-							li Эпидемиология
-							li Специфическая профилактика
-							li Неспецифическая профилактика
-							li Пути, факторы и механизмы передачи инфекции и т.д.
-					.tabs__content
-						ul
-							li Эпидемиология
-							li Специфическая профилактика
-							li Неспецифическая профилактика
-							li Пути, факторы и механизмы передачи инфекции и т.д.
-					.tabs__content
-						ul
-							li Эпидемиология
-							li Специфическая профилактика
-							li Неспецифическая профилактика
-							li Пути, факторы и механизмы передачи инфекции и т.д.
-					.tabs__content
-						ul
-							li Эпидемиология
-							li Специфическая профилактика
-							li Неспецифическая профилактика
-							li Пути, факторы и механизмы передачи инфекции и т.д.
-					.tabs__content
-						ul
-							li Эпидемиология
-							li Специфическая профилактика
-							li Неспецифическая профилактика
-							li Пути, факторы и механизмы передачи инфекции и т.д.
+			+e.container
+				+b.section-title
+					h2 Эпидемиологический справочник от а до я
+				p Наши эпидемиологические знания – надежное руководство для предпринимателей. В "Эпидемиологическом Справочнике" вы найдете ключевые сведения о различных заболеваниях, их воздействии на бизнес, и применимые меры предосторожности.
+				+e.btn.btn.btn-outline-info(href="06-epid-guide.html") Открыть справочник
+				+e.img-wrap.d-none.d-sm-block
+					+img('img/epidguide-banner.png')
 	// end sEpidGuide
