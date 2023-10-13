@@ -6,3 +6,4 @@
 1. <https://megafronteam.github.io/0002sanitary/public/03-food-3.html>
 1. <https://megafronteam.github.io/0002sanitary/public/04-news.html>
 1. <https://megafronteam.github.io/0002sanitary/public/05-article.html>
+1. <https://megafronteam.github.io/0002sanitary/public/06-epid-guide.html>
