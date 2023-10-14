@@ -75,6 +75,43 @@
 		height: auto;
 	}
 
+	&--medicine {
+		.sCatalog__slide {
+			@include media-breakpoint-up(xl) {			
+				flex-basis: calc((100% - 24px * 5) / 6);
+				margin-bottom: 24px;
+				&:not(:nth-child(6n)) {
+					margin-right: 24px !important;
+				}
+				&:nth-child(6n) {
+					margin-right: 0 !important;
+				}
+			}
+		}
+		.sCatalog__item {
+			@include media-breakpoint-up(xl) {
+				padding: 14px 7px 14px 16px;
+			}
+		}
+		.sCatalog__img-wrap {
+			@include media-breakpoint-up(xl) {
+				margin-right: 12px;
+				width: 24px;
+				height: 24px;
+				svg {
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+		}
+		.sCatalog__title {
+			@include media-breakpoint-up(xl) {
+				font-size: 14px;
+			}
+		}
+
+	}
+
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

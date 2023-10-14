@@ -1,0 +1,17 @@
+mixin sThreats(data)
+	// start sThreats
+	+b.SECTION.sThreats.section#sThreats&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Виды санитарно-эпидемиологических угроз связаны с этим видом деятельности.				
+			+e.row.row
+				mixin thread(title)
+					.col-sm-6.col-lg-3.text-center
+						+e.img-wrap
+							+img('img/alert.svg')
+						+e.title!= title
+				+thread('угроза причинения вреда жизни, здоровью людей, вреда окружающей среде')
+				+thread('угроза возникновения и&nbsp;распространения инфекционных заболеваний')
+				+thread('угроза возникновения и&nbsp;распространения массовых неинфекционных заболеваний (отравлений)')
+				+thread('угроза санитарно-эпидемиологическому благополучию населения')
+	// end sThreats

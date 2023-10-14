@@ -1,0 +1,58 @@
+// start .sBreach
+.sBreach {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	ul {
+		margin-bottom: 40px;
+		list-style-type: none;
+		font-size: rem(16);
+		line-height: 140%;
+		@include media-breakpoint-up(sm) {
+			font-size: rem(18);
+		}
+		li {
+			display: flex;
+			&::before {
+				display: inline-block;
+				flex-shrink: 0;
+				content: '';
+				width: 32px;
+				height: 32px;
+				margin-right: 16px;
+				background-image: url('../img/alarm-card.svg');
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			&:not(:last-child) {
+				margin-bottom: 24px;
+			}
+		}
+	}
+	.alarm {
+		align-items: flex-start;
+		border-radius: 8px;
+		p {
+			margin-bottom: 0;
+		}
+		ol {
+			padding-left: 16px;
+			margin-bottom: 0;
+		}
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sBreach

@@ -1,9 +1,11 @@
-mixin sEpidGuide(data)
+mixin sEpidGuide(title)
 	+b.SECTION.sEpidGuide.section#sEpidGuide&attributes(attributes)
 		.container
-			//- +b.section-title
-			//- 	h2 ОТ а до я
-			p Наши эпидемиологические знания&nbsp;&mdash; надежное руководство для предпринимателей. В&nbsp;&laquo;Эпидемиологическом Справочнике&raquo; вы&nbsp;найдете ключевые сведения о&nbsp;различных заболеваниях, их&nbsp;воздействии на&nbsp;бизнес, и&nbsp;применимые меры предосторожности.
+			if title
+				+b.section-title
+					h2= title
+			else
+				p Наши эпидемиологические знания&nbsp;&mdash; надежное руководство для предпринимателей. В&nbsp;&laquo;Эпидемиологическом Справочнике&raquo; вы&nbsp;найдете ключевые сведения о&nbsp;различных заболеваниях, их&nbsp;воздействии на&nbsp;бизнес, и&nbsp;применимые меры предосторожности.
 			+e.container
 				h3 Сфера деятельности
 				+e.swiper.swiper.mobile-swiper

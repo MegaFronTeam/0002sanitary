@@ -143,4 +143,47 @@
 			}
 		}
 	}
+	&--learning {
+		.sApp__container {
+			flex-direction: column;
+			padding: 24px;
+			border-radius: 12px;
+			background:#BE1722;
+			background-image: url('../img/learning-bg.png');
+			background-repeat: no-repeat;
+			@media (max-width: 375px) {
+				background-position: 200% 10%;
+			}
+			background-position: 100% 10%;
+			@include media-breakpoint-up(xl) {
+				align-items: center;
+				flex-direction: row;
+				background-position: 77% 10%;
+				background-size: 227px 385px;
+			}
+		}
+		.sApp__title {
+			margin-bottom: 20px;
+			max-width: 70%;
+			font-family:$header-font;
+			font-size: rem(24);
+			font-weight: 700;
+			line-height: 100%;
+			text-transform: uppercase;
+			@include media-breakpoint-up(sm) {
+				font-size: rem(32);
+			}
+			@include media-breakpoint-up(xl) {
+				margin-bottom: 0;
+				max-width: none;
+			}
+		}
+		.sApp__btn {
+			margin-bottom: 0;
+			max-width: 70%;
+			@include media-breakpoint-up(sm) {
+				max-width: none;
+			}
+		}
+	}
 } // end.sApp

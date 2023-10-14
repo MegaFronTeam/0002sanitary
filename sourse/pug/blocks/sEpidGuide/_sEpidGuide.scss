@@ -184,8 +184,8 @@
 			// z-index: 1;
 			@include media-breakpoint-down(lg) {
 				position: absolute;
-				top: 0;
-				right: 0;
+				top: 16px;
+				right: 16px;
 			}
 		}
 	}

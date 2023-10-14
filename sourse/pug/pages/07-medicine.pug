@@ -1,0 +1,52 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sEpidGuide/_sEpidGuide.pug
+include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sMedicine/_sMedicine.pug
+include ../blocks/sStages/_sStages.pug
+include ../blocks/sThreats/_sThreats.pug
+include ../blocks/sApp/_sApp.pug
+include ../blocks/sBreach/_sBreach.pug
+include ../blocks/sVideoSlider/_sVideoSlider.pug
+include ../blocks/sApp/_sApp.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= 'Медицина'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		//- +page-head('Медицина','Пищевая промыленность')
+		.container
+			+breadcrumb('Главная', 'Пищевая промышленность', 'Нормативные документы')
+	+sCatalog.sCatalog--medicine
+	.container
+		h1 Медицина
+	+sMedicine
+	+sStagesMedicine.sStages--medicine
+	+sThreats
+	+sStagesThreats.sStages--risk
+	+sApp
+	+sEpidGuide('Эпидемиологический справочник')
+	+sBreach
+	+sVideoSlider
+	+sAppLearning
+	+parts('footer')
+		+sForm()
+      
+
+
+

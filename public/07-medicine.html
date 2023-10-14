@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Медицина</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<div class="container">
+					<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+						<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+							<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+									<meta itemprop="position" content="1"/></a></li>
+							<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Пищевая промышленность</span>
+									<meta itemprop="position" content="2"/></a></li>
+							<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Нормативные документы</span>
+									<meta itemprop="position" content="3"/></a></li>
+						</ol>
+					</nav>
+				</div>
+			</main>
+			<!-- start sCatalog-->
+			<div class="sCatalog section sCatalog sCatalog--medicine">
+				<div class="container">
+					<div class="sCatalog__swiper swiper sEpidGuide__swiper">
+						<div class="sCatalog__wrapper swiper-wrapper">
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/medicine.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Медицина
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/social.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Социальные организации
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/utilities.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Коммунальные услуги
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/person.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Персональные услуги
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/hotels.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Гостиницы и туризм
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/park.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Культура, досуг и отдых
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/hand.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Детские и молодежные организации
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/manufacturing.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Пищевое производство
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/dish.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Общественное питание
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/ice-cream.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Торговля
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/industry.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Промышленность и сельское хозяйство
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+							<div class="sCatalog__slide swiper-slide">
+								<a class="sCatalog__item" href="#">
+									<div class="sCatalog__img-wrap"><img class="img-svg-js" src="img/bus.svg" alt="" loading="lazy"/>
+									</div>
+									<div class="sCatalog__title">Транспорт
+									</div>
+								</a>
+								<!-- /.catalog-item-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end sCatalog-->
+			<div class="container">
+				<h1>Медицина</h1>
+			</div>
+			<!-- start sMedicine-->
+			<section class="sMedicine section" id="sMedicine">
+				<div class="container">
+					<div class="sMedicine__row row">
+						<div class="col-lg-7 col-xl-6">
+							<p>Медицинская деятельность&nbsp;&mdash; профессиональная деятельность по&nbsp;оказанию медицинской помощи, проведению медицинских экспертиз, медицинских осмотров и&nbsp;медицинских освидетельствований, санитарно-противоэпидемических (профилактических) мероприятий и&nbsp;профессиональная деятельность, связанная с&nbsp;трансплантацией (пересадкой) органов&nbsp;и (или) тканей, обращением донорской крови&nbsp;и (или) ее&nbsp;компонентов в&nbsp;медицинских целях.</p>
+							<p>Это важная отрасль, которая оказывает огромное влияние на&nbsp;качество и&nbsp;продолжительность жизни человека. Медицинская помощь необходима всем без исключения: от&nbsp;новорожденных до&nbsp;пожилых людей. </p>
+							<p>Большинство организаций, осуществляющую свою деятельность в&nbsp;области здравоохранения отнесены к&nbsp;категориям чрезвычайно высокого и&nbsp;высокого риска. (Объекты чрезвычайно высокого и&nbsp;высокого риска).</p>
+						</div>
+						<div class="col-lg-5 col-xl-6">
+							<div class="sMedicine__video-wrap">
+								<video poster="img/medicine-poster.jpg">
+									<source src="#"/>
+									<p>Ваш браузер не поддерживает HTML5 видео. Используйте <span>a(href="#") ссылку на видео</span> для доступа.</p>
+								</video>
+							</div>
+						</div>
+					</div>
+					<div class="sMedicine__subtitle">К&nbsp;организациям, осуществляющим свою деятельность в&nbsp;области здравоохранения, относятся
+					</div>
+					<ul class="sMedicine__list">
+						<li class="sMedicine__item">организации по&nbsp;оказанию амбулаторно-поликлинической медицинской помощи;
+						</li>
+						<li class="sMedicine__item">организации по&nbsp;оказанию стоматологических услуг;
+						</li>
+						<li class="sMedicine__item">организации по&nbsp;оказанию стационарной медицинской помощи;
+						</li>
+						<li class="sMedicine__item">акушерские стационары в&nbsp;многопрофильных медицинских организациях, перинатальные центры;
+						</li>
+						<li class="sMedicine__item">санаторно-курортные учреждения (оказывающие медицинскую помощь) и&nbsp;др.
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- end sMedicine-->
+			<!-- start sStages-->
+			<section class="sStages section sStages sStages--medicine" id="sStages">
+				<div class="container">
+					<div class="dd-group dd-group-js">
+						<div class="dd-group__item">
+							<div class="dd-group__head dd-head-js">Виды деятельности (ОКВЭД)<span></span>
+							</div>
+							<div class="dd-group__content dd-content-js">
+								<dl>
+										<div class="sStages__dl-item">
+											<dt>Деятельность в области здравоохранения</dt>
+											<dd>86</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Деятельность больничных организаций</dt>
+											<dd>86.1, 86.10</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Медицинская и стоматологическая практика</dt>
+											<dd>86.2</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Общая врачебная практика</dt>
+											<dd>86.21</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Специальная врачебная практика</dt>
+											<dd>86.22</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Деятельность в области косметологии</dt>
+											<dd>86.22.1</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Специальная врачебная практика прочая</dt>
+											<dd>86.22.9</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Стоматологическая практика</dt>
+											<dd>86.23</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Деятельность в области медицины прочая</dt>
+											<dd>86.9  86.90</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Деятельность организаций санитарно-эпидемиологической службы</dt>
+											<dd>86.90.1</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Деятельность организаций судебно-медицинской экспертизы</dt>
+											<dd>86.90.2</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Деятельность массажных салонов</dt>
+											<dd>86.90.3</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Деятельность санаторно-курортных организаций</dt>
+											<dd>86.90.4</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Деятельность в области психического здоровья</dt>
+											<dd>86.90.5</dd>
+										</div>
+										<div class="sStages__dl-item">
+											<dt>Деятельность в области медицины прочая, не включенная в другие группировки</dt>
+											<dd>86.90.9</dd>
+										</div>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- start sThreats-->
+			<section class="sThreats section" id="sThreats">
+				<div class="container">
+					<div class="section-title">
+						<h2>Виды санитарно-эпидемиологических угроз связаны с этим видом деятельности.				</h2>
+					</div>
+					<div class="sThreats__row row">
+						<div class="col-sm-6 col-lg-3 text-center">
+							<div class="sThreats__img-wrap"><img src="img/alert.svg" alt="" loading="lazy"/>
+							</div>
+							<div class="sThreats__title">угроза причинения вреда жизни, здоровью людей, вреда окружающей среде
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 text-center">
+							<div class="sThreats__img-wrap"><img src="img/alert.svg" alt="" loading="lazy"/>
+							</div>
+							<div class="sThreats__title">угроза возникновения и&nbsp;распространения инфекционных заболеваний
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 text-center">
+							<div class="sThreats__img-wrap"><img src="img/alert.svg" alt="" loading="lazy"/>
+							</div>
+							<div class="sThreats__title">угроза возникновения и&nbsp;распространения массовых неинфекционных заболеваний (отравлений)
+							</div>
+						</div>
+						<div class="col-sm-6 col-lg-3 text-center">
+							<div class="sThreats__img-wrap"><img src="img/alert.svg" alt="" loading="lazy"/>
+							</div>
+							<div class="sThreats__title">угроза санитарно-эпидемиологическому благополучию населения
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sThreats-->
+			<!-- start sStages-->
+			<section class="sStages section sStages sStages--risk" id="sStages">
+				<div class="container">
+					<div class="section-title">
+						<h2>Какие риски характерны для этого вида деятельности и как ими управлять? </h2>
+					</div>
+					<div class="dd-group dd-group-js">
+						<div class="dd-group__item">
+							<div class="dd-group__head dd-head-js dd-group__head dd-group__head--risk">Инфекции, связанные с оказанием медицинской помощи<span></span>
+							</div>
+							<div class="dd-group__content dd-content-js">
+								<div class="sStages__risks-descr">
+									<p>К&nbsp;инфекциям, связанным с&nbsp;оказанием медицинской помощи (ИСМП), относят любое инфекционное заболевание, развившееся у&nbsp;пациента в&nbsp;связи с&nbsp;оказанием ему любых видов медицинской помощи (в&nbsp;медицинских организациях, осуществляющих оказание медицинской помощи в&nbsp;стационарных условиях, амбулаторно, в&nbsp;том числе на&nbsp;дому, в&nbsp;условиях дневного стационара и&nbsp;вне медицинской организации, в&nbsp;организациях социального обслуживания, в&nbsp;организациях, осуществляющих образовательную деятельность, санаторно-оздоровительных организациях и&nbsp;других), а&nbsp;также случаи заражения инфекционными болезнями медицинских работников в&nbsp;результате их&nbsp;профессиональной деятельности.</p>
+									<p>Внутрибольничные инфекции (ВБИ) остаются одной из&nbsp;острейших проблем современной медицины и&nbsp;приобретают все большую медицинскую и&nbsp;социальную значимость.</p>
+									<p>Внутрибольничные инфекции (ВБИ) представляют собой любые инфекционные заболевания (состояния), возникшие в&nbsp;МО (и&nbsp;не&nbsp;имевшиеся до&nbsp;обращения за&nbsp;медицинской помощью, в&nbsp;том числе в&nbsp;инкубационном периоде) и&nbsp;проявившиеся в&nbsp;условиях&nbsp;МО или вне&nbsp;МО в&nbsp;течение периода инкубации, а&nbsp;также инфекционное заболевание (состояние) сотрудника&nbsp;МО вследствие его инфицирования при выполнении трудовых обязанностей. Внутрибольничные инфекции являются частью ИСМП.</p>
+								</div>
+								<div class="sStages__risks-lists">
+									<ol>
+										<li>Они должны размещаться в помещениях с автономной системой вентиляции и кондиционирования, которая будет обеспечивать чистоту воздуха.</li>
+										<li>Операционные блоки должны быть зонированы и включать:
+											<ul>
+												<li>стерильную зону;</li>
+												<li>зону строгого режима (например, предоперационную или наркозную);</li>
+												<li>зону общебольничного режима (шлюз), которая отделяется запретительным знаком.</li>
+											</ul>
+										</li>
+									</ol>
+									<ol>
+										<li>Войти в операционный блок можно только через санитарные пропускники после специальной обработки. Входы для пациентов и сотрудников — раздельные.</li>
+										<li>Санитарные пропускники должны иметь три смежных помещения:
+											<ul>
+												<li>с душем, туалетом и дозатором;</li>
+												<li>для переодевания;</li>
+												<li>для сбора использованного белья.</li>
+											</ul>
+										</li>
+									</ol>
+									<ol>
+										<li>Если операционных — две, то оборудуется один санитарный пропускник.</li>
+									</ol>
+								</div>
+								<p>К&nbsp;факторам внутрибольничной среды, способствующим распространению ВБИ, относятся:</p>
+								<div class="sStages__list-item">
+									<div class="sStages__list-title">К&nbsp;причинам, способствующим росту заболеваемости ИСМП, относятся нарушения в&nbsp;организации работы&nbsp;МО, санитарно-техническом состоянии, материальном обеспечении и&nbsp;соблюдении противоэпидемического режима, в&nbsp;т.ч.:</div>
+									<ul class="sStages__reasons-list">
+										<li class="sStages__reason LI">несоответствие состава и&nbsp;площади помещений;</li>
+										<li class="sStages__reason LI">перекрест технологических потоков;</li>
+										<li class="sStages__reason LI">отсутствие механической приточно-вытяжной вентиляции</li>
+									</ul>
+								</div>
+								<div class="sStages__list-item">
+									<div class="sStages__list-title">Нарушения в&nbsp;организации работы&nbsp;МО:</div>
+									<ul class="sStages__reasons-list">
+										<li class="sStages__reason LI">превышение норм коечной емкости палат;</li>
+										<li class="sStages__reason LI">отсутствие разделения по&nbsp;нозологическим формам;</li>
+										<li class="sStages__reason LI">совместное размещение детей и&nbsp;взрослых пациентов;</li>
+										<li class="sStages__reason LI">аварийные ситуации на&nbsp;водопроводной и&nbsp;канализационной системах, перебои и&nbsp;отсутствие в&nbsp;подаче горячей и&nbsp;холодной воды, нарушения в&nbsp;тепло- и&nbsp;энергоснабжении;</li>
+										<li class="sStages__reason LI">нарушения в&nbsp;работе приточно-вытяжной вентиляции.</li>
+									</ul>
+								</div>
+								<div class="sStages__list-item">
+									<div class="sStages__list-title">Недостаточное материально-техническое оснащение:</div>
+									<ul class="sStages__reasons-list">
+										<li class="sStages__reason LI">недостаток медицинских изделий, в&nbsp;том числе одноразовых (катетеры, санационные системы, дыхательные трубки и&nbsp;другие);</li>
+										<li class="sStages__reason LI">нехватка оборудования, перевязочного материала, лекарств;</li>
+										<li class="sStages__reason LI">перебои в&nbsp;поставке белья, моющих и&nbsp;дезинфицирующих средств.</li>
+									</ul>
+								</div>
+								<div class="sStages__list-item">
+									<div class="sStages__list-title">Нарушения противоэпидемического режима:</div>
+									<ul class="sStages__reasons-list">
+										<li class="sStages__reason LI">несоблюдение цикличности заполнения палат;</li>
+										<li class="sStages__reason LI">несвоевременный перевод новорожденных и&nbsp;родильниц в&nbsp;соответствующие стационары;</li>
+										<li class="sStages__reason LI">повторное использование одноразовых медицинских изделий, неиндивидуальное использование средств ухода за&nbsp;больными, емкостей для питья, кормления, обработки кожных покровов и&nbsp;глаз;</li>
+										<li class="sStages__reason LI">нарушение правил текущей и&nbsp;заключительной дезинфекции, стерилизации и&nbsp;другие.</li>
+									</ul>
+								</div>
+								<div class="sStages__prevention">
+									<div class="sStages__list-item">
+										<div class="sStages__list-title">Профилактика (управление) риском 1</div>
+										<ul class="sStages__reasons-list">
+											<li class="sStages__reason LI">свести к&nbsp;минимуму возможность заноса инфекции;</li>
+											<li class="sStages__reason LI">исключить внутригоспитальные заражения;</li>
+											<li class="sStages__reason LI">исключить распространение инфекции за&nbsp;пределы медицинской организации.</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dd-group__item">
+							<div class="dd-group__head dd-head-js dd-group__head dd-group__head--risk">Целенаправленные санитарно-гигиенические и противоэпидемические мероприятий<span></span>
+							</div>
+							<div class="dd-group__content dd-content-js">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+							</div>
+						</div>
+						<div class="dd-group__item">
+							<div class="dd-group__head dd-head-js dd-group__head dd-group__head--risk">Ионизирующее излучение<span></span>
+							</div>
+							<div class="dd-group__content dd-content-js">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+							</div>
+						</div>
+					</div>
+					<div class="alarm">
+						<div class="alarm__text">
+							<p>Санитарно-эпидемиологические риски связанные с организацией общественного питания, в том числе в медицинских организациях рассматриваются в другом разделе</p><a href="#">Перейти в раздел общественное питание
+								<svg class="icon icon-link-arrow ">
+									<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+								</svg></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- start sApp-->
+			<section class="sApp section" id="sApp">
+				<div class="container">
+					<div class="sApp__container">
+						<div class="sApp__text">
+							<div class="sApp__subtitle">Мобильное приложение
+							</div>
+							<h2 class="sApp__title">«КЭП» - консультации эпидемиолога
+							</h2>
+							<p>информационно-консультационного характера направленное на&nbsp;информационное сопровождение и&nbsp;обеспечение санитарно-эпидемиологического благополучия в&nbsp;организациях и&nbsp;предприятиях</p>
+							<div class="sApp__buttons">
+								<div class="sApp__btn btn btn-outline-info">
+									<svg class="icon icon-internet ">
+										<use xlink:href="img/svg/sprite.svg#internet"></use>
+									</svg>Веб версия
+								</div>
+								<div class="sApp__btn btn btn-outline-info">
+									<svg class="icon icon-android ">
+										<use xlink:href="img/svg/sprite.svg#android"></use>
+									</svg>Скачать для Android
+								</div>
+								<div class="sApp__btn btn btn-outline-info">
+									<svg class="icon icon-apple ">
+										<use xlink:href="img/svg/sprite.svg#apple"></use>
+									</svg>Скачать для iOs
+								</div>
+							</div>
+						</div><img class="sApp__img d-none d-md-block" src="img/app-img.png" alt="" loading="lazy"/>
+					</div>
+				</div>
+			</section>
+			<section class="sEpidGuide section" id="sEpidGuide">
+				<div class="container">
+					<div class="section-title">
+						<h2>Эпидемиологический справочник</h2>
+					</div>
+					<div class="sEpidGuide__container">
+						<h3>Сфера деятельности</h3>
+						<div class="sEpidGuide__swiper swiper mobile-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">ВСЕ</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox" checked="checked"/><span class="custom-input__text form-check-label">Медицина</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox" checked="checked"/><span class="custom-input__text form-check-label">Социальные организации</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Коммунальные услуги</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Персональные услуги</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Гостиницы и туризм</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Культура, досуг и отдых</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Детские и молодежные организации</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Пищевое производство</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Общественное питание</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Торговля</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Промышленность и сельское хозяйство</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="field" type="checkbox"/><span class="custom-input__text form-check-label">Транспорт</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<h3>Наименование заболеваний:</h3>
+						<div class="sEpidGuide__swiper swiper mobile-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">ВСЕ</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Б</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">В</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" checked="checked"/><span class="custom-input__text form-check-label">Г</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Д</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" disabled="disabled"/><span class="custom-input__text form-check-label">И</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" disabled="disabled"/><span class="custom-input__text form-check-label">К</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Л</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">М</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">О</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">П</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" disabled="disabled"/><span class="custom-input__text form-check-label">С</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox" disabled="disabled"/><span class="custom-input__text form-check-label">Т</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Х</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Ч</span>
+									</label>
+								</div>
+								<div class="swiper-slide">
+									<label class="custom-input form-check"><input class="custom-input__input form-check-input" name="letter" type="checkbox"/><span class="custom-input__text form-check-label">Э</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<h3>Заболевания</h3>
+						<div class="sEpidGuide__swiper sEpidGuide__swiper--disease swiper mobile-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Гельминтозы, передающиеся через мясо и мясные продукты</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Гельминтозы, передающиеся через рыбу, ракообразных, моллюсков, земноводных, пресмыкающихся</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item"> 
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Геморрагическая лихорадка с почечным синдромом (ГЛПС)</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Геогельминтозы (аскаридоз, трихоцефалез, токсокароз)</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Гепатиты В и С.</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sEpidGuide__disease-item">
+										<div class="tooltip-btn btn BUTTON" aria-describedby="tooltip">Грипп и другие ОРВИ</div>
+										<div class="tooltip" role="tooltip">Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз</div>
+										<a class="sEpidGuide__disease-link" href="#">
+											<svg class="icon icon-link-arrow ">
+												<use xlink:href="img/svg/sprite.svg#link-arrow"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="sEpidGuide__more" href="#">Показать все 8
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- start sBreach-->
+			<section class="sBreach section" id="sBreach">
+				<div class="container">
+					<div class="section-title">
+						<h2>Часто встречающиеся нарушения для этого вида деятельности</h2>
+					</div>
+					<ul>
+						<li>Не&nbsp;выполняются санитарно-эпидемиологические требования к&nbsp;водоснабжению и&nbsp;канализации зданий медицинских организаций. На&nbsp;случай выхода из&nbsp;строя или проведения профилактического ремонта системы горячего водоснабжения не&nbsp;предусмотрено резервное горячее водоснабжение</li>
+						<li>Не&nbsp;выполняются санитарно-эпидемиологические требования к&nbsp;системам отопления, вентиляции, микроклимату и&nbsp;воздушной среде помещений. Не&nbsp;проводиться проверка эффективности работы, а&nbsp;также очистка и&nbsp;дезинфекция систем механической приточно-вытяжной вентиляции и&nbsp;кондиционирования. Не&nbsp;соблюдаются сроки проведения уборок помещений вентиляционных камер и&nbsp;воздухозаборных шахт</li>
+						<li>Не&nbsp;выполняются санитарно-эпидемиологические требования к&nbsp;естественному, искусственному и&nbsp;совмещенному освещению помещений. Показатели естественного, искусственного и&nbsp;совмещенного освещения не&nbsp;соответствуют гигиеническим нормативам.</li>
+						<li>Не&nbsp;выполняются санитарно-эпидемиологические требования к&nbsp;внутренней отделке помещений. Не&nbsp;обеспечена гладкая поверхность стен, потолков, полов (имеются щели, трещины, выбоины, отслоившаяся краска), что препятствует проведению легкодоступной влажной уборки с&nbsp;моющими и&nbsp;дезинфицирующими средствами</li>
+						<li>Нарушаются требования санитарно-эпидемиологического законодательства при обращении с&nbsp;медицинскими отходами. Схема обращения с&nbsp;медицинскими отходами. Осуществляется совместное хранение и&nbsp;утилизация медицинских отходов различных классов опасности</li>
+						<li>Не&nbsp;выполняются требования по&nbsp;оценке эффективности режимов стерилизации медицинских изделий</li>
+						<li>Отсутствие должного контроля за&nbsp;соблюдением санитарно-гигиенического и&nbsp;противоэпидемического режимов, с&nbsp;проведением лабораторно-инструментальных исследований, в&nbsp;рамках программ производственного контроля</li>
+						<li>В&nbsp;программах производственного контроля не&nbsp;в&nbsp;полном объеме отражен раздел лабораторно-инструментального контроля, имеются ссылки на&nbsp;нормативные документы, утратившие силу</li>
+					</ul>
+					<div class="alarm">
+						<div class="alarm__text">
+							<p>За&nbsp;совершение административных правонарушений в&nbsp;области санитарно-эпидемиологического благополучия населения могут устанавливаться и&nbsp;применяться следующие административные наказания, в&nbsp;соответствии с&nbsp;Кодексом Российской Федерации об&nbsp;административных правонарушениях:</p>
+							<ol>
+								<li>предупреждение;</li>
+								<li>административный штраф;</li>
+								<li>конфискация орудия совершения или предмета административного правонарушения;</li>
+								<li>административное приостановление деятельности.</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end sBreach-->
+			<!-- start sVideoSlider-->
+			<section class="sVideoSlider section" id="sVideoSlider">
+				<div class="container">
+					<div class="section-title">
+						<h2>Видеоматериалы по теме</h2>
+					</div>
+					<div class="slider-wrapper--video">
+						<div class="sVideoSlider__slider sVideoSlider__slider--js swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sVideoSlider__item">
+										<div class="sVideoSlider__video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+										</div>
+										<div class="sVideoSlider__item-title">Мытье рук персонала в общественном питании
+										</div>
+										<div class="sVideoSlider__info-row">
+											<div class="sVideoSlider__date">
+												<svg class="icon icon-calendar ">
+													<use xlink:href="img/svg/sprite.svg#calendar"></use>
+												</svg><span>25.07.23г</span>
+											</div>
+											<div class="sVideoSlider__time">
+												<svg class="icon icon-clock ">
+													<use xlink:href="img/svg/sprite.svg#clock"></use>
+												</svg><span>1:43</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sVideoSlider__item">
+										<div class="sVideoSlider__video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+										</div>
+										<div class="sVideoSlider__item-title">Мытье рук персонала в общественном питании
+										</div>
+										<div class="sVideoSlider__info-row">
+											<div class="sVideoSlider__date">
+												<svg class="icon icon-calendar ">
+													<use xlink:href="img/svg/sprite.svg#calendar"></use>
+												</svg><span>25.07.23г</span>
+											</div>
+											<div class="sVideoSlider__time">
+												<svg class="icon icon-clock ">
+													<use xlink:href="img/svg/sprite.svg#clock"></use>
+												</svg><span>1:43</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sVideoSlider__item">
+										<div class="sVideoSlider__video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+										</div>
+										<div class="sVideoSlider__item-title">Мытье рук персонала в общественном питании
+										</div>
+										<div class="sVideoSlider__info-row">
+											<div class="sVideoSlider__date">
+												<svg class="icon icon-calendar ">
+													<use xlink:href="img/svg/sprite.svg#calendar"></use>
+												</svg><span>25.07.23г</span>
+											</div>
+											<div class="sVideoSlider__time">
+												<svg class="icon icon-clock ">
+													<use xlink:href="img/svg/sprite.svg#clock"></use>
+												</svg><span>1:43</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sVideoSlider__item">
+										<div class="sVideoSlider__video-wrap"><iframe width="560" height="315" src="https://www.youtube.com/embed/nmuoR2dEw3w?si=P3GDu95bTkg8JL8N&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+										</div>
+										<div class="sVideoSlider__item-title">Мытье рук персонала в общественном питании
+										</div>
+										<div class="sVideoSlider__info-row">
+											<div class="sVideoSlider__date">
+												<svg class="icon icon-calendar ">
+													<use xlink:href="img/svg/sprite.svg#calendar"></use>
+												</svg><span>25.07.23г</span>
+											</div>
+											<div class="sVideoSlider__time">
+												<svg class="icon icon-clock ">
+													<use xlink:href="img/svg/sprite.svg#clock"></use>
+												</svg><span>1:43</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider-controls">
+							<div class="swiper-pagination"></div>
+							<div class="slider-buttons">
+								<div class="swiper-button-prev">
+									<svg class="icon icon-slider-left ">
+										<use xlink:href="img/svg/sprite.svg#slider-left"></use>
+									</svg>
+								</div>
+								<div class="swiper-button-next">
+									<svg class="icon icon-slider-right ">
+										<use xlink:href="img/svg/sprite.svg#slider-right"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sVideoSlider__row row">
+					</div>
+				</div>
+			</section>
+			<!-- end sVideoSlider-->
+			<!-- start sApp-->
+			<section class="sApp sApp--learning section" id="sApp">
+				<div class="container">
+					<div class="sApp__container">
+						<div class="sApp__title">Гигиеническая аттестация и обучение
+						</div>
+						<div class="sApp__btn btn btn-outline-info">Перейти к обучению
+						</div>
+					</div>
+				</div>
+			</section>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/@popperjs/core/umd/popper.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+// start .sThreats
+.sThreats {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	&__row{
+		@include media-breakpoint-up(xl) {
+			--bs-gutter-x: #{rem(72)};
+		}
+		--bs-gutter-y: #{rem(30)};
+
+	}
+	&__img-wrap {
+		margin: 0 auto 24px;
+		width: 40px;
+		height: 40px;
+		img {
+			max-width: 100%;
+		}
+	}
+	&__title {
+		font-size:rem(14);
+		line-height: 140%;
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sThreats

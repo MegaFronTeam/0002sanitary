@@ -33,3 +33,12 @@ mixin sAppTest(data)
 					+e.btn.btn.btn-outline-info Пройти тест
 				+img('img/app-test-bg.svg').d-none.d-sm-block
 	// end sApp
+
+mixin sAppLearning(data)
+	// start sApp
+	+b.SECTION.sApp--learning.section#sApp&attributes(attributes)
+		.container
+			+e.container
+				+e.title Гигиеническая аттестация и обучение
+				+e.btn.btn.btn-outline-info Перейти к обучению
+
