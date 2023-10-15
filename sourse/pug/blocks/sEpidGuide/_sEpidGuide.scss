@@ -114,7 +114,7 @@
 	}
 	.form-check-input:checked[type=checkbox] {
 		& + .form-check-label {
-			background-color: #BE1722;
+			background-color: $red;
 			color: $white;
 		}
 	}
@@ -163,7 +163,7 @@
 			font-size: rem(18);
 		}
 		&:hover {
-			color: #BE1722;
+			color: $red;
 			&::after {
 				color: $body-color;
 			}
@@ -191,7 +191,7 @@
 	}
 	&__disease-link {
 		.icon {
-			stroke: #BE1722;
+			stroke: $red;
 		}
 	}
 	.tooltip {
@@ -207,7 +207,7 @@
 		z-index: 100;
 	}
 	&__more {
-		color: #BE1722;
+		color: $red;
 		font-size: 14px;
 		font-weight: 400;
 	}

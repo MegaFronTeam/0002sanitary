@@ -1,0 +1,42 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sApp/_sApp.pug
+include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sSlider/_sSlider.pug
+include ../blocks/sNews/_sNews.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= 'Болезни'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head('Вирусные гепатиты В&nbsp;и&nbsp;С', 'Эпидемиологический справочник', 'Вирусные гепатиты В и С')
+		.container
+			.row
+				.col-lg-3
+					+sCatalogMenu
+				.col-md-8.col-lg-6
+					+sContentDisease
+				.col-md-4.col-lg-3
+					+downloadList
+		+sApp
+		+sSlider('Похожие материалы').sSlider-light
+	+parts('footer')
+		+sForm()
+      
+
+
+

@@ -198,9 +198,9 @@ function eventHandler() {
 		},
 	});
 
-	const fieldSliders = document.querySelectorAll('.sEpidGuide__swiper');
-	fieldSliders.forEach((fieldSlider) => {
-		fieldSlider = new Swiper('.sEpidGuide__swiper',{
+	const smSliders = document.querySelectorAll('.sm-swiper-js');
+	smSliders.forEach((fieldSlider) => {
+		fieldSlider = new Swiper('.sm-swiper-js',{
 		 spaceBetween: 8,
 		 freeMode: true,
 			 slidesPerView: 'auto',

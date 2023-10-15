@@ -7,3 +7,5 @@
 1. <https://megafronteam.github.io/0002sanitary/public/04-news.html>
 1. <https://megafronteam.github.io/0002sanitary/public/05-article.html>
 1. <https://megafronteam.github.io/0002sanitary/public/06-epid-guide.html>
+1. <https://megafronteam.github.io/0002sanitary/public/07-medicine.html>
+1. <https://megafronteam.github.io/0002sanitary/public/08-diseases.html>

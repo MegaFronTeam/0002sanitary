@@ -3,6 +3,10 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	--sTPB: #{rem(16)};
+	&--medicine {
+		--sPT: #{rem(14)};
+
+	}
 	&__row{
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};

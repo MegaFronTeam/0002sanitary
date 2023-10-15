@@ -9,7 +9,7 @@ mixin sCatalog(data)
 	// start sCatalog
 	+b.sCatalog.section&attributes(attributes)
 		.container
-			+e.swiper.swiper.sEpidGuide__swiper
+			+e.swiper.swiper.sm-swiper-js
 				+e.wrapper.swiper-wrapper
 					+e.slide.swiper-slide
 						+catalog-item(`medicine`,`Медицина`) 
@@ -35,5 +35,15 @@ mixin sCatalog(data)
 						+catalog-item(`industry`,`Промышленность и сельское хозяйство`) 
 					+e.slide.swiper-slide
 						+catalog-item(`bus`,`Транспорт`) 
+
+mixin sCatalogMenu
+	+b.sCatalog--menu.section&attributes(attributes)
+		p Для кого актуально:
+		+e.list.UL
+			+catalog-item(`social`,`Социальные организации`)
+			+catalog-item(`utilities`,`Коммунальные услуги`)
+			+catalog-item(`person`,`Персональные услуги`)
+			+catalog-item(`hotels`,`Гостиницы и туризм`)
+
 
 	// end sCatalog

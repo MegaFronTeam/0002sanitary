@@ -8,7 +8,7 @@ mixin sEpidGuide(title)
 				p Наши эпидемиологические знания&nbsp;&mdash; надежное руководство для предпринимателей. В&nbsp;&laquo;Эпидемиологическом Справочнике&raquo; вы&nbsp;найдете ключевые сведения о&nbsp;различных заболеваниях, их&nbsp;воздействии на&nbsp;бизнес, и&nbsp;применимые меры предосторожности.
 			+e.container
 				h3 Сфера деятельности
-				+e.swiper.swiper.mobile-swiper
+				+e.swiper.swiper.sm-swiper-js
 					.swiper-wrapper
 						.swiper-slide
 							+in-c('checkbox','ВСЕ','field')
@@ -37,7 +37,7 @@ mixin sEpidGuide(title)
 						.swiper-slide
 							+in-c('checkbox','Транспорт','field')
 				h3 Наименование заболеваний:
-				+e.swiper.swiper.mobile-swiper
+				+e.swiper.swiper.sm-swiper-js
 					.swiper-wrapper
 						.swiper-slide
 							+in-c('checkbox','ВСЕ','letter')
@@ -73,7 +73,7 @@ mixin sEpidGuide(title)
 							+in-c('checkbox','Э','letter')
 				h3 Заболевания
 					//- +e.disease-list.UL
-				+e.swiper--disease.swiper.mobile-swiper
+				+e.swiper--disease.swiper.sm-swiper-js
 					.swiper-wrapper
 						.swiper-slide
 							+e.disease-item

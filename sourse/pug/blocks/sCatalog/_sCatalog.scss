@@ -14,11 +14,6 @@
 	&__col{
 
 	}
-	&__wrapper {
-		@include media-breakpoint-up(lg) {
-
-		}
-	}
 	&__slide {
 		@include media-breakpoint-up(lg) {			
 			flex-basis: calc((100% - 24px * 3) / 4);
@@ -43,7 +38,7 @@
 			padding: rem(24);
 		}
 		&:hover {
-			background-color: #BE1722;
+			background-color: $red;
 			[fill="#0A0A0A"],
 			[fill="black"],
 			[stroke="black"] {
@@ -110,6 +105,63 @@
 			}
 		}
 
+	}
+	&--menu {
+		--sPT: #{rem(32)};
+		@include media-breakpoint-up(md) {
+			--sPT: #{rem(64)};
+		}
+		p {
+			margin-bottom: 16px;
+			color: $secondary;
+			font-size: rem(14);
+		}
+		ul {
+			list-style-type: none;
+			@include media-breakpoint-down(lg) {
+				display: grid;
+				column-gap: 15px;
+				grid-template-columns: repeat(4, 1fr);
+				align-items: stretch;
+			}
+			@include media-breakpoint-down(md) {
+				grid-template-columns: repeat(2, 1fr);
+				column-gap: 10px;
+				row-gap: 10px;
+			}
+			@include media-breakpoint-down(sm) {
+				grid-template-columns: 1fr;
+			}
+		}
+		li {
+			@include media-breakpoint-up(lg) {
+				height: 100%;
+			}
+			&:not(:last-child) {
+				margin-bottom: 0;
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 16px;
+				}
+			}
+		}
+		.sCatalog__item {
+			padding: 10px;
+			@include media-breakpoint-up(lg) {
+				padding: rem(16);
+			}
+		}
+		.sCatalog__img-wrap {
+			margin-right: 12px;
+			height: 24px;
+			width: 24px;
+			svg {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		.sCatalog__title {
+			font-size: rem(14);
+		}
 	}
 
 	@include media-breakpoint-up(xl) {}

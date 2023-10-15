@@ -3,6 +3,9 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
+	&--medicine {
+		--sPB: #{rem(14)};
+	}
 	&__container {
 		position: relative;
 		display: flex;
@@ -144,11 +147,13 @@
 		}
 	}
 	&--learning {
+		padding-top: 14px;
+		padding-bottom: 32px;
 		.sApp__container {
 			flex-direction: column;
 			padding: 24px;
 			border-radius: 12px;
-			background:#BE1722;
+			background:$red;
 			background-image: url('../img/learning-bg.png');
 			background-repeat: no-repeat;
 			@media (max-width: 375px) {

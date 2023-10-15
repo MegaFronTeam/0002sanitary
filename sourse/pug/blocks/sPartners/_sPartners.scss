@@ -20,32 +20,20 @@
 			margin-right: 16px;
 		}
 	}
-	.swiper-wrapper {
-		@include media-breakpoint-up(lg) {
-			// justify-content: space-between;
-		}
-	}
 	.swiper-slide{
 		width: 314px;
 		@include media-breakpoint-up(lg){
 			margin-bottom: 8px;
 			
-			width: var(--size, 24%);
+			width: var(--size, 24.285%);
 			
 			&:nth-child(9n + 2),
 			&:nth-child(9n + 4){
-				--size: 14%;
+				--size: 14.2%;
 			}
-			// &:nth-child(9n + 10),
 			&:nth-child(9n + 5){
 				--size: calc( (251/ 1280 * 100%)) ;
 			}
-			// &:nth-child(9n + 13){
-			// 	--size: calc(314 / 1280) * 100%;
-			// } 
-			// &:nth-child(9n + 14){
-			// 	--size: calc( (184 / 1280 * 100%));
-			// }
 			&:nth-child(9n + 5),
 			&:nth-child(9n + 9) {
 				margin-right: 0 !important;

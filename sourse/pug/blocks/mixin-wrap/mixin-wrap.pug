@@ -44,9 +44,21 @@ mixin page-head(t,...items)
 		.container
 			+breadcrumb('Главная',...items)
 
-			h1= t
+			h1!= t
 
 mixin parts(elem)
 	script.
 		addBlock(`#{elem}`)
 	div(id=`${elem}Wrap`)
+
+mixin downloadList
+	+b.download-list.UL
+		mixin downloadItem(img,btn)
+			+e.item.LI
+				+e.img-wrap
+					if img
+						+img(`img/dl-img-${img}.jpg`)
+				+e.btn.btn.btn-outline-danger(href="#")= btn
+		+downloadItem('1','Скачать памятку')
+		+downloadItem('','Скачать буклет')
+		+downloadItem('','Скачать инфографику')

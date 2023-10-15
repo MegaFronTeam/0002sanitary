@@ -73,20 +73,41 @@
 	color: $body-color;
 	text-transform: none;
 	@include media-breakpoint-up(md) {
-		font-size: rem(20);
+			font-size: rem(20);
+		}
 	}
-}
-	.section-title{
-		
-	}
-	&__col{
-
-	}
-	&__item{
-
-	}
-	&__slide{
-		height: auto;
+	&--disease {
+		--sPT: #{rem(0)};
+		--sPB: #{rem(0)};
+		line-height: 140%;
+		@include media-breakpoint-up(lg) {
+			--sPT: #{rem(64)};
+		}
+		.sContent__main-text {
+			margin-bottom: 24px;
+			p {
+				font-size: rem(18);
+			}
+		}
+		.sContent__default-text {
+			margin-bottom: rem(24);
+			p {
+				font-size: 14px;
+				&.light {
+					color: $secondary;
+				}
+			}
+		}
+		h2 {
+			font-size: rem(24);
+			text-transform: uppercase;
+			@include media-breakpoint-up(md) {
+				font-size: rem(32);
+			}
+		}
+		h3 {
+			margin-bottom: rem(24);
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
