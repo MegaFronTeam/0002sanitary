@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Мой Роспотребнадзор</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<div class="page-head">
+					<div class="container">
+						<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+							<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"/></a></li>
+								<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Мой Роспотребнадзор</span>
+										<meta itemprop="position" content="2"/></a></li>
+							</ol>
+						</nav>
+						<h1>Мой Роспотребнадзор</h1>
+					</div>
+				</div>
+				<!-- start headerBlock3-->
+				<div class="headerBlock headerBlock--mission section" id="headerBlock">
+					<div class="container">
+						<div class="headerBlock__row row">
+							<div class="col-12 col-md-6">
+								<p>На&nbsp;этой странице вы&nbsp;найдете все необходимую информацию, связанную с&nbsp;Роспотребнадзором и&nbsp;его контрольно-надзорной деятельностью, а&nbsp;также узнаете, как эти аспекты связаны с&nbsp;проектом &laquo;КЭП&nbsp;&mdash; консультация эпидемиолога&raquo;</p>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="headerBlock__img-wrap"><img src="img/rpn.jpg" alt="" loading="lazy"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end headerBlock2-->
+				<!-- start sRpn-->
+				<section class="sRpnContent section" id="sRpn">
+					<div class="container">
+						<ul class="sRpnContent__list">
+							<li class="sRpnContent__item sRpnContent__item--map">
+								<div class="sRpnContent__title">Найди свое территориальное Управление Роспотребнадзора и&nbsp;центр гигиены и&nbsp;эпидемиологии
+								</div>
+								<div class="sRpnContent__descr">Используйте нашу удобную карту с&nbsp;функцией поиска, чтобы найти ближайшее к&nbsp;вам территориальное управление Роспотребнадзора и&nbsp;центр гигиены и&nbsp;эпидемиологии. Здесь вы&nbsp;сможете получить актуальную информацию и&nbsp;поддержку, связанную с&nbsp;соблюдением санитарно-эпидемиологических норм и&nbsp;правил.
+								</div>
+								<div class="sRpnContent__map-wrap">
+									<div class="sRpnContent__search">
+										<form>
+											<button class="btn">
+												<svg class="icon icon-search ">
+													<use xlink:href="img/svg/sprite.svg#search"></use>
+												</svg>
+											</button>
+											<input type="text" placeholder="Название населенного пункта" inputmode="search"/>
+										</form>
+									</div><img src="img/rpn-map.png" alt="" loading="lazy"/>
+								</div>
+							</li>
+							<li class="sRpnContent__item">
+								<div class="sRpnContent__title">О&nbsp;Роспотребнадзоре, его органах и&nbsp;организациях
+								</div>
+								<div class="sRpnContent__descr">Роспотребнадзор, или Федеральная служба по&nbsp;надзору в&nbsp;сфере защиты прав потребителей и&nbsp;благосостояния человека, является ключевым государственным органом
+								</div>
+								<a class="sRpnContent__more" href="#">Подробнее
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sRpnContent__item">
+								<div class="sRpnContent__title">Контрольно-надзорная деятельность Роспотребнадзора
+								</div>
+								<div class="sRpnContent__descr">Узнайте подробности о&nbsp;контрольно-надзорной деятельности Роспотребнадзора и&nbsp;о&nbsp;том, какие меры принимаются для обеспечения соблюдения санитарно-эпидемиологических стандартов на&nbsp;предприятиях и&nbsp;в&nbsp;организациях.
+								</div>
+								<a class="sRpnContent__more" href="#">Подробнее
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sRpnContent__item">
+								<div class="sRpnContent__title">Разрешительные документы Роспотребнадзора, необходимые для получения на&nbsp;этапе открытия предприятия
+								</div>
+								<div class="sRpnContent__descr">Узнайте, какие разрешительные документы требуются на&nbsp;этапе открытия предприятия и&nbsp;как получить необходимые разрешения у&nbsp;Роспотребнадзора.
+								</div>
+								<a class="sRpnContent__more" href="#">Подробнее
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sRpnContent__item">
+								<div class="sRpnContent__title">Соблюдение санитарно-эпидемиологического законодательства в&nbsp;процессе осуществления предпринимательской деятельности
+								</div>
+								<div class="sRpnContent__descr">Познакомьтесь с&nbsp;основами соблюдения санитарно-эпидемиологического законодательства в&nbsp;12&nbsp;ключевых отраслях предпринимательства.
+								</div>
+								<a class="sRpnContent__more" href="#">Подробнее
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sRpnContent__item">
+								<div class="sRpnContent__title">Обжалование решений контрольных (надзорных) органов
+								</div>
+								<div class="sRpnContent__descr">Если у&nbsp;вас возникли вопросы или несогласие с&nbsp;решением контрольных органов, узнайте, как правильно обжаловать решение и&nbsp;защитить свои интересы.
+								</div>
+								<a class="sRpnContent__more" href="#">Подробнее
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sRpnContent__item">
+								<div class="sRpnContent__title">Государственные услуги, предоставляемые Роспотребнадзором
+								</div>
+								<div class="sRpnContent__descr">Получите доступ к&nbsp;государственным услугам, предоставляемым Роспотребнадзором, через официальный портал Госуслуги:
+								</div>
+								<div class="sRpnContent__btn btn btn-outline-danger">
+									<svg class="icon icon-internet ">
+										<use xlink:href="img/svg/sprite.svg#internet"></use>
+									</svg>Перейти в Госуслуги
+								</div>
+							</li>
+						</ul>
+						<p>Мы&nbsp;стремимся обеспечить вас всей необходимой информацией и&nbsp;поддержкой, чтобы ваше предприятие было безопасным и&nbsp;соответствовало всем санитарно-эпидемиологическим требованиям.</p>
+						<p>Пользуйтесь нашими ресурсами и&nbsp;участвуйте в&nbsp;обеспечении общественного здоровья и&nbsp;безопасности.</p>
+					</div>
+				</section>
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/@popperjs/core/umd/popper.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

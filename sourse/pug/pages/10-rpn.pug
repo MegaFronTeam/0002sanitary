@@ -1,0 +1,31 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sRpn/_sRpn.pug
+ 
+include ../blocks/sContact/_sContact.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= 'Мой Роспотребнадзор'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head('Мой Роспотребнадзор', 'Мой Роспотребнадзор')
+		+headerBlock4('На&nbsp;этой странице вы&nbsp;найдете все необходимую информацию, связанную с&nbsp;Роспотребнадзором и&nbsp;его контрольно-надзорной деятельностью, а&nbsp;также узнаете, как эти аспекты связаны с&nbsp;проектом &laquo;КЭП&nbsp;&mdash; консультация эпидемиолога&raquo;','rpn')
+		+sRpnContent
+	+parts('footer')
+		+sForm()
+      
+
+
+

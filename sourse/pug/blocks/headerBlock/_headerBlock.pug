@@ -23,13 +23,28 @@ mixin headerBlock2()
 	// end headerBlock2
 
 mixin headerBlock3(p,img)
-	// start headerBlock2
-	+b.headerBlock--des.section#headerBlock&attributes(attributes)
+	// start headerBlock3
+	+b.headerBlock--mission.section#headerBlock&attributes(attributes)
 		.container
 			+e.row.row
 				.col-12.col-lg-6
 					p!= p
+					if block
+						block
 				.col-12.col-lg-6
+					+e.img-wrap
+						+img(`img/${img}.jpg`)
+	// end headerBlock2
+mixin headerBlock4(p,img)
+	// start headerBlock3
+	+b.headerBlock--mission.section#headerBlock&attributes(attributes)
+		.container
+			+e.row.row
+				.col-12.col-md-6
+					p!= p
+					if block
+						block
+				.col-12.col-md-6
 					+e.img-wrap
 						+img(`img/${img}.jpg`)
 	// end headerBlock2

@@ -56,15 +56,24 @@
 			height: auto;
 		}
 	}
-	&--des {
+	&--des, &--mission {
 		.headerBlock__row {
 			flex-wrap: wrap;
 		}
 		@include media-breakpoint-up(lg) {
 			p {
 				max-width: 506px;
+				font-size: rem(18);
 			}
 		}
+	}
+	&--mission {
+		@include media-breakpoint-up(lg) {
+			p {
+				max-width: none;
+			}
+		}
+
 	}
 
 	@include media-breakpoint-up(xl) {}

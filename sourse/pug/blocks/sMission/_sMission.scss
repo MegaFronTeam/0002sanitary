@@ -1,0 +1,77 @@
+// start .sMission
+.sMission {
+	--sPT: #{rem(14)};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	counter-reset: content-list;
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	&__content-list {
+		margin-bottom: rem(32);
+		list-style-type: none;
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(64);
+		}
+	}
+	&__content-item {
+		padding: rem(16);
+		border-radius: 12px;
+		background: $white;
+		box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.07);
+		@include media-breakpoint-up(lg) {
+			padding: rem(24);
+		}
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+	p {
+		font-size: rem(16);
+		line-height: 140%;
+		@include media-breakpoint-up(lg) {
+			font-size: rem(18);
+		}
+	}
+	&__content-title {
+		margin-bottom: rem(24);
+		font-family: $header-font;
+		font-size: rem(20);
+		font-weight: 700;
+		line-height: 100%;
+		&::before {
+			counter-increment: content-list;
+			content: counter(content-list, upper-roman);
+			margin-right: 10px;
+			color: $gray-600;
+		}
+	}
+	&__content-descr {
+		margin-bottom: 0;
+		line-height: 140%;
+	}
+	p.sMission__slogan {
+		padding-top: rem(24);
+		padding-bottom: rem(24);
+		font-size: rem(24);
+		font-family:$header-font;
+		font-weight: 700;
+		line-height: 100%;
+		text-transform: uppercase;
+		@include media-breakpoint-up(lg) {
+			padding-top: rem(48);
+			padding-bottom: rem(44);
+			font-size: rem(32);
+		}
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sMission
