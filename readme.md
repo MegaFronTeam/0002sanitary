@@ -12,3 +12,4 @@
 1. <https://megafronteam.github.io/0002sanitary/public/09-mission.html>
 1. <https://megafronteam.github.io/0002sanitary/public/10-rpn.html>
 1. <https://megafronteam.github.io/0002sanitary/public/11-media.html>
+1. <https://megafronteam.github.io/0002sanitary/public/12-contacts.html>

@@ -24,6 +24,8 @@
 			font-size: rem(20);
 			margin-bottom: rem(24);
 			pointer-events: none;
+			color: $body-color;
+			font-weight: 700;
 		}
 	}
 	&__map-wrap {
@@ -59,10 +61,10 @@
 	&__item-content {
 		font-family: $header-font;
 		font-size: rem(24);
-		font-weight: 700;
+		// font-weight: 700;
 		line-height: 100%;
 		text-transform: uppercase;
-		color: $body-color;
+		color: $secondary;
 		@include media-breakpoint-up(lg) {
 			font-size: rem(32);
 		}

@@ -1,0 +1,52 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sRpn/_sRpn.pug
+ 
+include ../blocks/sContact/_sContact.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= 'Контакты'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+page-head('Контакты', 'Контакты')
+		+sContact
+			.row
+				.col-lg-8
+					+e.address.ADDRESS
+						+e.item
+							+e.title Адрес
+							+e.item-content 121099, г. Москва, 1-й Смоленский переулок, д. 9, стр.1
+							+e.map-wrap
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aefd0f5759daad23face9b9a35326ba619b9ced1b0c63f500117ed802b553b845&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+				.col-lg-4
+					+e.list.UL
+						+e.item.LI
+							+e.title Телефон
+							+e.item-content(href="tel:+74992418628") 8 (499) 241 86 28
+						+e.item.LI
+							+e.title E-mail
+							+e.item-content(href="mailto:cgon@cgon.ru") cgon@cgon.ru
+						+e.item.LI
+							+e.title ВКонтакте
+							+e.item-content(href="vk.com/link") vk.com/link
+						+e.item.LI
+							+e.title Telegram
+							+e.item-content(href="https://t.me/link") t.me/link
+	+parts('footer')
+		+sForm()
+      
+
+
+
