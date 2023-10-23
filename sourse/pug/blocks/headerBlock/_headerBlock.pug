@@ -22,7 +22,7 @@ mixin headerBlock2()
 						+img('img/header-hotels.jpg')
 	// end headerBlock2
 
-mixin headerBlock3(p,img)
+mixin headerBlock3(p,img,title)
 	// start headerBlock3
 	+b.headerBlock--mission.section#headerBlock&attributes(attributes)
 		.container
@@ -34,6 +34,8 @@ mixin headerBlock3(p,img)
 				.col-12.col-lg-6
 					+e.img-wrap
 						+img(`img/${img}.jpg`)
+						if title
+							+e.img-title КЭП - ваш надежный партнер в соблюдении санитарных&nbsp;правил!
 	// end headerBlock2
 mixin headerBlock4(p,img)
 	// start headerBlock3

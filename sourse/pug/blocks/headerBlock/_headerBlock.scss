@@ -73,6 +73,27 @@
 				max-width: none;
 			}
 		}
+		.headerBlock__img-wrap {
+			position: relative;
+		}
+		.headerBlock__img-title {
+			position: absolute;
+			padding: rem(20) rem(10);
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			background-color: $primary;
+			color: $white;
+			font-family: $header-font;
+			font-size: rem(21);
+			font-weight: 700;
+			line-height: 95%;
+			@include media-breakpoint-down(md)  {
+				font-size: rem(18);
+				padding: rem(10);
+			}
+		}
 
 	}
 
