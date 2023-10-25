@@ -35,14 +35,13 @@
 			height: 100%;
 		}
 	}
-	&__subtitle {
+	h3{
 		margin-bottom: 24px;
-		font-family: $header-font;
-		font-size: rem(20);
+		font-family: $header-font; 
 		font-weight: 700;
 		line-height: 100%;
 	}
-	&__list {
+	ul {
 		padding-left: 26px;
 		font-size: rem(18);
 		line-height: 140%;
