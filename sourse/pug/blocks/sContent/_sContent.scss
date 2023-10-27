@@ -109,6 +109,18 @@
 			margin-bottom: rem(24);
 		}
 	}
+	&__subtitle {
+		margin-bottom: 24px;
+		font-family: $header-font;
+		font-size: rem(20);
+		font-weight: 700;
+		line-height: 100%;
+	}
+	ul {
+		padding-left: 26px;
+		font-size: rem(18);
+		line-height: 140%;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

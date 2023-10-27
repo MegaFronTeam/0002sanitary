@@ -172,6 +172,30 @@ function eventHandler() {
 		});
 	});
 
+	document.addEventListener('click', function (event) {
+		let searchBlockTarget = event.target.closest('.sRpnContent__map-wrap');
+		if (searchBlockTarget) {
+			let searchBlock = searchBlockTarget.querySelector('.sRpnContent__search');
+			let searchBlockInput = searchBlock.querySelector('input');
+			searchBlockInput.addEventListener('input', function () {
+				if (searchBlockInput.value.length > 0) {
+					searchBlockTarget.querySelector('.sRpnContent__delete-btn').classList.add('active');
+					searchBlockTarget.querySelector('.sRpnContent__search-result').classList.add('active');
+				} else {
+					searchBlockTarget.querySelector('.sRpnContent__delete-btn').classList.remove('active');
+					searchBlockTarget.querySelector('.sRpnContent__search-result').classList.remove('active');
+				}
+			});
+			searchBlockTarget.querySelector('.sRpnContent__delete-btn').addEventListener('click', function (el) {
+				el.preventDefault();
+				searchBlockInput.value = '';
+				searchBlockInput.focus();
+				searchBlockTarget.querySelector('.sRpnContent__delete-btn').classList.remove('active');
+				searchBlockTarget.querySelector('.sRpnContent__search-result').classList.remove('active');
+			})
+		}
+	})
+
 	new Swiper('.freemode-slider--js', {
 		slidesPerView: 'auto',
 		freeMode: true,

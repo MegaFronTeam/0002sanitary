@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Вопрос-ответ</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<div class="page-head">
+					<div class="container">
+						<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+							<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"/></a></li>
+								<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Вопрос-ответ</span>
+										<meta itemprop="position" content="2"/></a></li>
+							</ol>
+						</nav>
+						<h1>Вопрос-ответ</h1>
+					</div>
+				</div>
+				<!-- start sContent-->
+				<section class="sContent section" id="sContent">
+					<div class="container">
+						<p>В&nbsp;данном разделе&nbsp;Вы найдете исчерпывающую информацию, связанную с&nbsp;обеспечением санитарно-эпидемиологической безопасности в&nbsp;бизнесе. Этот раздел представляет собой уникальный источник ответов на&nbsp;наиболее актуальные и&nbsp;часто встречаемые вопросы, возникающие у&nbsp;предпринимателей и&nbsp;организаций.</p>
+						<p>Раздел &laquo;Вопросы и&nbsp;ответы&raquo; на&nbsp;нашем портале не&nbsp;только отвечает на&nbsp;конкретные вопросы, но&nbsp;и&nbsp;помогает вам развивать свои знания в&nbsp;области санитарно-эпидемиологической безопасности, обеспечивая таким образом уверенность в&nbsp;том, что ваш бизнес функционирует в&nbsp;соответствии с&nbsp;высокими стандартами здоровья и&nbsp;безопасности.</p>
+					</div>
+				</section>
+				<!-- end sContent-->
+				<!-- start sStages-->
+				<section class="sStages section sStages sStages--main sStages sStages--faq" id="sStages">
+					<div class="container">
+						<div class="dd-group dd-group-js">
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js dd-group__head dd-group__head--rome">Какие современные технические средства используются для автоматизации информационно-управленческой деятельностиz<span></span>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js dd-group__head dd-group__head--rome">Что подразумевается под структурированием информации<span></span>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js dd-group__head dd-group__head--rome">Что такое базы данных<span></span>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js dd-group__head dd-group__head--rome">Как найти сумму и среднее значение ряда чисел с помощью научного калькулятора<span></span>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Войти в&nbsp;режим калькулятора и&nbsp;щелчком кнопки мыши на&nbsp;Sta, включим режим статистических расчетов. Вводится первое число в&nbsp;калькулятор и&nbsp;кнопки Dat обеспечиваем прием полем поддержки статрасчетов введенного числа. Аналогично вводятся остальные числа. Если мы&nbsp;хотим произвести подсчет суммы введенных чисел, необходимо нажать кнопку Sum (мышью), а&nbsp;если мы&nbsp;хотим подсчитать среднее значение&nbsp;&mdash; то&nbsp;кнопку</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js dd-group__head dd-group__head--rome">Как в exel скопировать в необходимую ячейку формулу из другой ячецки<span></span>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js dd-group__head dd-group__head--rome">Как в access выполнить поиск информации в таблице<span></span>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+								</div>
+							</div>
+							<div class="dd-group__item">
+								<div class="dd-group__head dd-head-js dd-group__head dd-group__head--rome">Как в fccess изменить структуру таблицы<span></span>
+								</div>
+								<div class="dd-group__content dd-content-js">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ducimus et fuga id, iure molestiae nam quaerat qui sequi similique.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/@popperjs/core/umd/popper.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

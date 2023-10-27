@@ -11,8 +11,21 @@
 		// --bs-gutter-y: var(--bs-gutter-x);
 		align-items: center;
 	}
-	.kep-logo {
-		margin-right: rem(24);
+	&__logo {
+		display: inline-block;
+		flex-shrink: 0;
+		&--rpn {
+			width: 29px;
+		}
+		&--kep {
+			height: 38x;
+		}
+		&--kep {
+			height: 38px;
+		}
+		&:not(:last-child) {
+			margin-right: rem(24);
+		}
 	}
 	.section-title{
 		
@@ -76,9 +89,6 @@
 	@include media-breakpoint-down(xs) {} 
 
 } // end.topLine
-.logo {
-	flex-shrink: 0;
-}
 .search-block {
 	font-family: $header-font;
 	@include media-breakpoint-down(md) {

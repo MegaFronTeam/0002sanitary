@@ -1,0 +1,25 @@
+mixin sLearning(data)
+	// start sLearning
+	+b.SECTION.sLearning.section#sLearning&attributes(attributes)
+		.container
+			+e.row.row
+				mixin leatningItem(poster, title, descr, ...tags)
+					.col-md-6.col-lg-4
+						+e.item
+							+e.video-wrap
+								<iframe width="720" height="405" src="https://rutube.ru/play/embed/5f35955e74b94d14bad1986ee132bead" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+							+e.text
+								+e.title= title
+								if descr
+									+e.descr= descr
+								+e.tags-list.UL
+									for tag in tags
+										+e.tags-item.LI
+											+e.tags-link.btn.btn-primary(href="#")= tag
+				+leatningItem('learning-1','«Профилактика ОРВИ в образовательных организациях»', '', 'Медицина','Общественное питание','Пищевая промышленность')
+				+leatningItem('learning-2','«Безопасное кондитерское производство»','Описание видео для наглядности отображения контента в одну или несколько строк как пример' ,'Медицина','Общественное питание','Пищевая промышленность')
+				+leatningItem('learning-3','«Как подготовить детский лагерь к открытию»','Описание видео для наглядности отображения контента в одну или несколько строк как пример' ,'Медицина','Общественное питание','Пищевая промышленность')
+				+leatningItem('learning-4','«Профилактика ОРВИ в образовательных организациях»', '', 'Медицина','Общественное питание','Пищевая промышленность')
+				+leatningItem('learning-5','«Санитарно-эпидемиологические требования к эксплуатации железнодорожного транспорта»', 'Описание видео для наглядности отображения контента в одну или несколько строк как пример', 'Медицина','Общественное питание','Пищевая промышленность')
+				+leatningItem('learning-6','«Порядок обращения с медицинскими отходами»', 'Описание видео для наглядности отображения контента в одну или несколько строк как пример', 'Медицина','Общественное питание','Пищевая промышленность')
+	// end sLearning

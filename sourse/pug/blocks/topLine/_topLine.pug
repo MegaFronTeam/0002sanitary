@@ -6,9 +6,11 @@ mixin topLine()
 				.col-auto.d-lg-none
 					+menu-toggle()
 				.col
-						+b.kep-logo(href="/").d-none.d-md-inline
-							img(src="img/kep-logo.png", alt="").res-i
-						+b.logo(href="/")
+						+e.logo--rpn(href="/").d-none.d-md-inline-block
+							img(src="img/emblem-c.svg", alt="").res-i
+						+e.logo--kep(href="/").d-none.d-md-inline-block
+							img(src="img/kep-logo.svg", alt="").res-i
+						+e.logo(href="/")
 							img(src="img/logo.svg", alt="").res-i
 				.col-auto.d-lg-none
 					+btn('Обращение').--sm.btn.btn-primary

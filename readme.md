@@ -13,3 +13,6 @@
 1. <https://megafronteam.github.io/0002sanitary/public/10-rpn.html>
 1. <https://megafronteam.github.io/0002sanitary/public/11-media.html>
 1. <https://megafronteam.github.io/0002sanitary/public/12-contacts.html>
+1. <https://megafronteam.github.io/0002sanitary/public/13-learning.html>
+1. <https://megafronteam.github.io/0002sanitary/public/14-documents.html>
+1. <https://megafronteam.github.io/0002sanitary/public/15-faq.html>

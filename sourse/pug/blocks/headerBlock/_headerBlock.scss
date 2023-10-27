@@ -96,6 +96,42 @@
 		}
 
 	}
+	&--medicine {
+		--sPB: #{rem(0)};
+		.headerBlock__row{
+			margin-bottom: 30px;
+			flex-wrap: wrap;
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 0;
+			}
+			@include media-breakpoint-up(xl) {
+				--bs-gutter-x: #{rem(77)};
+			}
+			// --bs-gutter-y: #{rem()};
+	
+		}
+		p {
+			font-size: rem(16);
+			line-height: 140%;
+			@include media-breakpoint-up(xl) {
+				font-size: rem(18);
+			}
+		}
+		.headerBlock__video-wrap {
+			@include block(415,629);
+			width: 100%;
+			border-radius: 12px;
+			overflow: hidden;
+			@include media-breakpoint-down(xl) {
+				margin-bottom: 24px;
+			}
+			& > * {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 
 	@include media-breakpoint-up(xl) {}
 

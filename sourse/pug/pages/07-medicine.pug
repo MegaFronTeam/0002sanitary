@@ -8,7 +8,7 @@ include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sEpidGuide/_sEpidGuide.pug
 include ../blocks/sCatalog/_sCatalog.pug
-include ../blocks/sMedicine/_sMedicine.pug
+//- include ../blocks/sMedicine/_sMedicine.pug
 include ../blocks/sStages/_sStages.pug
 include ../blocks/sThreats/_sThreats.pug
 include ../blocks/sApp/_sApp.pug
@@ -38,7 +38,19 @@ block pagecontent
 	+sCatalog.sCatalog--medicine
 	.container
 		h1 Медицина
-	+sMedicine
+	+headerBlock4('Медицинская деятельность&nbsp;&mdash; профессиональная деятельность по&nbsp;оказанию медицинской помощи, проведению медицинских экспертиз, медицинских осмотров и&nbsp;медицинских освидетельствований, санитарно-противоэпидемических (профилактических) мероприятий и&nbsp;профессиональная деятельность, связанная с&nbsp;трансплантацией (пересадкой) органов&nbsp;и (или) тканей, обращением донорской крови&nbsp;и (или) ее&nbsp;компонентов в&nbsp;медицинских целях.')
+		p Это важная отрасль, которая оказывает огромное влияние на&nbsp;качество и&nbsp;продолжительность жизни человека. Медицинская помощь необходима всем без исключения: от&nbsp;новорожденных до&nbsp;пожилых людей. 
+		p Большинство организаций, осуществляющую свою деятельность в&nbsp;области здравоохранения отнесены к&nbsp;категориям чрезвычайно высокого и&nbsp;высокого риска. (Объекты чрезвычайно высокого и&nbsp;высокого риска).
+	//- +sMedicine
+	+sContent
+		.container
+			+e.subtitle К&nbsp;организациям, осуществляющим свою деятельность в&nbsp;области здравоохранения, относятся
+			+e.list.UL
+				+e.item.LI организации по&nbsp;оказанию амбулаторно-поликлинической медицинской помощи;
+				+e.item.LI организации по&nbsp;оказанию стоматологических услуг;
+				+e.item.LI организации по&nbsp;оказанию стационарной медицинской помощи;
+				+e.item.LI акушерские стационары в&nbsp;многопрофильных медицинских организациях, перинатальные центры;
+				+e.item.LI санаторно-курортные учреждения (оказывающие медицинскую помощь) и&nbsp;др.
 	+sStagesMedicine.sStages--medicine
 	+sThreats
 	+sStagesThreats.sStages--risk
