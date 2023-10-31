@@ -17,7 +17,8 @@ mixin sApp(data)
 						+e.btn.btn.btn-outline-info
 							+icon('apple')
 							| Скачать для iOs
-				+img('img/app-img.png').sApp__img.d-none.d-md-block
+				+e.img-wrap.d-none.d-md-flex
+					+img('img/app-img.png').sApp__img
 
 mixin sAppTest(data)
 	// start sApp
