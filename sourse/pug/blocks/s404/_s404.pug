@@ -1,0 +1,15 @@
+mixin s404(data)
+	// start s404
+	+b.SECTION.s404.section#s404&attributes(attributes)
+		.container
+			+e.row.row
+				.col-md-6.text-center.text-md-end
+					+e.header
+						h1 404
+						+e.img-wrap
+							+img('img/header-bg.svg')
+				.col-md-6.text-center.text-md-start
+					+e.text
+						h2 Страница не найдена
+						+e.btn.btn.btn-outline-danger(href="#") На главную
+	// end s404

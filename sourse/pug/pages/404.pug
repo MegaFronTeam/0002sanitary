@@ -1,0 +1,30 @@
+extends ../layout/main.pug
+
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/s404/_s404.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= index.head.title
+	title= '404'
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+parts('header')
+	main
+		+s404
+	+parts('footer')
+		+sForm()
+      
+
+
+

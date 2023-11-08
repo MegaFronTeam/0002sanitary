@@ -16,3 +16,4 @@
 1. <https://megafronteam.github.io/0002sanitary/public/13-learning.html>
 1. <https://megafronteam.github.io/0002sanitary/public/14-documents.html>
 1. <https://megafronteam.github.io/0002sanitary/public/15-faq.html>
+1. <https://megafronteam.github.io/0002sanitary/public/404.html>
