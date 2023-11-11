@@ -23,9 +23,12 @@ block pagecontent
 		+page-head('Мой Роспотребнадзор', 'Мой Роспотребнадзор')
 		+headerBlock4('На&nbsp;этой странице вы&nbsp;найдете все необходимую информацию, связанную с&nbsp;Роспотребнадзором и&nbsp;его контрольно-надзорной деятельностью, а&nbsp;также узнаете, как эти аспекты связаны с&nbsp;проектом &laquo;КЭП&nbsp;&mdash; консультация эпидемиолога&raquo;','rpn')
 		+sRpnContent
+	
 	+parts('footer')
 		+sForm()
-      
 
-
-
+block scripts
+	script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=2066e304-cee0-4ed2-9cb2-5f6521d5f96c") 
+	script
+		include map.js
+	

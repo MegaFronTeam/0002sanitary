@@ -279,3 +279,5 @@ if (document.readyState !== 'loading') {
 // 		document.body.classList.remove('loaded_hiding');
 // 	}, 500);
 // }
+
+// document.addEventListener('DOMContentLoaded', ()=>{

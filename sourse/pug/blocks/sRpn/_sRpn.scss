@@ -201,10 +201,13 @@
 		}
 	}
 	&__search {
-		position: absolute;
+		// position: absolute;
+		z-index: 25;
+		position: relative;
+		margin-bottom: 20px;
 		top: 0;
 		left: 0;
-		// width: 217px;
+		width: 290px;
 		border-radius: 4px;
 		border: 1px solid $gray-300;
 		form {
@@ -224,6 +227,7 @@
 	}
 	&__search-result {
 		position: absolute;
+		z-index: 4;
 		left: 0;
 		top: 40px;
 		margin-bottom: 0;
@@ -303,4 +307,10 @@
 			font-size: rem(18);
 		}
 	}
+
+	&__map{
+		height: 400px;
+	}
 }
+
+
