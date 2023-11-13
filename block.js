@@ -181,6 +181,7 @@ function initMakeBlock(blockName) {
 
 // Command line arguments
 const blockNameFromCli = process.argv
+
 	.slice(2)
 	// join all arguments to one string (to simplify the capture user input errors)
 	.join(' ');
