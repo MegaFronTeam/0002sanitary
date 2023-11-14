@@ -268,10 +268,26 @@
 		font-weight: 700;
 		line-height: 100%;
 	}
-	&__descr {
-		margin-bottom: rem(16);
-		font-size: rem(14);
-		line-height: 140%;
+	.sRpnContent__descr {
+		p {
+			margin-bottom: rem(16);
+			font-size: rem(14);
+			line-height: 140%;
+		}
+		ul {
+			padding: 0;
+			margin-bottom: 20px;
+    	margin-left: 20px;
+			font-size: rem(14);
+			list-style-type: disc;
+		}
+		a {
+			color: $body-color;
+			text-decoration: underline;
+			&:hover {
+				color: $primary;
+			}
+		}
 	}
 	&__more {
 		display: flex;

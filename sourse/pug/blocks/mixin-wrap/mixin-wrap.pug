@@ -39,7 +39,7 @@ mixin search()
 				+icon("search")
 
 mixin page-head(t,...items)
-	+b.page-head
+	+b.page-head&attributes(attributes)
 		- let l = items.length
 		.container
 			+breadcrumb('Главная',...items)

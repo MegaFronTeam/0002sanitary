@@ -69,6 +69,9 @@
 	}
 	&--mission {
 		@include media-breakpoint-up(lg) {
+			.headerBlock__row {
+				--bs-gutter-x: #{rem(40)};
+			}
 			p {
 				max-width: none;
 			}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Гигиеническое обучение и аттестация</title>
+		<meta name="description" content="о чем страница">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> 
+		<link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+		<link href="libs/@fancyapps/ui/fancybox/fancybox.css" rel="stylesheet"/>
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+						wrap.previousElementSibling.remove()
+						wrap.remove();
+					});
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<script>addBlock(`header`)</script>
+			<div id="headerWrap"></div>
+			<main>
+				<div class="page-head page-head--sertification">
+					<div class="container">
+						<nav class="swiper breadcrumb-slider--js" aria-label="breadcrumb">
+							<ol class="breadcrumb swiper-wrapper" itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+								<li class="breadcrumb-item swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Главная</span>
+										<meta itemprop="position" content="1"/></a></li>
+								<li class="breadcrumb-item active swiper-slide" itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Гигиеническое обучение и аттестация</span>
+										<meta itemprop="position" content="2"/></a></li>
+							</ol>
+						</nav>
+						<h1>Гигиеническое обучение и&nbsp;аттестация</h1>
+					</div>
+				</div>
+				<!-- start headerBlock3-->
+				<div class="headerBlock headerBlock--mission section" id="headerBlock">
+					<div class="container">
+						<div class="headerBlock__row row">
+							<div class="col-12 col-lg-6">
+								<p>Гигиеническая аттестация&nbsp;&mdash; подтверждение уровня знаний и&nbsp;умений по&nbsp;профессиональному гигиеническому обучению.</p>
+								<p>Гигиеническая подготовка и&nbsp;аттестация обязательны для должностных лиц и&nbsp;работников организаций, деятельность которых связана с&nbsp;производством, хранением, транспортировкой и&nbsp;реализацией пищевых продуктов и&nbsp;питьевой воды, воспитаниеми&nbsp;обучением детей, коммунальным и&nbsp;бытовым обслуживанием населения</p>
+							</div>
+							<div class="col-12 col-lg-6">
+								<div class="headerBlock__img-wrap"><img src="img/header-sertification.jpg" alt="" loading="lazy"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end headerBlock2-->
+				<!-- start sRpn-->
+				<section class="sRpnContent section" id="sRpn">
+					<div class="container">
+						<ul class="sRpnContent__list">
+							<li class="sRpnContent__item">
+								<div class="sRpnContent__title">Гигиеническая подготовка проводится при приеме на&nbsp;работу и&nbsp;в&nbsp;дальнейшем:
+								</div>
+								<div class="sRpnContent__descr">
+									<p></p>
+								</div>
+								<div class="sRpnContent__descr">
+									<ul>
+										<li>Для должностных лиц и&nbsp;работников организаций, деятельность которых связана с&nbsp;производством, хранением, транспортировкой и&nbsp;реализацией мясо-молочной и&nbsp;кремово-кондитерской продукции, детского питания, питания дошкольников ежегодно;</li>
+										<li>В&nbsp;других случаях&nbsp;&mdash; 1&nbsp;раз в&nbsp;2&nbsp;года.</li>
+									</ul>
+									<p>Гигиеническую аттестацию проводят после прохождения медицинского осмотра в&nbsp;медицинской организации и&nbsp;гигиенического обучения в&nbsp; <a href="#">центре гигиены и&nbsp;эпидемиологии Роспотребнадзора</a> по&nbsp;месту жительства или месту нахождения работодателя.</p>
+									<p>Гигиеническое обучение проводится в&nbsp;очной или дистанционной формах.</p>
+									<p>Стоимость услуги определяет центрами гигиены и&nbsp;эпидемиологии Роспотребнадзора. Чтобы узнать текущую стоимость, обратитесь в&nbsp;<a href="#">указанный центр в&nbsp;своём регионе</a>.</p>
+									<p>Сведения о&nbsp;прохождении гигиенической аттестации вносятся в&nbsp;личную медицинскую книжку.</p>
+								</div>
+							</li>
+							<li class="sRpnContent__item">
+								<div class="sRpnContent__title">Гигиеническую аттестацию проводят:
+								</div>
+								<div class="sRpnContent__descr">
+									<p></p>
+								</div>
+								<div class="sRpnContent__descr">
+									<p>После прохождения медицинского осмотра в медицинской организации и гигиенического обучения <a href="#">в центре гигиены и эпидемиологии Роспотребнадзора</a> по месту жительства или месту нахождения работодателя.</p>
+								</div>
+								<a class="sRpnContent__more" href="#">Подробнее
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="sRpnContent__item">
+								<div class="sRpnContent__title">Гигиеническое обучение проводится в очной или дистанционной формах
+								</div>
+								<div class="sRpnContent__descr">
+									<p></p>
+								</div>
+								<div class="sRpnContent__descr">
+									<p>Стоимость услуги определяет центрами гигиены и эпидемиологии Роспотребнадзора. Чтобы узнать текущую стоимость, обратитесь в указанный центр в своём регионе.</p>
+									<p>Сведения о прохождении гигиенической аттестации вносятся в личную медицинскую книжку.</p>
+								</div>
+								<a class="sRpnContent__more" href="#">Подробнее
+									<svg class="icon icon-arrow-right ">
+										<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<p>Мы&nbsp;стремимся обеспечить вас всей необходимой информацией и&nbsp;поддержкой, чтобы ваше предприятие было безопасным и&nbsp;соответствовало всем санитарно-эпидемиологическим требованиям.</p>
+						<p>Пользуйтесь нашими ресурсами и&nbsp;участвуйте в&nbsp;обеспечении общественного здоровья и&nbsp;безопасности.</p>
+					</div>
+				</section>
+			</main>
+			<script>addBlock(`footer`)</script>
+			<div id="footerWrap"></div>
+		</div>
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/@fancyapps/ui/fancybox/fancybox.umd.js"> </script>
+		<script src="libs/swiper/swiper-bundle.min.js"> </script>
+		<script src="libs/inputmask/inputmask.min.js"> </script>
+		<script src="libs/@popperjs/core/umd/popper.min.js"> </script>
+		<script src="js/JSCCommon.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>
