@@ -69,14 +69,7 @@ function init() {
         $(".sOurStores__map-caption").html("");
       });
 
-    let text = `
-				<li class="sRpnContent__search-item">
-					<a href="#" class="sRpnContent__search-link" data-coords="${i}">
-						${points[i].p}
-					</a>
-				</li>
-		`
-    searchList.insertAdjacentHTML('beforeend', text);
+    
 
 
   }
@@ -112,18 +105,21 @@ function init() {
   let input = document.querySelector("#suggest1");
   input.addEventListener('input', function () {
     var filter, ul, li, a, i;
-    filter = this.value.toUpperCase();
-    let searchList = document.getElementById("myDropdown");
-    li = searchList.querySelectorAll("li");
-
-    for (i = 0; i < li.length; i++) {
-
-      let txtValue = li[i].querySelector("a").innerText;
-      console.log(li[i].querySelector("a").innerText)
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
+    filter = this.value.toUpperCase(); 
+    searchList.innerHTML = '';
+    for (i = 0; i < points.length; i++) { 
+      if (points[i].p.toUpperCase().indexOf(filter) > -1) {
+        let text = `
+          <li class="sRpnContent__search-item">
+            <a href="#" class="sRpnContent__search-link" data-coords="${i}">
+              ${points[i].p}
+            </a>
+          </li>
+      `
+      searchList.insertAdjacentHTML('beforeend', text);
+        // li[i].style.display = "";
       } else {
-        li[i].style.display = "none";
+        // li[i].style.display = "none";
       }
     }
   })
@@ -138,7 +134,6 @@ function init() {
 
     for (i = 0; i < li.length; i++) {
       let txtValue = li[i].querySelector("a").innerText;
-      console.log(li[i].querySelector("a").innerText)
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         showBaloon(li[i].querySelector("a"))
       }
