@@ -132,7 +132,7 @@ function eventHandler() {
 	
 	const tooltipBtn = document.querySelectorAll('.tooltip-btn')
 	tooltipBtn.forEach((btn) => {
-		let tooltip = btn.nextElementSibling;
+		let tooltip = document.querySelector(btn.dataset.tooltip);
 		const popperInstance = Popper.createPopper(btn, tooltip, {
 			placement: 'top-end',
 			container: 'body',
