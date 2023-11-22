@@ -228,36 +228,42 @@
 			background-position: 50% 200%;
 		}
 		img {
+			max-width: calc(100% - var(--sp));
 			position: absolute;
-			bottom: 0;
-			top: auto;
-			left: calc(16px + 259px - 40px) ;
-			max-height: calc(100% - 16px);
-			@include media-breakpoint-up(sm) {
-				left: auto;
-				right: 0;
-				max-width: 50%;
-			}
-			@include media-breakpoint-up(lg) {
-				top: 100%;
-				bottom: auto;
-				max-width: none;
-			}
-			@include media-breakpoint-up(xl) {
-				top: 75%;
-			}
-			@include media-breakpoint-up(xxl) {
-				top: 60%;
-			}
+			top: calc(100% - var(--sp) / 2);
+			left: 50%;
+			translate: -50% 0;
+			// bottom: 0;
+			// top: auto;
+			// left: calc(16px + 259px - 40px) ;
+			// max-height: calc(100% - 16px);
+			// @include media-breakpoint-up(sm) {
+			// 	left: auto;
+			// 	right: 0;
+			// 	max-width: 50%;
+			// }
+			// @include media-breakpoint-up(lg) {
+			// 	top: 100%;
+			// 	bottom: auto;
+			// 	max-width: none;
+			// }
+			// @include media-breakpoint-up(xl) {
+			// 	top: 75%;
+			// }
+			// @include media-breakpoint-up(xxl) {
+			// 	top: 60%;
+			// }
 		}
 	}
 	.sApp__text {
-		padding: 16px;
+		position: relative;
+		padding: var(--sp);
+		--sp: 16px;
 		@include media-breakpoint-up(sm) {
-			padding: 24px;
+			--sp: 24px;
 		}
-		@include media-breakpoint-up(xl) {
-			padding: 40px;
+		@include media-breakpoint-up(xxl) {
+			--sp: 40px;
 		}
 	}
 	.sApp__title {

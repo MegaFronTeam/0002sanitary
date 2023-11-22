@@ -28,7 +28,7 @@ mixin sAbout(data)
 						p Портал консультационно-экспертной поддержки ориентирован на&nbsp;информационное сопровождение обеспечения санитарно-эпидемиологического благополучия в&nbsp;организациях и&nbsp;предприятиях с&nbsp;учетом особенностей различных отраслей экономической деятельности
 						+e.btn.btn.btn-primary Узнать больше
 			+e.row.row
-				.col-lg-8.col-xxl-9
+				.col-lg-8.col-xl-9
 					.slider-wrapper.slider-wrapper--video
 						+e.slider--js.swiper.sVideoSlider__slider--js
 							.swiper-wrapper
@@ -54,7 +54,7 @@ mixin sAbout(data)
 										+icon('slider-left')
 									.swiper-button-next
 										+icon('slider-right')
-				.col-lg-4.col-xxl-3
+				.col-lg-4.col-xl-3
 					+b.sApp
 						+e.container
 							+e.text
@@ -67,7 +67,7 @@ mixin sAbout(data)
 									+e.btn.btn.btn-outline-info
 										+icon('android')
 										| #[span Скачать ]&nbsp;для Android
-							+img('img/app-img-main.png').sApp__img
+									+img('img/app-img.png').sApp__img
 				.col-lg-6
 					+e.item--well-being(href='#')
 						+e.item-title.h2 Что такое санитарно-эпидемиологическое благополучие?
