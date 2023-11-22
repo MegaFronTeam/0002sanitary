@@ -33,20 +33,20 @@ mixin sAbout(data)
 						+e.slider--js.swiper.sVideoSlider__slider--js
 							.swiper-wrapper
 								.swiper-slide
-									+e.media-wrap--video
-										//- +e.video-title.h2 Промо-ролик
-										<video src="#" poster="img/video-main.jpg"></video> 
-								.swiper-slide
 									+e.media-wrap
-										+img('img/media-banner-1.jpg').sAbout__banner
+										+img('img/main-slide-1.png').sAbout__banner
 										//- +e.video-title.h2 Промо-ролик
 										//- +mediaBanner('Управляйте эпидемиологическими рисками на предприятии вместе с КЭП!').--red
 								.swiper-slide
 									+e.media-wrap
-										+img('img/media-banner-2.jpg').sAbout__banner
+										+img('img/main-slide-1.png').sAbout__banner
 										//- +e.video-title.h2 Промо-ролик
 										//- +mediaBanner('КЭП — ваш надежный партнер в соблюдении санитарных правил!').--blue
 										//- <video src="#" poster="img/video-main.jpg"></video>
+								.swiper-slide
+									+e.media-wrap--video
+										//- +e.video-title.h2 Промо-ролик
+										<video src="#" poster="img/video-main.jpg"></video> 
 							.slider-controls
 								.swiper-pagination
 								.slider-buttons
