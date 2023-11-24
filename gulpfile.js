@@ -288,7 +288,7 @@ class gs {
     }
     static startwatch() {
         watch([sourse + '/sass/**/*.css', sourse + '/pug/blocks/**/*.scss', sourse + '/sass/**/*.scss', sourse + '/sass/**/*.sass'], { usePolling: true }, gs.styles);
-        watch([sourse + '/pug/**/*.pug', sourse + '/pug/content.json'], { usePolling: true }, gs.pugFiles);
+        watch([sourse + '/pug/**/*.pug', sourse + '/pug/**/*.js', sourse + '/pug/content.json'], { usePolling: true }, gs.pugFiles);
         watch(sourse + '/svg/*.svg', { usePolling: true }, gs.svg);
         // watch([sourse + '/js/libs.js'], { usePolling: true }, gs.scripts);
         watch(sourse + '/sass/*.svg', { usePolling: true }, gs.svgCopy);

@@ -78,7 +78,7 @@ mixin sEpidGuide(title)
 							+in-c('checkbox','Ч','letter')
 						.swiper-slide
 							+in-c('checkbox','Э','letter')
-				h3 Заболевания
+				h3 Важно знать об этих инфекциях
 					//- +e.disease-list.UL
 				+e.swiper--disease.swiper.sm-swiper-js
 					.swiper-wrapper
@@ -118,7 +118,12 @@ mixin sEpidGuide(title)
 								//- .tooltip(role="tooltip") Основными гельминтозами, передающимися через рыбу, ракообразных, моллюсков и продукты их переработки, являются описторхозы, дифиллоботриозы, анизакидоз, спарганоз, нанофиетоз, метагонимоз, парагонимоз
 								+e.disease-link(href="#")
 									+icon('link-arrow')
-				+e.more(href="#") Показать все 8
+				.row.align-items-center
+					.col
+						+e.more(href="#") Показать все 8
+					.col-auto 
+						a.btn.btn-primary(href="https://cepportal.ru/epidemiologicheskiy-spravochnik/") Открыть справочник
+
 mixin sEpidBanner(data)
 	// start sEpidGuide
 	+b.SECTION.sEpidGuideBanner.section#sEpidGuide&attributes(attributes)
