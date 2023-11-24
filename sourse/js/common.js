@@ -288,7 +288,7 @@ if (document.readyState !== 'loading') {
 function init() {
   const markIcon = 'img/location.svg';
   const markIconColor = 'img/svg/map-color.png';
-  var center = [55.75380038320217, 37.62071970898438];
+  var center = [46.75380038320217, 90.62071970898438];
   var myMap = new ymaps.Map('map2', {
     center: center,
     zoom: 2,
@@ -327,13 +327,14 @@ function init() {
       objectManager.add(data); 
       points.push(data.features)
   });
+	
+	// console.log(points);
 
-	console.log(objectManager.objects);
   let searchList = document.querySelector(".sRpnContent__search-result"); 
-  function showBaloon(el) {
+  function showBaloon(index, el) {
     
 		var objectState = objectManager.getObjectState(el); 
-		myMap.setCenter(points[0][el].geometry.coordinates, 14);
+		myMap.setCenter(points[0][index].geometry.coordinates, 14);
 
 		myMap.geoObjects.add(objectManager);
         // if (objectState.isClustered) {
@@ -351,7 +352,7 @@ function init() {
     const target = e.target.closest(".sRpnContent__search-link")
     if (!target) return;
     e.preventDefault();
-    showBaloon(target.dataset.coords)
+    showBaloon(target.dataset.index, target.dataset.coords)
     // ymaps.geoQuery(geoObjects).getClosestTo().balloon.open();  
   })
 
@@ -366,7 +367,7 @@ function init() {
       if (title.toUpperCase().indexOf(filter) > -1) {
         let text = `
           <li class="sRpnContent__search-item">
-            <a href="#" class="sRpnContent__search-link" data-coords="${id}">
+            <a href="#" class="sRpnContent__search-link" data-index="${i}" data-coords="${id}">
               ${title}
             </a>
           </li>
@@ -391,6 +392,7 @@ function init() {
       let txtValue = li[i].querySelector("a").innerText;
       if (txtValue.toUpperCase().indexOf(filter) > -1) {
         showBaloon(li[i].querySelector("a"))
+				document.querySelector(".sRpnContent__search-result").classList.remove('active');
       }
     }
   })
