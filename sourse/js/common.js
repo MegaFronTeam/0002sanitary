@@ -102,6 +102,7 @@ function eventHandler() {
 	const videoWrap = document.querySelectorAll('.slider-wrapper--video');
 	for (let wrap of videoWrap) {
 		const videoSlider = new Swiper('.sVideoSlider__slider--js', {
+			simulateTouch: false,
 			slidesPerView: 'auto',
 			spaceBetween: 24,
 			pagination: {
