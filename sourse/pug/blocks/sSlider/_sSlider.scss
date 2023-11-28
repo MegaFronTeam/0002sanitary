@@ -28,11 +28,13 @@
 	.swiper {
 		@include media-breakpoint-down(sm) {
 			overflow: visible;
+			max-width: 314px;
+			margin-left: 0;
+			margin-right: 0;
 		}
 	}
 	.swiper-slide {
 		height: auto;
-		max-width: 314px;
 	}
 	&__slider {
 		margin: -8px;

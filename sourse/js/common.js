@@ -74,8 +74,7 @@ function eventHandler() {
 
 	});
 
-	const moreSlider = new Swiper('.sSlider__slider--js', {
-		slidesPerView: 4,
+	const moreSlider = new Swiper('.sSlider__slider--js', { 
 		pagination: {
 			el: '.sSlider .swiper-pagination',
 			clickable: true,
