@@ -13,11 +13,11 @@
 		overflow: hidden;
 		background-repeat: no-repeat;
 		background-position: 100% 100%;
-		// @include media-breakpoint-up(sm) {
-		// 	background-size: auto 25%;
-		// }
+		@include media-breakpoint-up(sm) {
+			background-size: auto 25%;
+		}
 		@include media-breakpoint-up(lg) {
-			// background-image: url('../img/epidguide-bg.png');
+			background-image: url('../img/epidguide-bg-2.png');
 			background-size: auto;
 			flex-direction: row;
 		}
